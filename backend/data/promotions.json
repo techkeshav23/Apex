@@ -1,0 +1,144 @@
+{
+  "promotions": [
+    {
+      "promo_id": "DIWALI2024",
+      "name": "Diwali Sale",
+      "description": "Flat 20% off on all ethnic wear",
+      "type": "percentage",
+      "value": 20,
+      "applicable_categories": [
+        "Women's Ethnic",
+        "Men's Ethnic"
+      ],
+      "min_purchase": 3000,
+      "start_date": "2024-11-01",
+      "end_date": "2024-11-15",
+      "active": true
+    },
+    {
+      "promo_id": "FIRST500",
+      "name": "First Purchase Discount",
+      "description": "₹500 off on first purchase above ₹2000",
+      "type": "fixed",
+      "value": 500,
+      "applicable_categories": [],
+      "min_purchase": 2000,
+      "start_date": "2024-01-01",
+      "end_date": "2024-12-31",
+      "active": true,
+      "first_time_only": true
+    },
+    {
+      "promo_id": "WINTER25",
+      "name": "Winter Collection",
+      "description": "25% off on western wear",
+      "type": "percentage",
+      "value": 25,
+      "applicable_categories": [
+        "Women's Western",
+        "Men's Casual"
+      ],
+      "min_purchase": 2500,
+      "start_date": "2024-11-01",
+      "end_date": "2024-11-30",
+      "active": true
+    },
+    {
+      "promo_id": "BANK10",
+      "name": "Bank Offer",
+      "description": "Additional 10% off with HDFC Bank cards",
+      "type": "percentage",
+      "value": 10,
+      "applicable_categories": [],
+      "min_purchase": 5000,
+      "start_date": "2024-11-01",
+      "end_date": "2024-11-30",
+      "active": true,
+      "payment_method": "HDFC Card"
+    },
+    {
+      "promo_id": "BUNDLE15",
+      "name": "Bundle Offer",
+      "description": "Buy 2 or more items, get 15% off",
+      "type": "percentage",
+      "value": 15,
+      "applicable_categories": [],
+      "min_items": 2,
+      "min_purchase": 3000,
+      "start_date": "2024-11-01",
+      "end_date": "2024-11-30",
+      "active": true
+    }
+  ],
+  "loyalty_tiers": {
+    "Bronze": {
+      "min_points": 0,
+      "max_points": 999,
+      "points_per_100": 5,
+      "birthday_bonus": 100,
+      "exclusive_access": false,
+      "free_shipping_threshold": 1000
+    },
+    "Silver": {
+      "min_points": 1000,
+      "max_points": 2499,
+      "points_per_100": 7,
+      "birthday_bonus": 250,
+      "exclusive_access": false,
+      "free_shipping_threshold": 750
+    },
+    "Gold": {
+      "min_points": 2500,
+      "max_points": 4999,
+      "points_per_100": 10,
+      "birthday_bonus": 500,
+      "exclusive_access": true,
+      "free_shipping_threshold": 500
+    },
+    "Platinum": {
+      "min_points": 5000,
+      "max_points": 999999,
+      "points_per_100": 15,
+      "birthday_bonus": 1000,
+      "exclusive_access": true,
+      "free_shipping_threshold": 0
+    }
+  },
+  "coupons": [
+    {
+      "code": "SAVE200",
+      "description": "₹200 off on orders above ₹2000",
+      "type": "fixed",
+      "value": 200,
+      "min_purchase": 2000,
+      "valid_till": "2024-11-30",
+      "usage_limit": 1,
+      "active": true
+    },
+    {
+      "code": "FESTIVE30",
+      "description": "30% off on ethnic wear",
+      "type": "percentage",
+      "value": 30,
+      "applicable_categories": [
+        "Women's Ethnic",
+        "Men's Ethnic"
+      ],
+      "min_purchase": 3500,
+      "valid_till": "2024-11-15",
+      "usage_limit": 1,
+      "active": true
+    },
+    {
+      "code": "NEWUSER",
+      "description": "₹300 off for new users",
+      "type": "fixed",
+      "value": 300,
+      "min_purchase": 1500,
+      "valid_till": "2024-12-31",
+      "usage_limit": 1,
+      "active": true,
+      "first_time_only": true
+    }
+  ]
+}

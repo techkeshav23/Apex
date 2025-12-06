@@ -1,0 +1,230 @@
+{
+  "fresher": {
+    "introduction": [
+      "Tell me about yourself and your educational background.",
+      "What made you interested in web development?",
+      "What projects have you worked on during your studies?"
+    ],
+    "javascript": [
+      "What is JavaScript and why is it used?",
+      "What is the difference between let, const, and var?",
+      "What are data types in JavaScript?",
+      "What is an array and how do you create one?",
+      "What is the difference between == and ===?",
+      "What are functions in JavaScript?",
+      "What is an object in JavaScript?",
+      "What is the DOM?",
+      "What are loops and what types do you know?",
+      "What is an event in JavaScript?"
+    ],
+    "react": [
+      "What is React and why is it used?",
+      "What is a component in React?",
+      "What is JSX?",
+      "What is the difference between state and props?",
+      "What is useState hook?",
+      "How do you handle events in React?",
+      "What is conditional rendering?",
+      "How do you display a list in React?",
+      "What is the virtual DOM?",
+      "What are React Developer Tools?"
+    ],
+    "nodejs": [
+      "What is Node.js?",
+      "What is npm?",
+      "What is Express.js?",
+      "What is a REST API?",
+      "What are HTTP methods like GET and POST?",
+      "What is package.json?",
+      "What is a module in Node.js?",
+      "How do you install a package using npm?",
+      "What is a callback function?",
+      "What is JSON?"
+    ],
+    "database": [
+      "What is a database?",
+      "What is the difference between SQL and NoSQL?",
+      "What is MongoDB?",
+      "What is a collection in MongoDB?",
+      "What is a document in MongoDB?",
+      "What is CRUD?",
+      "What is a primary key?",
+      "How do you connect to a database from Node.js?",
+      "What is Mongoose?",
+      "What are basic MongoDB operations?"
+    ],
+    "general": [
+      "What is version control and Git?",
+      "What is GitHub?",
+      "What is the difference between frontend and backend?",
+      "What is an API?",
+      "What is responsive design?",
+      "What is CSS?",
+      "What is HTML?",
+      "What is a web server?",
+      "What is localhost?",
+      "What tools do you use for coding?"
+    ],
+    "closing": [
+      "What are your strengths as a developer?",
+      "Where do you see yourself in 2 years?",
+      "Do you have any questions for me?"
+    ]
+  },
+  "intermediate": {
+    "introduction": [
+      "Tell me about yourself and your development experience.",
+      "Walk me through a project you're proud of.",
+      "What technologies have you worked with professionally?"
+    ],
+    "javascript": [
+      "Explain closures in JavaScript with an example.",
+      "What is the difference between synchronous and asynchronous code?",
+      "Explain Promises and how they work.",
+      "What is async/await and how does it work?",
+      "Explain the event loop in JavaScript.",
+      "What are higher-order functions?",
+      "What is destructuring in JavaScript?",
+      "Explain the spread and rest operators.",
+      "What is the this keyword in JavaScript?",
+      "What are arrow functions and how are they different?"
+    ],
+    "react": [
+      "Explain the React component lifecycle.",
+      "What are React hooks? Explain useState and useEffect.",
+      "What is the purpose of useCallback and useMemo?",
+      "How do you manage state in a React application?",
+      "What is Context API and when would you use it?",
+      "Explain controlled vs uncontrolled components.",
+      "How do you handle forms in React?",
+      "What is prop drilling and how do you avoid it?",
+      "How do you make API calls in React?",
+      "What are keys in React and why are they important?"
+    ],
+    "nodejs": [
+      "Explain middleware in Express.js.",
+      "How do you handle errors in Node.js?",
+      "What is the difference between process.nextTick and setImmediate?",
+      "How does Node.js handle concurrent requests?",
+      "What are environment variables and how do you use them?",
+      "Explain authentication in Node.js applications.",
+      "What is JWT and how does it work?",
+      "How do you structure a Node.js project?",
+      "What are streams in Node.js?",
+      "How do you handle file uploads?"
+    ],
+    "database": [
+      "Explain database indexing and why it's important.",
+      "What is aggregation in MongoDB?",
+      "How do you design a schema in MongoDB?",
+      "What are relationships in MongoDB?",
+      "Explain ACID properties.",
+      "What is data validation in Mongoose?",
+      "How do you handle database migrations?",
+      "What is connection pooling?",
+      "Explain populate in Mongoose.",
+      "How do you optimize database queries?"
+    ],
+    "api": [
+      "What makes an API RESTful?",
+      "Explain HTTP status codes.",
+      "How do you handle API versioning?",
+      "What is CORS and how do you handle it?",
+      "How do you secure an API?",
+      "What is rate limiting?",
+      "How do you document an API?",
+      "What is the difference between PUT and PATCH?",
+      "How do you handle pagination in APIs?",
+      "What is API caching?"
+    ],
+    "closing": [
+      "How do you stay updated with new technologies?",
+      "Describe a challenging bug you fixed.",
+      "Do you have any questions about the role?"
+    ]
+  },
+  "advanced": {
+    "introduction": [
+      "Tell me about your most complex project and your role in it.",
+      "What architectural decisions have you made in past projects?",
+      "How do you approach technical leadership?"
+    ],
+    "javascript": [
+      "Explain the JavaScript engine and how V8 works.",
+      "What is the difference between the call stack and task queue?",
+      "Explain memory management and garbage collection in JavaScript.",
+      "What are generators and iterators?",
+      "Explain the Proxy object and its use cases.",
+      "What are WeakMap and WeakSet?",
+      "How would you implement a debounce function from scratch?",
+      "Explain the module system: CommonJS vs ES Modules.",
+      "What is tail call optimization?",
+      "How do you handle memory leaks in JavaScript?"
+    ],
+    "react": [
+      "Explain React's reconciliation algorithm.",
+      "How would you optimize a slow React application?",
+      "Explain React Fiber architecture.",
+      "What are render props and when would you use them?",
+      "How do you implement code splitting in React?",
+      "Explain Suspense and Concurrent Mode.",
+      "How do you test React components effectively?",
+      "What are compound components pattern?",
+      "How do you handle complex state with useReducer?",
+      "Explain the difference between client-side and server-side rendering."
+    ],
+    "nodejs": [
+      "How would you scale a Node.js application?",
+      "Explain the cluster module in Node.js.",
+      "How do you implement graceful shutdown?",
+      "What is event-driven architecture?",
+      "How do you handle backpressure in streams?",
+      "Explain worker threads in Node.js.",
+      "How do you profile and debug Node.js applications?",
+      "What is libuv and how does Node.js use it?",
+      "How do you implement a job queue?",
+      "Explain the N+1 query problem and how to solve it."
+    ],
+    "systemDesign": [
+      "How would you design a URL shortener at scale?",
+      "Explain microservices vs monolithic architecture.",
+      "How would you design a real-time chat system?",
+      "What is event sourcing and CQRS?",
+      "How do you implement distributed caching?",
+      "Explain CAP theorem and its implications.",
+      "How would you design a rate limiter?",
+      "What are circuit breakers and how do they work?",
+      "How do you handle distributed transactions?",
+      "Explain horizontal vs vertical scaling strategies."
+    ],
+    "security": [
+      "How do you prevent SQL injection in a Node.js app?",
+      "Explain OAuth 2.0 and OpenID Connect.",
+      "How do you implement RBAC?",
+      "What is OWASP Top 10?",
+      "How do you secure sensitive data at rest and in transit?",
+      "Explain Content Security Policy.",
+      "How do you handle secrets management?",
+      "What are security headers and why are they important?",
+      "How do you implement secure session management?",
+      "Explain the principle of least privilege in system design."
+    ],
+    "devops": [
+      "Explain CI/CD pipelines.",
+      "How do you containerize a Node.js application?",
+      "What is Kubernetes and when would you use it?",
+      "How do you implement blue-green deployments?",
+      "What is infrastructure as code?",
+      "How do you monitor and log distributed systems?",
+      "Explain the 12-factor app methodology.",
+      "How do you handle configuration management?",
+      "What is service mesh?",
+      "How do you implement feature flags?"
+    ],
+    "closing": [
+      "How do you mentor junior developers?",
+      "What's your approach to technical debt?",
+      "Do you have any questions about our tech stack or challenges?"
+    ]
+  }
+}

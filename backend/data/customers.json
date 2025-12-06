@@ -1,0 +1,470 @@
+[
+  {
+    "customer_id": "CUST001",
+    "name": "Keshav Sharma",
+    "email": "Keshav.sharma@email.com",
+    "phone": "+91-9876543210",
+    "demographics": {
+      "age": 28,
+      "gender": "Female",
+      "location": "Mumbai",
+      "preferred_store": "Phoenix Mall Mumbai"
+    },
+    "purchase_history": [
+      {
+        "date": "2024-10-15",
+        "category": "Women's Ethnic",
+        "amount": 4500,
+        "items": [
+          "Kurta Set",
+          "Dupatta"
+        ]
+      },
+      {
+        "date": "2024-09-20",
+        "category": "Accessories",
+        "amount": 1200,
+        "items": [
+          "Earrings"
+        ]
+      }
+    ],
+    "loyalty_tier": "Gold",
+    "loyalty_points": 2500,
+    "device_preferences": [
+      "Mobile App",
+      "WhatsApp"
+    ],
+    "browsing_history": [
+      "Sarees",
+      "Women's Western",
+      "Jewelry"
+    ],
+    "preferences": {
+      "size": "M",
+      "favorite_colors": [
+        "Blue",
+        "Green",
+        "White"
+      ],
+      "budget_range": "3000-8000"
+    }
+  },
+  {
+    "customer_id": "CUST002",
+    "name": "Rajesh Kumar",
+    "email": "rajesh.kumar@email.com",
+    "phone": "+91-9876543211",
+    "demographics": {
+      "age": 35,
+      "gender": "Male",
+      "location": "Delhi",
+      "preferred_store": "DLF Mall Delhi"
+    },
+    "purchase_history": [
+      {
+        "date": "2024-10-25",
+        "category": "Men's Formal",
+        "amount": 6500,
+        "items": [
+          "Formal Shirt",
+          "Trousers"
+        ]
+      },
+      {
+        "date": "2024-09-10",
+        "category": "Men's Casual",
+        "amount": 3200,
+        "items": [
+          "Polo T-shirt"
+        ]
+      }
+    ],
+    "loyalty_tier": "Platinum",
+    "loyalty_points": 5000,
+    "device_preferences": [
+      "Web",
+      "In-store Kiosk"
+    ],
+    "browsing_history": [
+      "Men's Formal",
+      "Watches",
+      "Belts"
+    ],
+    "preferences": {
+      "size": "L",
+      "favorite_colors": [
+        "Black",
+        "Navy Blue",
+        "Grey"
+      ],
+      "budget_range": "5000-15000"
+    }
+  },
+  {
+    "customer_id": "CUST003",
+    "name": "Anita Desai",
+    "email": "anita.desai@email.com",
+    "phone": "+91-9876543212",
+    "demographics": {
+      "age": 42,
+      "gender": "Female",
+      "location": "Bangalore",
+      "preferred_store": "Brigade Road Bangalore"
+    },
+    "purchase_history": [
+      {
+        "date": "2024-11-01",
+        "category": "Women's Western",
+        "amount": 8900,
+        "items": [
+          "Dress",
+          "Blazer"
+        ]
+      },
+      {
+        "date": "2024-10-05",
+        "category": "Footwear",
+        "amount": 4500,
+        "items": [
+          "Heels"
+        ]
+      }
+    ],
+    "loyalty_tier": "Silver",
+    "loyalty_points": 1200,
+    "device_preferences": [
+      "Mobile App",
+      "Web"
+    ],
+    "browsing_history": [
+      "Formal Wear",
+      "Party Wear",
+      "Handbags"
+    ],
+    "preferences": {
+      "size": "L",
+      "favorite_colors": [
+        "Red",
+        "Black",
+        "Gold"
+      ],
+      "budget_range": "5000-20000"
+    }
+  },
+  {
+    "customer_id": "CUST004",
+    "name": "Vikram Singh",
+    "email": "vikram.singh@email.com",
+    "phone": "+91-9876543213",
+    "demographics": {
+      "age": 25,
+      "gender": "Male",
+      "location": "Pune",
+      "preferred_store": "Phoenix Pune"
+    },
+    "purchase_history": [
+      {
+        "date": "2024-10-20",
+        "category": "Men's Casual",
+        "amount": 2500,
+        "items": [
+          "Jeans",
+          "T-shirt"
+        ]
+      }
+    ],
+    "loyalty_tier": "Bronze",
+    "loyalty_points": 500,
+    "device_preferences": [
+      "Mobile App",
+      "WhatsApp"
+    ],
+    "browsing_history": [
+      "Casual Wear",
+      "Sneakers",
+      "Backpacks"
+    ],
+    "preferences": {
+      "size": "M",
+      "favorite_colors": [
+        "Blue",
+        "Black",
+        "White"
+      ],
+      "budget_range": "2000-5000"
+    }
+  },
+  {
+    "customer_id": "CUST005",
+    "name": "Meera Patel",
+    "email": "meera.patel@email.com",
+    "phone": "+91-9876543214",
+    "demographics": {
+      "age": 31,
+      "gender": "Female",
+      "location": "Ahmedabad",
+      "preferred_store": "Alpha One Mall Ahmedabad"
+    },
+    "purchase_history": [
+      {
+        "date": "2024-10-30",
+        "category": "Women's Ethnic",
+        "amount": 12000,
+        "items": [
+          "Designer Saree"
+        ]
+      },
+      {
+        "date": "2024-09-15",
+        "category": "Jewelry",
+        "amount": 3500,
+        "items": [
+          "Necklace Set"
+        ]
+      }
+    ],
+    "loyalty_tier": "Platinum",
+    "loyalty_points": 6500,
+    "device_preferences": [
+      "Web",
+      "Mobile App"
+    ],
+    "browsing_history": [
+      "Sarees",
+      "Lehengas",
+      "Jewelry"
+    ],
+    "preferences": {
+      "size": "S",
+      "favorite_colors": [
+        "Pink",
+        "Gold",
+        "Maroon"
+      ],
+      "budget_range": "8000-25000"
+    }
+  },
+  {
+    "customer_id": "CUST006",
+    "name": "Arjun Reddy",
+    "email": "arjun.reddy@email.com",
+    "phone": "+91-9876543215",
+    "demographics": {
+      "age": 29,
+      "gender": "Male",
+      "location": "Hyderabad",
+      "preferred_store": "Inorbit Mall Hyderabad"
+    },
+    "purchase_history": [
+      {
+        "date": "2024-11-02",
+        "category": "Men's Casual",
+        "amount": 4200,
+        "items": [
+          "Casual Shirt",
+          "Chinos"
+        ]
+      }
+    ],
+    "loyalty_tier": "Gold",
+    "loyalty_points": 3200,
+    "device_preferences": [
+      "Mobile App"
+    ],
+    "browsing_history": [
+      "Smart Casuals",
+      "Accessories",
+      "Sunglasses"
+    ],
+    "preferences": {
+      "size": "L",
+      "favorite_colors": [
+        "Olive",
+        "Beige",
+        "White"
+      ],
+      "budget_range": "3000-10000"
+    }
+  },
+  {
+    "customer_id": "CUST007",
+    "name": "Sneha Iyer",
+    "email": "sneha.iyer@email.com",
+    "phone": "+91-9876543216",
+    "demographics": {
+      "age": 24,
+      "gender": "Female",
+      "location": "Chennai",
+      "preferred_store": "Express Avenue Chennai"
+    },
+    "purchase_history": [
+      {
+        "date": "2024-10-18",
+        "category": "Women's Western",
+        "amount": 3500,
+        "items": [
+          "Tops",
+          "Jeans"
+        ]
+      }
+    ],
+    "loyalty_tier": "Silver",
+    "loyalty_points": 800,
+    "device_preferences": [
+      "WhatsApp",
+      "Mobile App"
+    ],
+    "browsing_history": [
+      "Casual Wear",
+      "College Fashion",
+      "Accessories"
+    ],
+    "preferences": {
+      "size": "S",
+      "favorite_colors": [
+        "Pastel",
+        "White",
+        "Yellow"
+      ],
+      "budget_range": "1500-5000"
+    }
+  },
+  {
+    "customer_id": "CUST008",
+    "name": "Karan Malhotra",
+    "email": "karan.malhotra@email.com",
+    "phone": "+91-9876543217",
+    "demographics": {
+      "age": 38,
+      "gender": "Male",
+      "location": "Mumbai",
+      "preferred_store": "Phoenix Mall Mumbai"
+    },
+    "purchase_history": [
+      {
+        "date": "2024-10-28",
+        "category": "Men's Formal",
+        "amount": 15000,
+        "items": [
+          "Suit",
+          "Formal Shoes"
+        ]
+      },
+      {
+        "date": "2024-09-22",
+        "category": "Accessories",
+        "amount": 5000,
+        "items": [
+          "Watch",
+          "Tie"
+        ]
+      }
+    ],
+    "loyalty_tier": "Platinum",
+    "loyalty_points": 8500,
+    "device_preferences": [
+      "Web",
+      "In-store Kiosk"
+    ],
+    "browsing_history": [
+      "Premium Formal",
+      "Luxury Accessories",
+      "Cufflinks"
+    ],
+    "preferences": {
+      "size": "XL",
+      "favorite_colors": [
+        "Charcoal",
+        "Black",
+        "Wine"
+      ],
+      "budget_range": "10000-50000"
+    }
+  },
+  {
+    "customer_id": "CUST009",
+    "name": "Divya Nair",
+    "email": "divya.nair@email.com",
+    "phone": "+91-9876543218",
+    "demographics": {
+      "age": 27,
+      "gender": "Female",
+      "location": "Kochi",
+      "preferred_store": "Lulu Mall Kochi"
+    },
+    "purchase_history": [
+      {
+        "date": "2024-10-12",
+        "category": "Women's Ethnic",
+        "amount": 5500,
+        "items": [
+          "Anarkali Set"
+        ]
+      }
+    ],
+    "loyalty_tier": "Gold",
+    "loyalty_points": 2200,
+    "device_preferences": [
+      "Mobile App",
+      "Web"
+    ],
+    "browsing_history": [
+      "Ethnic Wear",
+      "Festive Collection",
+      "Footwear"
+    ],
+    "preferences": {
+      "size": "M",
+      "favorite_colors": [
+        "Royal Blue",
+        "Green",
+        "Purple"
+      ],
+      "budget_range": "4000-12000"
+    }
+  },
+  {
+    "customer_id": "CUST010",
+    "name": "Rohit Verma",
+    "email": "rohit.verma@email.com",
+    "phone": "+91-9876543219",
+    "demographics": {
+      "age": 33,
+      "gender": "Male",
+      "location": "Jaipur",
+      "preferred_store": "World Trade Park Jaipur"
+    },
+    "purchase_history": [
+      {
+        "date": "2024-11-05",
+        "category": "Men's Ethnic",
+        "amount": 7500,
+        "items": [
+          "Kurta Pajama Set",
+          "Nehru Jacket"
+        ]
+      }
+    ],
+    "loyalty_tier": "Gold",
+    "loyalty_points": 3800,
+    "device_preferences": [
+      "In-store Kiosk",
+      "WhatsApp"
+    ],
+    "browsing_history": [
+      "Ethnic Wear",
+      "Festive Collection",
+      "Accessories"
+    ],
+    "preferences": {
+      "size": "L",
+      "favorite_colors": [
+        "Cream",
+        "Gold",
+        "Maroon"
+      ],
+      "budget_range": "5000-15000"
+    }
+  }
+]
