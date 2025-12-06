@@ -24,8 +24,8 @@ from agents.sales_agent import SalesAgent
 from session_manager import SessionManager
 
 app = Flask(__name__)
-frontend_url = os.getenv('FRONTEND_URL', 'http://localhost:3000')
-CORS(app, resources={r"/*": {"origins": frontend_url}})
+# Enable CORS for all domains on all routes (Fixes Vercel/Render communication)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Register the Data API Blueprint
 # This makes the mock server routes available on the main app
@@ -33,6 +33,13 @@ app.register_blueprint(api_bp)
 
 # Initialize Session Manager (Supports SQLite for local, Postgres for Render)
 session_manager = SessionManager()
+
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    return response
 
 # Health check
 @app.route('/health', methods=['GET'])
