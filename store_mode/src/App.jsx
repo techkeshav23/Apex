@@ -22,6 +22,13 @@ function App() {
   
   // Ref to hold the latest handleSendMessage to avoid stale closures in event listeners
   const handleSendMessageRef = useRef(null);
+  
+  // Ref to track listening state without triggering re-renders of the effect
+  const isListeningRef = useRef(isListening);
+  
+  useEffect(() => {
+    isListeningRef.current = isListening;
+  }, [isListening]);
 
   // Text-to-Speech Function
   const speak = useCallback((text) => {
@@ -74,7 +81,7 @@ function App() {
              // Just woke up, waiting for command
              speak("I'm listening.");
            }
-        } else if (isListening) {
+        } else if (isListeningRef.current) {
            // Already listening, treat as command
            setInputMessage(transcript);
            if (handleSendMessageRef.current) {
@@ -89,7 +96,7 @@ function App() {
           try {
             recognitionRef.current.start();
           } catch (e) {
-            console.log("Recognition already started");
+            // Ignore if already started
           }
         } else {
           setIsListening(false);
@@ -97,6 +104,7 @@ function App() {
       };
 
       recognitionRef.current.onerror = (event) => {
+        if (event.error === 'aborted') return; // Ignore aborted errors
         console.error('Speech error:', event.error);
         if (event.error === 'not-allowed') {
            setWakeWordActive(false);
@@ -113,7 +121,14 @@ function App() {
     } else {
       setVoiceSupported(false);
     }
-  }, [wakeWordActive, isListening, speak]); // Re-run if dependencies change
+    
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.onend = null; // Prevent auto-restart on unmount
+        recognitionRef.current.stop();
+      }
+    };
+  }, [wakeWordActive, speak]); // Removed isListening from dependencies
 
 
 
@@ -149,6 +164,11 @@ function App() {
         }
       } catch (error) {
         console.error("Failed to start session", error);
+        setMessages([{
+            type: 'bot',
+            text: `⚠️ Connection Error: Could not connect to server. Please check if the backend is running. (${error.message})`,
+            timestamp: new Date().toLocaleTimeString()
+        }]);
       }
     };
     
