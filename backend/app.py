@@ -24,7 +24,8 @@ from agents.sales_agent import SalesAgent
 from session_manager import SessionManager
 
 app = Flask(__name__)
-CORS(app)
+frontend_url = os.getenv('FRONTEND_URL', 'http://localhost:3000')
+CORS(app, resources={r"/*": {"origins": frontend_url}})
 
 # Register the Data API Blueprint
 # This makes the mock server routes available on the main app

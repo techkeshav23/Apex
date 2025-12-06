@@ -111,6 +111,10 @@ class SalesAgent:
             "message": message + "How can I help you?",
             "session": self.current_session
         }
+
+    def get_state(self):
+        """Return the current session state"""
+        return self.current_session
     
     def handle_conversation(self, user_input: str) -> Dict[str, Any]:
         """Handle user conversation and orchestrate appropriate agents"""
@@ -575,18 +579,23 @@ class SalesAgent:
         # Try to get customer data for personalized greeting
         if GEMINI_ENABLED and gemini_assistant.is_available():
             try:
-                import requests
-                response = requests.get(f"{self.api_base_url}/api/customers/{customer_id}")
-                if response.status_code == 200:
-                    customer = response.json()
-                    greeting_text = gemini_assistant.generate_personalized_greeting(
-                        customer, 
-                        self.current_session.get('channel', 'web')
-                    )
-                    return {
-                        "success": True,
-                        "message": greeting_text + "\n\nI can help you:\n✨ Find the perfect products\n📦 Check availability\n🎁 Apply best offers\n🚚 Complete your purchase\n\nWhat are you looking for today?"
-                    }
+                # Use internal API call if possible, or skip if connection fails
+                # For now, we'll just use the fallback if the API call fails
+                # to prevent the entire session start from failing
+                try:
+                    response = requests.get(f"{self.api_base_url}/api/customers/{customer_id}", timeout=2)
+                    if response.status_code == 200:
+                        customer = response.json()
+                        greeting_text = gemini_assistant.generate_personalized_greeting(
+                            customer, 
+                            self.current_session.get('channel', 'web')
+                        )
+                        return {
+                            "success": True,
+                            "message": greeting_text + "\n\nI can help you:\n✨ Find the perfect products\n📦 Check availability\n🎁 Apply best offers\n🚚 Complete your purchase\n\nWhat are you looking for today?"
+                        }
+                except requests.exceptions.RequestException:
+                    pass # Fallback silently
             except Exception as e:
                 self.log(f"Could not fetch customer data: {str(e)}")
         
@@ -596,6 +605,10 @@ class SalesAgent:
             "message": f"👋 Hello! Welcome to our store! I'm your personal shopping assistant.\n\nI can help you:\n✨ Find the perfect products\n📦 Check availability\n🎁 Apply best offers\n🚚 Complete your purchase\n\nWhat are you looking for today?"
         }
     
+    def get_state(self):
+        """Return the current session state"""
+        return self.current_session
+
     def log(self, message: str):
         """Log agent activity"""
         print(f"[{self.name}] {message}")
