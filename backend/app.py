@@ -7,6 +7,10 @@ from flask_cors import CORS
 import sys
 import os
 import uuid
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Add current directory to path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -44,8 +48,8 @@ def start_session():
     # Use a stable UUID per session to support channel switching
     session_id = str(uuid.uuid4())
     
-    # Use the current host URL for the agent to call back to itself
-    host_url = request.host_url.rstrip('/')
+    # Use the configured API URL or fallback to the request host
+    host_url = os.getenv('API_BASE_URL', request.host_url.rstrip('/'))
     
     sales_agent = SalesAgent(api_base_url=host_url)
     greeting = sales_agent.start_session(customer_id, channel)

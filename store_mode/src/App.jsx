@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import axios from 'axios';
 import { getProductImage } from './utils/productImage';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 function App() {
   const [sessionData, setSessionData] = useState(null);
   const [messages, setMessages] = useState([]);
@@ -130,7 +132,7 @@ function App() {
   useEffect(() => {
     const startSession = async () => {
       try {
-        const response = await axios.post('http://localhost:5000/api/start_session', {
+        const response = await axios.post(`${API_URL}/api/start_session`, {
           customer_id: 'CUST001',
           channel: 'kiosk' // Important: Set channel to kiosk
         });
@@ -171,12 +173,10 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/chat', {
+      const response = await axios.post(`${API_URL}/api/chat`, {
         session_id: sessionData.session_id,
         message: text
-      });
-
-      const botMessage = {
+      });      const botMessage = {
         type: 'bot',
         text: response.data.message || 'I received your message.',
         data: response.data,
