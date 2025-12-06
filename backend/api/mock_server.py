@@ -1,12 +1,10 @@
-from flask import Flask, jsonify, request
-from flask_cors import CORS
+from flask import Blueprint, jsonify, request
 import json
 import os
 import random
 from datetime import datetime
 
-app = Flask(__name__)
-CORS(app)
+api_bp = Blueprint('mock_api', __name__)
 
 # Load data
 def load_json(filename):
@@ -23,24 +21,24 @@ promotions_data = load_json('promotions.json') or {}
 
 # API Endpoints
 
-@app.route('/api/health', methods=['GET'])
+@api_bp.route('/api/health', methods=['GET'])
 def health_check():
     return jsonify({"status": "ok", "message": "Mock API Server is running"})
 
 # Customer APIs
-@app.route('/api/customers/<customer_id>', methods=['GET'])
+@api_bp.route('/api/customers/<customer_id>', methods=['GET'])
 def get_customer(customer_id):
     customer = next((c for c in customers if c['customer_id'] == customer_id), None)
     if customer:
         return jsonify(customer)
     return jsonify({"error": "Customer not found"}), 404
 
-@app.route('/api/customers', methods=['GET'])
+@api_bp.route('/api/customers', methods=['GET'])
 def get_all_customers():
     return jsonify(customers)
 
 # Product APIs
-@app.route('/api/products', methods=['GET'])
+@api_bp.route('/api/products', methods=['GET'])
 def get_products():
     category = request.args.get('category')
     search = request.args.get('search', '').lower()
@@ -56,7 +54,7 @@ def get_products():
     
     return jsonify(filtered_products)
 
-@app.route('/api/products/<sku>', methods=['GET'])
+@api_bp.route('/api/products/<sku>', methods=['GET'])
 def get_product(sku):
     product = next((p for p in products if p['sku'] == sku), None)
     if product:
@@ -64,13 +62,13 @@ def get_product(sku):
     return jsonify({"error": "Product not found"}), 404
 
 # Inventory APIs
-@app.route('/api/inventory/<sku>', methods=['GET'])
+@api_bp.route('/api/inventory/<sku>', methods=['GET'])
 def get_inventory(sku):
     if sku in inventory:
         return jsonify(inventory[sku])
     return jsonify({"error": "Inventory not found"}), 404
 
-@app.route('/api/inventory/check', methods=['POST'])
+@api_bp.route('/api/inventory/check', methods=['POST'])
 def check_inventory():
     data = request.json
     sku = data.get('sku')
@@ -104,7 +102,7 @@ def check_inventory():
     })
 
 # Payment APIs
-@app.route('/api/payment/process', methods=['POST'])
+@api_bp.route('/api/payment/process', methods=['POST'])
 def process_payment():
     data = request.json
     amount = data.get('amount')
@@ -132,7 +130,7 @@ def process_payment():
         "message": "Payment processed successfully"
     })
 
-@app.route('/api/payment/retry', methods=['POST'])
+@api_bp.route('/api/payment/retry', methods=['POST'])
 def retry_payment():
     data = request.json
     # Retry has better success rate
@@ -150,11 +148,11 @@ def retry_payment():
     })
 
 # Promotions APIs
-@app.route('/api/promotions', methods=['GET'])
+@api_bp.route('/api/promotions', methods=['GET'])
 def get_promotions():
     return jsonify(promotions_data.get('promotions', []))
 
-@app.route('/api/promotions/apply', methods=['POST'])
+@api_bp.route('/api/promotions/apply', methods=['POST'])
 def apply_promotion():
     data = request.json
     promo_code = data.get('promo_code')
@@ -195,7 +193,7 @@ def apply_promotion():
     })
 
 # Loyalty APIs
-@app.route('/api/loyalty/<customer_id>', methods=['GET'])
+@api_bp.route('/api/loyalty/<customer_id>', methods=['GET'])
 def get_loyalty_points(customer_id):
     customer = next((c for c in customers if c['customer_id'] == customer_id), None)
     if not customer:
@@ -212,7 +210,7 @@ def get_loyalty_points(customer_id):
         "tier_benefits": tier_info
     })
 
-@app.route('/api/loyalty/redeem', methods=['POST'])
+@api_bp.route('/api/loyalty/redeem', methods=['POST'])
 def redeem_points():
     data = request.json
     customer_id = data.get('customer_id')
@@ -240,7 +238,7 @@ def redeem_points():
     })
 
 # Order/Fulfillment APIs
-@app.route('/api/orders/create', methods=['POST'])
+@api_bp.route('/api/orders/create', methods=['POST'])
 def create_order():
     data = request.json
     
@@ -254,7 +252,7 @@ def create_order():
         "tracking_number": f"TRK{random.randint(100000, 999999)}"
     })
 
-@app.route('/api/orders/<order_id>', methods=['GET'])
+@api_bp.route('/api/orders/<order_id>', methods=['GET'])
 def get_order(order_id):
     return jsonify({
         "order_id": order_id,
@@ -263,7 +261,7 @@ def get_order(order_id):
     })
 
 # POS Integration (In-store)
-@app.route('/api/pos/scan', methods=['POST'])
+@api_bp.route('/api/pos/scan', methods=['POST'])
 def pos_scan():
     data = request.json
     barcode = data.get('barcode')
@@ -282,19 +280,3 @@ def pos_scan():
         "success": False,
         "message": "Product not found"
     }), 404
-
-if __name__ == '__main__':
-    import os
-    port = int(os.environ.get('PORT', 5001))
-    print("🚀 Starting Mock API Server...")
-    print(f"📍 Server running on port {port}")
-    print("\nAvailable endpoints:")
-    print("  - GET  /api/health")
-    print("  - GET  /api/customers")
-    print("  - GET  /api/products")
-    print("  - GET  /api/inventory/<sku>")
-    print("  - POST /api/payment/process")
-    print("  - GET  /api/promotions")
-    print("  - GET  /api/loyalty/<customer_id>")
-    print("  - POST /api/orders/create")
-    app.run(host='0.0.0.0', port=port, debug=False)

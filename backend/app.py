@@ -2,7 +2,7 @@
 Backend Main Server
 Combines Data API and Sales Agent API
 """
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 import sys
 import os
@@ -12,16 +12,22 @@ import uuid
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Import API server
-from api.mock_server import app as api_app
+from api.mock_server import api_bp
+from werkzeug.middleware.dispatcher import DispatcherMiddleware
 
 # Import Sales Agent routes
 from agents.sales_agent import SalesAgent
+from session_manager import SessionManager
 
 app = Flask(__name__)
 CORS(app)
 
-# Store active sessions
-sessions = {}
+# Register the Data API Blueprint
+# This makes the mock server routes available on the main app
+app.register_blueprint(api_bp)
+
+# Initialize Session Manager (Supports SQLite for local, Postgres for Render)
+session_manager = SessionManager()
 
 # Health check
 @app.route('/health', methods=['GET'])
@@ -31,7 +37,6 @@ def health():
 # Sales Agent Routes
 @app.route('/api/start_session', methods=['POST'])
 def start_session():
-    from flask import request
     data = request.json
     customer_id = data.get('customer_id', 'CUST001')
     channel = data.get('channel', 'web')
@@ -39,10 +44,19 @@ def start_session():
     # Use a stable UUID per session to support channel switching
     session_id = str(uuid.uuid4())
     
-    sales_agent = SalesAgent(api_base_url="http://localhost:5001")
+    # Use the current host URL for the agent to call back to itself
+    host_url = request.host_url.rstrip('/')
+    
+    sales_agent = SalesAgent(api_base_url=host_url)
     greeting = sales_agent.start_session(customer_id, channel)
     
-    sessions[session_id] = sales_agent
+    # Save session state to DB
+    session_manager.save_session(
+        session_id, 
+        customer_id, 
+        channel, 
+        sales_agent.get_state()
+    )
     
     return jsonify({
         "success": True,
@@ -52,47 +66,79 @@ def start_session():
 
 @app.route('/api/chat', methods=['POST'])
 def chat():
-    from flask import request
     data = request.json
     session_id = data.get('session_id')
     user_message = data.get('message')
     
-    if session_id not in sessions:
+    # Load session state
+    state = session_manager.load_session(session_id)
+    if not state:
         return jsonify({
             "success": False,
             "error": "Session not found"
         }), 404
     
-    sales_agent = sessions[session_id]
+    # Rehydrate agent
+    host_url = request.host_url.rstrip('/')
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
+    
     response = sales_agent.handle_conversation(user_message)
+    
+    # Save updated state
+    session_manager.save_session(
+        session_id, 
+        sales_agent.current_session.get('customer_id'), 
+        sales_agent.current_session.get('channel'), 
+        sales_agent.get_state()
+    )
     
     return jsonify(response)
 
 @app.route('/api/cart/add', methods=['POST'])
 def add_to_cart():
-    from flask import request
     data = request.json
     session_id = data.get('session_id')
     sku = data.get('sku')
     quantity = int(data.get('quantity', 1))
 
-    if not session_id or session_id not in sessions:
+    # Load session state
+    state = session_manager.load_session(session_id)
+    if not session_id or not state:
         return jsonify({"success": False, "error": "Session not found"}), 404
     if not sku:
         return jsonify({"success": False, "error": "Missing SKU"}), 400
 
-    sales_agent = sessions[session_id]
+    # Rehydrate agent
+    host_url = request.host_url.rstrip('/')
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
+
     result = sales_agent.add_item_to_cart(sku, quantity)
+    
+    # Save updated state
+    session_manager.save_session(
+        session_id, 
+        sales_agent.current_session.get('customer_id'), 
+        sales_agent.current_session.get('channel'), 
+        sales_agent.get_state()
+    )
+    
     return jsonify(result)
 
 @app.route('/api/cart', methods=['GET'])
 def get_cart():
-    from flask import request
     session_id = request.args.get('session_id')
-    if not session_id or session_id not in sessions:
+    
+    state = session_manager.load_session(session_id)
+    if not session_id or not state:
         return jsonify({"success": False, "error": "Session not found"}), 404
 
-    sales_agent = sessions[session_id]
+    # Rehydrate agent
+    host_url = request.host_url.rstrip('/')
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
+    
     cart = sales_agent.current_session.get('cart', [])
 
     subtotal = sum((item.get('price', 0) * item.get('quantity', 1)) for item in cart)
@@ -118,17 +164,20 @@ def get_cart():
 
 @app.route('/api/cart/apply_promo', methods=['POST'])
 def apply_promo():
-    from flask import request
     data = request.json
     session_id = data.get('session_id')
     promo_code = data.get('promo_code')
 
-    if not session_id or session_id not in sessions:
+    state = session_manager.load_session(session_id)
+    if not session_id or not state:
         return jsonify({"success": False, "error": "Session not found"}), 404
     if not promo_code:
         return jsonify({"success": False, "error": "Missing promo code"}), 400
 
-    sales_agent = sessions[session_id]
+    host_url = request.host_url.rstrip('/')
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
+
     cart = sales_agent.current_session.get('cart', [])
     subtotal = sum((item.get('price', 0) * item.get('quantity', 1)) for item in cart)
 
@@ -150,6 +199,14 @@ def apply_promo():
         # Recompute delivery and total
         delivery = 0 if subtotal > 1000 else (0 if subtotal == 0 else 50)
         total = max(0, subtotal - discount_total - ctx.get('redeemed_discount', 0) + delivery)
+        
+        # Save state
+        session_manager.save_session(
+            session_id, 
+            sales_agent.current_session.get('customer_id'), 
+            sales_agent.current_session.get('channel'), 
+            sales_agent.get_state()
+        )
 
         return jsonify({
             "success": True,
@@ -162,17 +219,20 @@ def apply_promo():
 
 @app.route('/api/cart/redeem_points', methods=['POST'])
 def redeem_points():
-    from flask import request
     data = request.json
     session_id = data.get('session_id')
     points = int(data.get('points', 0))
 
-    if not session_id or session_id not in sessions:
+    state = session_manager.load_session(session_id)
+    if not session_id or not state:
         return jsonify({"success": False, "error": "Session not found"}), 404
     if points <= 0:
         return jsonify({"success": False, "error": "Invalid points"}), 400
 
-    sales_agent = sessions[session_id]
+    host_url = request.host_url.rstrip('/')
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
+
     customer_id = sales_agent.current_session.get('customer_id')
 
     redeem_result = sales_agent.loyalty_agent.redeem_points(customer_id, points)
@@ -183,6 +243,14 @@ def redeem_points():
     ctx = sales_agent.current_session.setdefault('cart_context', {})
     ctx['redeemed_points'] = points
     ctx['redeemed_discount'] = redeem_result.get('discount', 0)
+    
+    # Save state
+    session_manager.save_session(
+        session_id, 
+        sales_agent.current_session.get('customer_id'), 
+        sales_agent.current_session.get('channel'), 
+        sales_agent.get_state()
+    )
 
     # Return updated cart summary
     cart = sales_agent.current_session.get('cart', [])
@@ -198,54 +266,51 @@ def redeem_points():
 
 @app.route('/api/checkout', methods=['POST'])
 def checkout():
-    from flask import request
     data = request.json
     session_id = data.get('session_id')
-    if not session_id or session_id not in sessions:
+    
+    state = session_manager.load_session(session_id)
+    if not session_id or not state:
         return jsonify({"success": False, "error": "Session not found"}), 404
 
-    sales_agent = sessions[session_id]
+    host_url = request.host_url.rstrip('/')
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
+
     result = sales_agent._handle_checkout()
     return jsonify(result), (200 if result.get('success') else 400)
 
 @app.route('/api/switch_channel', methods=['POST'])
 def switch_channel():
-    from flask import request
     data = request.json
     session_id = data.get('session_id')
     new_channel = data.get('new_channel')
     
-    if session_id not in sessions:
+    state = session_manager.load_session(session_id)
+    if not state:
         return jsonify({
             "success": False,
             "error": "Session not found"
         }), 404
     
-    sales_agent = sessions[session_id]
+    host_url = request.host_url.rstrip('/')
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
+    
     response = sales_agent.switch_channel(new_channel)
+    
+    # Save state
+    session_manager.save_session(
+        session_id, 
+        sales_agent.current_session.get('customer_id'), 
+        sales_agent.current_session.get('channel'), 
+        sales_agent.get_state()
+    )
     
     return jsonify(response)
 
 if __name__ == '__main__':
-    import os
-    from threading import Thread
-    import time
-    
-    # Start Data API server in separate thread
-    def run_data_api():
-        api_app.run(host='0.0.0.0', port=5001, debug=False, use_reloader=False)
-    
-    api_thread = Thread(target=run_data_api)
-    api_thread.daemon = True
-    api_thread.start()
-    
-    # Give data API time to start
-    time.sleep(2)
-    
-    print("🚀 Starting Backend Server...")
-    print("📍 Data API running on http://localhost:5001")
-    print("📍 Sales Agent API running on http://localhost:5000")
-    
-    # Start Sales Agent API on port 5000
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
+    print(f"🚀 Starting Backend Server on port {port}...")
+    app.run(host='0.0.0.0', port=port, debug=False)
+
