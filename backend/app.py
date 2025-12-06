@@ -3,7 +3,7 @@ Backend Main Server
 Combines Data API and Sales Agent API
 """
 from flask import Flask, jsonify, request
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 import sys
 import os
 import uuid
@@ -47,8 +47,12 @@ def health():
     return jsonify({"status": "ok", "message": "Backend server is running"})
 
 # Sales Agent Routes
-@app.route('/api/start_session', methods=['POST'])
+@app.route('/api/start_session', methods=['POST', 'OPTIONS'])
+@cross_origin()
 def start_session():
+    if request.method == 'OPTIONS':
+        return jsonify({}), 200
+        
     data = request.json
     customer_id = data.get('customer_id', 'CUST001')
     channel = data.get('channel', 'web')
@@ -76,8 +80,12 @@ def start_session():
         "message": greeting['message']
     })
 
-@app.route('/api/chat', methods=['POST'])
+@app.route('/api/chat', methods=['POST', 'OPTIONS'])
+@cross_origin()
 def chat():
+    if request.method == 'OPTIONS':
+        return jsonify({}), 200
+
     data = request.json
     session_id = data.get('session_id')
     user_message = data.get('message')
