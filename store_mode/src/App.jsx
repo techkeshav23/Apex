@@ -213,9 +213,17 @@ function App() {
 
     } catch (error) {
       console.error('Chat error:', error);
+      let errorMsg = "⚠️ Connection Error. Please ask a store associate for help.";
+      
+      if (error.code === "ERR_NETWORK") {
+          errorMsg = "⚠️ Network Error: Cannot reach server. (Possible CORS issue or Server Down)";
+      } else if (error.response) {
+          errorMsg = `⚠️ Server Error (${error.response.status}): ${error.response.data.error || 'Unknown error'}`;
+      }
+
       setMessages(prev => [...prev, {
         type: 'bot',
-        text: "⚠️ Connection Error. Please ask a store associate for help.",
+        text: errorMsg,
         timestamp: new Date().toLocaleTimeString()
       }]);
     } finally {
