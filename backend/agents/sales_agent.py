@@ -112,6 +112,16 @@ class SalesAgent:
             "session": self.current_session
         }
 
+    def load_state(self, state: Dict[str, Any]):
+        """Load session state"""
+        if isinstance(state, str):
+            try:
+                self.current_session = json.loads(state)
+            except:
+                self.current_session = {}
+        else:
+            self.current_session = state or {}
+
     def get_state(self):
         """Return the current session state"""
         return self.current_session
