@@ -163,10 +163,13 @@ function App() {
           // Optional: Speak welcome message on interaction (browsers block auto-play audio)
         }
       } catch (error) {
-        console.error("Failed to start session", error);
+        console.error("Failed to start session:", error);
+        if (error.response) {
+            console.error("Server Response:", error.response.status, error.response.data);
+        }
         setMessages([{
             type: 'bot',
-            text: `⚠️ Connection Error: Could not connect to server. Please check if the backend is running. (${error.message})`,
+            text: `⚠️ Connection Error: ${error.response ? `Server returned ${error.response.status}` : error.message}. Please check backend logs.`,
             timestamp: new Date().toLocaleTimeString()
         }]);
       }
