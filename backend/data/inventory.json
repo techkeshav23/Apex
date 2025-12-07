@@ -1,442 +1,4102 @@
 {
-  "WE001": {
-    "sku": "WE001",
-    "name": "Premium Suit",
+  "SKU0001": {
+    "sku": "SKU0001",
+    "name": "Banarasi Silk Saree",
     "warehouse_stock": {
-      "Mumbai Warehouse": 244,
-      "Delhi Warehouse": 220,
-      "Bangalore Warehouse": 463
+      "Mumbai Warehouse": 486,
+      "Delhi Warehouse": 433,
+      "Bangalore Warehouse": 60
     },
     "store_stock": {
-      "Phoenix Mall Mumbai": 0,
-      "DLF Mall Delhi": 28,
-      "Brigade Road Bangalore": 40,
-      "Phoenix Pune": 7,
-      "Alpha One Mall Ahmedabad": 50,
-      "Inorbit Mall Hyderabad": 34,
-      "Express Avenue Chennai": 23,
-      "Lulu Mall Kochi": 21,
-      "World Trade Park Jaipur": 5
-    }
-  },
-  "WE002": {
-    "sku": "WE002",
-    "name": "Cotton Kurta Set",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 107,
-      "Delhi Warehouse": 447,
-      "Bangalore Warehouse": 98
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 0,
-      "DLF Mall Delhi": 18,
-      "Brigade Road Bangalore": 35,
-      "Phoenix Pune": 0,
-      "Alpha One Mall Ahmedabad": 6,
-      "Inorbit Mall Hyderabad": 46,
-      "Express Avenue Chennai": 29,
-      "Lulu Mall Kochi": 30,
-      "World Trade Park Jaipur": 48
-    }
-  },
-  "WE003": {
-    "sku": "WE003",
-    "name": "Anarkali Suit Set",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 59,
-      "Delhi Warehouse": 58,
-      "Bangalore Warehouse": 77
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 41,
-      "DLF Mall Delhi": 15,
-      "Brigade Road Bangalore": 31,
-      "Phoenix Pune": 38,
-      "Alpha One Mall Ahmedabad": 34,
-      "Inorbit Mall Hyderabad": 32,
-      "Express Avenue Chennai": 0,
-      "Lulu Mall Kochi": 49,
-      "World Trade Park Jaipur": 0
-    }
-  },
-  "WW001": {
-    "sku": "WW001",
-    "name": "Formal Blazer",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 485,
-      "Delhi Warehouse": 207,
-      "Bangalore Warehouse": 443
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 50,
-      "DLF Mall Delhi": 0,
-      "Brigade Road Bangalore": 0,
-      "Phoenix Pune": 21,
-      "Alpha One Mall Ahmedabad": 11,
-      "Inorbit Mall Hyderabad": 46,
-      "Express Avenue Chennai": 11,
-      "Lulu Mall Kochi": 18,
-      "World Trade Park Jaipur": 0
-    }
-  },
-  "WW002": {
-    "sku": "WW002",
-    "name": "Party Dress",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 245,
-      "Delhi Warehouse": 442,
-      "Bangalore Warehouse": 304
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 38,
-      "DLF Mall Delhi": 3,
-      "Brigade Road Bangalore": 28,
-      "Phoenix Pune": 16,
-      "Alpha One Mall Ahmedabad": 0,
-      "Inorbit Mall Hyderabad": 11,
-      "Express Avenue Chennai": 31,
-      "Lulu Mall Kochi": 3,
-      "World Trade Park Jaipur": 44
-    }
-  },
-  "WW003": {
-    "sku": "WW003",
-    "name": "Casual Jeans",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 141,
-      "Delhi Warehouse": 111,
-      "Bangalore Warehouse": 68
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 45,
-      "DLF Mall Delhi": 33,
-      "Brigade Road Bangalore": 46,
-      "Phoenix Pune": 41,
-      "Alpha One Mall Ahmedabad": 34,
-      "Inorbit Mall Hyderabad": 43,
-      "Express Avenue Chennai": 50,
-      "Lulu Mall Kochi": 28,
-      "World Trade Park Jaipur": 20
-    }
-  },
-  "MF001": {
-    "sku": "MF001",
-    "name": "Designer Silk Saree",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 138,
-      "Delhi Warehouse": 251,
-      "Bangalore Warehouse": 403
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 0,
-      "DLF Mall Delhi": 0,
-      "Brigade Road Bangalore": 0,
-      "Phoenix Pune": 43,
+      "Phoenix Mall Mumbai": 8,
+      "DLF Mall Delhi": 30,
+      "Brigade Road Bangalore": 37,
+      "Phoenix Pune": 25,
       "Alpha One Mall Ahmedabad": 35,
-      "Inorbit Mall Hyderabad": 4,
-      "Express Avenue Chennai": 0,
-      "Lulu Mall Kochi": 36,
-      "World Trade Park Jaipur": 50
+      "Inorbit Mall Hyderabad": 34,
+      "Express Avenue Chennai": 50,
+      "Lulu Mall Kochi": 32,
+      "World Trade Park Jaipur": 25
     }
   },
-  "MF002": {
-    "sku": "MF002",
-    "name": "Formal Shirt",
+  "SKU0002": {
+    "sku": "SKU0002",
+    "name": "Kanjivaram Silk Saree",
     "warehouse_stock": {
-      "Mumbai Warehouse": 338,
-      "Delhi Warehouse": 124,
-      "Bangalore Warehouse": 88
+      "Mumbai Warehouse": 106,
+      "Delhi Warehouse": 109,
+      "Bangalore Warehouse": 394
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 6,
+      "DLF Mall Delhi": 9,
+      "Brigade Road Bangalore": 28,
+      "Phoenix Pune": 3,
+      "Alpha One Mall Ahmedabad": 38,
+      "Inorbit Mall Hyderabad": 31,
+      "Express Avenue Chennai": 43,
+      "Lulu Mall Kochi": 5,
+      "World Trade Park Jaipur": 49
+    }
+  },
+  "SKU0003": {
+    "sku": "SKU0003",
+    "name": "Tussar Silk Saree",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 56,
+      "Delhi Warehouse": 232,
+      "Bangalore Warehouse": 299
     },
     "store_stock": {
       "Phoenix Mall Mumbai": 0,
-      "DLF Mall Delhi": 17,
-      "Brigade Road Bangalore": 27,
-      "Phoenix Pune": 30,
+      "DLF Mall Delhi": 48,
+      "Brigade Road Bangalore": 50,
+      "Phoenix Pune": 31,
+      "Alpha One Mall Ahmedabad": 40,
+      "Inorbit Mall Hyderabad": 40,
+      "Express Avenue Chennai": 15,
+      "Lulu Mall Kochi": 5,
+      "World Trade Park Jaipur": 21
+    }
+  },
+  "SKU0004": {
+    "sku": "SKU0004",
+    "name": "Mysore Silk Saree",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 462,
+      "Delhi Warehouse": 219,
+      "Bangalore Warehouse": 449
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 8,
+      "DLF Mall Delhi": 4,
+      "Brigade Road Bangalore": 25,
+      "Phoenix Pune": 3,
       "Alpha One Mall Ahmedabad": 29,
-      "Inorbit Mall Hyderabad": 45,
-      "Express Avenue Chennai": 13,
-      "Lulu Mall Kochi": 13,
-      "World Trade Park Jaipur": 47
-    }
-  },
-  "MF003": {
-    "sku": "MF003",
-    "name": "Formal Trousers",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 198,
-      "Delhi Warehouse": 87,
-      "Bangalore Warehouse": 285
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 38,
-      "DLF Mall Delhi": 0,
-      "Brigade Road Bangalore": 26,
-      "Phoenix Pune": 11,
-      "Alpha One Mall Ahmedabad": 11,
-      "Inorbit Mall Hyderabad": 8,
-      "Express Avenue Chennai": 24,
-      "Lulu Mall Kochi": 7,
-      "World Trade Park Jaipur": 1
-    }
-  },
-  "MC001": {
-    "sku": "MC001",
-    "name": "Polo T-Shirt",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 386,
-      "Delhi Warehouse": 308,
-      "Bangalore Warehouse": 442
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 19,
-      "DLF Mall Delhi": 2,
-      "Brigade Road Bangalore": 3,
-      "Phoenix Pune": 35,
-      "Alpha One Mall Ahmedabad": 15,
-      "Inorbit Mall Hyderabad": 0,
-      "Express Avenue Chennai": 0,
-      "Lulu Mall Kochi": 26,
+      "Inorbit Mall Hyderabad": 7,
+      "Express Avenue Chennai": 49,
+      "Lulu Mall Kochi": 20,
       "World Trade Park Jaipur": 15
     }
   },
-  "MC002": {
-    "sku": "MC002",
-    "name": "Casual Chinos",
+  "SKU0005": {
+    "sku": "SKU0005",
+    "name": "Paithani Silk Saree",
     "warehouse_stock": {
-      "Mumbai Warehouse": 431,
-      "Delhi Warehouse": 225,
-      "Bangalore Warehouse": 229
+      "Mumbai Warehouse": 165,
+      "Delhi Warehouse": 304,
+      "Bangalore Warehouse": 204
     },
     "store_stock": {
-      "Phoenix Mall Mumbai": 41,
-      "DLF Mall Delhi": 0,
+      "Phoenix Mall Mumbai": 2,
+      "DLF Mall Delhi": 19,
+      "Brigade Road Bangalore": 13,
+      "Phoenix Pune": 44,
+      "Alpha One Mall Ahmedabad": 47,
+      "Inorbit Mall Hyderabad": 49,
+      "Express Avenue Chennai": 9,
+      "Lulu Mall Kochi": 25,
+      "World Trade Park Jaipur": 39
+    }
+  },
+  "SKU0006": {
+    "sku": "SKU0006",
+    "name": "Blue Cotton Saree",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 59,
+      "Delhi Warehouse": 95,
+      "Bangalore Warehouse": 402
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 8,
+      "DLF Mall Delhi": 12,
+      "Brigade Road Bangalore": 13,
+      "Phoenix Pune": 39,
+      "Alpha One Mall Ahmedabad": 31,
+      "Inorbit Mall Hyderabad": 4,
+      "Express Avenue Chennai": 17,
+      "Lulu Mall Kochi": 21,
+      "World Trade Park Jaipur": 8
+    }
+  },
+  "SKU0007": {
+    "sku": "SKU0007",
+    "name": "Red Cotton Saree",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 476,
+      "Delhi Warehouse": 195,
+      "Bangalore Warehouse": 461
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 2,
+      "DLF Mall Delhi": 25,
+      "Brigade Road Bangalore": 11,
+      "Phoenix Pune": 47,
+      "Alpha One Mall Ahmedabad": 32,
+      "Inorbit Mall Hyderabad": 26,
+      "Express Avenue Chennai": 27,
+      "Lulu Mall Kochi": 22,
+      "World Trade Park Jaipur": 12
+    }
+  },
+  "SKU0008": {
+    "sku": "SKU0008",
+    "name": "Green Cotton Saree",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 453,
+      "Delhi Warehouse": 233,
+      "Bangalore Warehouse": 298
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 3,
+      "DLF Mall Delhi": 49,
       "Brigade Road Bangalore": 19,
-      "Phoenix Pune": 38,
-      "Alpha One Mall Ahmedabad": 46,
-      "Inorbit Mall Hyderabad": 2,
-      "Express Avenue Chennai": 18,
-      "Lulu Mall Kochi": 46,
+      "Phoenix Pune": 41,
+      "Alpha One Mall Ahmedabad": 44,
+      "Inorbit Mall Hyderabad": 30,
+      "Express Avenue Chennai": 27,
+      "Lulu Mall Kochi": 26,
+      "World Trade Park Jaipur": 29
+    }
+  },
+  "SKU0009": {
+    "sku": "SKU0009",
+    "name": "Yellow Cotton Saree",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 411,
+      "Delhi Warehouse": 177,
+      "Bangalore Warehouse": 439
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 7,
+      "DLF Mall Delhi": 9,
+      "Brigade Road Bangalore": 38,
+      "Phoenix Pune": 28,
+      "Alpha One Mall Ahmedabad": 13,
+      "Inorbit Mall Hyderabad": 20,
+      "Express Avenue Chennai": 20,
+      "Lulu Mall Kochi": 18,
+      "World Trade Park Jaipur": 41
+    }
+  },
+  "SKU0010": {
+    "sku": "SKU0010",
+    "name": "Pink Cotton Saree",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 287,
+      "Delhi Warehouse": 351,
+      "Bangalore Warehouse": 168
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 4,
+      "DLF Mall Delhi": 14,
+      "Brigade Road Bangalore": 30,
+      "Phoenix Pune": 7,
+      "Alpha One Mall Ahmedabad": 43,
+      "Inorbit Mall Hyderabad": 20,
+      "Express Avenue Chennai": 3,
+      "Lulu Mall Kochi": 44,
+      "World Trade Park Jaipur": 7
+    }
+  },
+  "SKU0011": {
+    "sku": "SKU0011",
+    "name": "Anarkali Suit Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 387,
+      "Delhi Warehouse": 121,
+      "Bangalore Warehouse": 398
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 33,
+      "DLF Mall Delhi": 16,
+      "Brigade Road Bangalore": 45,
+      "Phoenix Pune": 50,
+      "Alpha One Mall Ahmedabad": 27,
+      "Inorbit Mall Hyderabad": 21,
+      "Express Avenue Chennai": 9,
+      "Lulu Mall Kochi": 22,
+      "World Trade Park Jaipur": 20
+    }
+  },
+  "SKU0012": {
+    "sku": "SKU0012",
+    "name": "Palazzo Suit Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 313,
+      "Delhi Warehouse": 259,
+      "Bangalore Warehouse": 298
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 36,
+      "DLF Mall Delhi": 36,
+      "Brigade Road Bangalore": 45,
+      "Phoenix Pune": 8,
+      "Alpha One Mall Ahmedabad": 25,
+      "Inorbit Mall Hyderabad": 20,
+      "Express Avenue Chennai": 23,
+      "Lulu Mall Kochi": 4,
+      "World Trade Park Jaipur": 38
+    }
+  },
+  "SKU0013": {
+    "sku": "SKU0013",
+    "name": "Straight Cut Suit Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 405,
+      "Delhi Warehouse": 164,
+      "Bangalore Warehouse": 331
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 0,
+      "DLF Mall Delhi": 43,
+      "Brigade Road Bangalore": 24,
+      "Phoenix Pune": 34,
+      "Alpha One Mall Ahmedabad": 40,
+      "Inorbit Mall Hyderabad": 42,
+      "Express Avenue Chennai": 41,
+      "Lulu Mall Kochi": 27,
+      "World Trade Park Jaipur": 43
+    }
+  },
+  "SKU0014": {
+    "sku": "SKU0014",
+    "name": "A-Line Suit Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 498,
+      "Delhi Warehouse": 317,
+      "Bangalore Warehouse": 282
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 36,
+      "DLF Mall Delhi": 19,
+      "Brigade Road Bangalore": 42,
+      "Phoenix Pune": 0,
+      "Alpha One Mall Ahmedabad": 28,
+      "Inorbit Mall Hyderabad": 47,
+      "Express Avenue Chennai": 27,
+      "Lulu Mall Kochi": 49,
+      "World Trade Park Jaipur": 43
+    }
+  },
+  "SKU0015": {
+    "sku": "SKU0015",
+    "name": "Pakistani Suit Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 430,
+      "Delhi Warehouse": 148,
+      "Bangalore Warehouse": 74
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 1,
+      "DLF Mall Delhi": 1,
+      "Brigade Road Bangalore": 10,
+      "Phoenix Pune": 27,
+      "Alpha One Mall Ahmedabad": 42,
+      "Inorbit Mall Hyderabad": 20,
+      "Express Avenue Chennai": 26,
+      "Lulu Mall Kochi": 39,
+      "World Trade Park Jaipur": 11
+    }
+  },
+  "SKU0016": {
+    "sku": "SKU0016",
+    "name": "Printed Kurta Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 410,
+      "Delhi Warehouse": 343,
+      "Bangalore Warehouse": 483
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 47,
+      "DLF Mall Delhi": 30,
+      "Brigade Road Bangalore": 4,
+      "Phoenix Pune": 15,
+      "Alpha One Mall Ahmedabad": 18,
+      "Inorbit Mall Hyderabad": 33,
+      "Express Avenue Chennai": 37,
+      "Lulu Mall Kochi": 31,
+      "World Trade Park Jaipur": 45
+    }
+  },
+  "SKU0017": {
+    "sku": "SKU0017",
+    "name": "Embroidered Kurta Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 252,
+      "Delhi Warehouse": 325,
+      "Bangalore Warehouse": 177
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 7,
+      "DLF Mall Delhi": 9,
+      "Brigade Road Bangalore": 40,
+      "Phoenix Pune": 24,
+      "Alpha One Mall Ahmedabad": 50,
+      "Inorbit Mall Hyderabad": 11,
+      "Express Avenue Chennai": 23,
+      "Lulu Mall Kochi": 47,
+      "World Trade Park Jaipur": 32
+    }
+  },
+  "SKU0018": {
+    "sku": "SKU0018",
+    "name": "Block Print Kurta Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 337,
+      "Delhi Warehouse": 388,
+      "Bangalore Warehouse": 397
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 31,
+      "DLF Mall Delhi": 40,
+      "Brigade Road Bangalore": 28,
+      "Phoenix Pune": 25,
+      "Alpha One Mall Ahmedabad": 9,
+      "Inorbit Mall Hyderabad": 4,
+      "Express Avenue Chennai": 37,
+      "Lulu Mall Kochi": 31,
+      "World Trade Park Jaipur": 7
+    }
+  },
+  "SKU0019": {
+    "sku": "SKU0019",
+    "name": "Bandhani Kurta Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 476,
+      "Delhi Warehouse": 78,
+      "Bangalore Warehouse": 485
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 48,
+      "DLF Mall Delhi": 30,
+      "Brigade Road Bangalore": 25,
+      "Phoenix Pune": 23,
+      "Alpha One Mall Ahmedabad": 41,
+      "Inorbit Mall Hyderabad": 26,
+      "Express Avenue Chennai": 28,
+      "Lulu Mall Kochi": 35,
+      "World Trade Park Jaipur": 24
+    }
+  },
+  "SKU0020": {
+    "sku": "SKU0020",
+    "name": "Chikankari Kurta Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 414,
+      "Delhi Warehouse": 355,
+      "Bangalore Warehouse": 357
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 2,
+      "DLF Mall Delhi": 5,
+      "Brigade Road Bangalore": 13,
+      "Phoenix Pune": 10,
+      "Alpha One Mall Ahmedabad": 19,
+      "Inorbit Mall Hyderabad": 45,
+      "Express Avenue Chennai": 39,
+      "Lulu Mall Kochi": 22,
+      "World Trade Park Jaipur": 45
+    }
+  },
+  "SKU0021": {
+    "sku": "SKU0021",
+    "name": "Bridal Lehenga Choli",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 397,
+      "Delhi Warehouse": 313,
+      "Bangalore Warehouse": 386
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 50,
+      "DLF Mall Delhi": 23,
+      "Brigade Road Bangalore": 50,
+      "Phoenix Pune": 22,
+      "Alpha One Mall Ahmedabad": 2,
+      "Inorbit Mall Hyderabad": 18,
+      "Express Avenue Chennai": 45,
+      "Lulu Mall Kochi": 36,
+      "World Trade Park Jaipur": 24
+    }
+  },
+  "SKU0022": {
+    "sku": "SKU0022",
+    "name": "Party Wear Lehenga Choli",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 81,
+      "Delhi Warehouse": 130,
+      "Bangalore Warehouse": 113
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 14,
+      "DLF Mall Delhi": 41,
+      "Brigade Road Bangalore": 44,
+      "Phoenix Pune": 2,
+      "Alpha One Mall Ahmedabad": 19,
+      "Inorbit Mall Hyderabad": 13,
+      "Express Avenue Chennai": 23,
+      "Lulu Mall Kochi": 2,
+      "World Trade Park Jaipur": 50
+    }
+  },
+  "SKU0023": {
+    "sku": "SKU0023",
+    "name": "Designer Lehenga Choli",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 323,
+      "Delhi Warehouse": 170,
+      "Bangalore Warehouse": 287
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 16,
+      "DLF Mall Delhi": 40,
+      "Brigade Road Bangalore": 1,
+      "Phoenix Pune": 44,
+      "Alpha One Mall Ahmedabad": 43,
+      "Inorbit Mall Hyderabad": 45,
+      "Express Avenue Chennai": 48,
+      "Lulu Mall Kochi": 2,
+      "World Trade Park Jaipur": 3
+    }
+  },
+  "SKU0024": {
+    "sku": "SKU0024",
+    "name": "Floral Lehenga Choli",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 249,
+      "Delhi Warehouse": 225,
+      "Bangalore Warehouse": 135
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 39,
+      "DLF Mall Delhi": 44,
+      "Brigade Road Bangalore": 48,
+      "Phoenix Pune": 37,
+      "Alpha One Mall Ahmedabad": 12,
+      "Inorbit Mall Hyderabad": 22,
+      "Express Avenue Chennai": 50,
+      "Lulu Mall Kochi": 14,
       "World Trade Park Jaipur": 19
     }
   },
-  "MC003": {
-    "sku": "MC003",
+  "SKU0025": {
+    "sku": "SKU0025",
+    "name": "Heavy Work Lehenga Choli",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 457,
+      "Delhi Warehouse": 392,
+      "Bangalore Warehouse": 68
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 22,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 42,
+      "Phoenix Pune": 23,
+      "Alpha One Mall Ahmedabad": 27,
+      "Inorbit Mall Hyderabad": 9,
+      "Express Avenue Chennai": 23,
+      "Lulu Mall Kochi": 29,
+      "World Trade Park Jaipur": 36
+    }
+  },
+  "SKU0026": {
+    "sku": "SKU0026",
+    "name": "Silk Dupatta",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 211,
+      "Delhi Warehouse": 184,
+      "Bangalore Warehouse": 149
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 15,
+      "DLF Mall Delhi": 30,
+      "Brigade Road Bangalore": 46,
+      "Phoenix Pune": 46,
+      "Alpha One Mall Ahmedabad": 21,
+      "Inorbit Mall Hyderabad": 2,
+      "Express Avenue Chennai": 45,
+      "Lulu Mall Kochi": 38,
+      "World Trade Park Jaipur": 44
+    }
+  },
+  "SKU0027": {
+    "sku": "SKU0027",
+    "name": "Chiffon Dupatta",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 189,
+      "Delhi Warehouse": 111,
+      "Bangalore Warehouse": 229
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 28,
+      "DLF Mall Delhi": 50,
+      "Brigade Road Bangalore": 33,
+      "Phoenix Pune": 47,
+      "Alpha One Mall Ahmedabad": 28,
+      "Inorbit Mall Hyderabad": 35,
+      "Express Avenue Chennai": 49,
+      "Lulu Mall Kochi": 23,
+      "World Trade Park Jaipur": 6
+    }
+  },
+  "SKU0028": {
+    "sku": "SKU0028",
+    "name": "Net Dupatta",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 118,
+      "Delhi Warehouse": 458,
+      "Bangalore Warehouse": 203
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 27,
+      "DLF Mall Delhi": 42,
+      "Brigade Road Bangalore": 39,
+      "Phoenix Pune": 42,
+      "Alpha One Mall Ahmedabad": 32,
+      "Inorbit Mall Hyderabad": 23,
+      "Express Avenue Chennai": 33,
+      "Lulu Mall Kochi": 10,
+      "World Trade Park Jaipur": 4
+    }
+  },
+  "SKU0029": {
+    "sku": "SKU0029",
+    "name": "Georgette Dupatta",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 359,
+      "Delhi Warehouse": 441,
+      "Bangalore Warehouse": 74
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 23,
+      "DLF Mall Delhi": 33,
+      "Brigade Road Bangalore": 15,
+      "Phoenix Pune": 32,
+      "Alpha One Mall Ahmedabad": 13,
+      "Inorbit Mall Hyderabad": 44,
+      "Express Avenue Chennai": 21,
+      "Lulu Mall Kochi": 43,
+      "World Trade Park Jaipur": 3
+    }
+  },
+  "SKU0030": {
+    "sku": "SKU0030",
+    "name": "Bandhej Dupatta",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 324,
+      "Delhi Warehouse": 266,
+      "Bangalore Warehouse": 403
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 32,
+      "DLF Mall Delhi": 16,
+      "Brigade Road Bangalore": 17,
+      "Phoenix Pune": 44,
+      "Alpha One Mall Ahmedabad": 6,
+      "Inorbit Mall Hyderabad": 46,
+      "Express Avenue Chennai": 24,
+      "Lulu Mall Kochi": 39,
+      "World Trade Park Jaipur": 47
+    }
+  },
+  "SKU0031": {
+    "sku": "SKU0031",
+    "name": "Maxi Dress",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 308,
+      "Delhi Warehouse": 322,
+      "Bangalore Warehouse": 333
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 3,
+      "DLF Mall Delhi": 27,
+      "Brigade Road Bangalore": 8,
+      "Phoenix Pune": 31,
+      "Alpha One Mall Ahmedabad": 31,
+      "Inorbit Mall Hyderabad": 11,
+      "Express Avenue Chennai": 15,
+      "Lulu Mall Kochi": 4,
+      "World Trade Park Jaipur": 45
+    }
+  },
+  "SKU0032": {
+    "sku": "SKU0032",
+    "name": "Midi Dress",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 141,
+      "Delhi Warehouse": 383,
+      "Bangalore Warehouse": 491
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 30,
+      "DLF Mall Delhi": 20,
+      "Brigade Road Bangalore": 39,
+      "Phoenix Pune": 28,
+      "Alpha One Mall Ahmedabad": 33,
+      "Inorbit Mall Hyderabad": 1,
+      "Express Avenue Chennai": 3,
+      "Lulu Mall Kochi": 32,
+      "World Trade Park Jaipur": 37
+    }
+  },
+  "SKU0033": {
+    "sku": "SKU0033",
+    "name": "Mini Dress",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 250,
+      "Delhi Warehouse": 115,
+      "Bangalore Warehouse": 296
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 26,
+      "DLF Mall Delhi": 1,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 18,
+      "Alpha One Mall Ahmedabad": 40,
+      "Inorbit Mall Hyderabad": 45,
+      "Express Avenue Chennai": 34,
+      "Lulu Mall Kochi": 18,
+      "World Trade Park Jaipur": 3
+    }
+  },
+  "SKU0034": {
+    "sku": "SKU0034",
+    "name": "A-Line Dress",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 131,
+      "Delhi Warehouse": 399,
+      "Bangalore Warehouse": 155
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 39,
+      "DLF Mall Delhi": 22,
+      "Brigade Road Bangalore": 9,
+      "Phoenix Pune": 10,
+      "Alpha One Mall Ahmedabad": 14,
+      "Inorbit Mall Hyderabad": 9,
+      "Express Avenue Chennai": 21,
+      "Lulu Mall Kochi": 47,
+      "World Trade Park Jaipur": 3
+    }
+  },
+  "SKU0035": {
+    "sku": "SKU0035",
+    "name": "Bodycon Dress",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 187,
+      "Delhi Warehouse": 300,
+      "Bangalore Warehouse": 405
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 45,
+      "DLF Mall Delhi": 25,
+      "Brigade Road Bangalore": 7,
+      "Phoenix Pune": 36,
+      "Alpha One Mall Ahmedabad": 0,
+      "Inorbit Mall Hyderabad": 4,
+      "Express Avenue Chennai": 23,
+      "Lulu Mall Kochi": 2,
+      "World Trade Park Jaipur": 4
+    }
+  },
+  "SKU0036": {
+    "sku": "SKU0036",
+    "name": "Shift Dress",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 498,
+      "Delhi Warehouse": 289,
+      "Bangalore Warehouse": 314
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 9,
+      "DLF Mall Delhi": 46,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 15,
+      "Alpha One Mall Ahmedabad": 8,
+      "Inorbit Mall Hyderabad": 6,
+      "Express Avenue Chennai": 33,
+      "Lulu Mall Kochi": 38,
+      "World Trade Park Jaipur": 26
+    }
+  },
+  "SKU0037": {
+    "sku": "SKU0037",
+    "name": "Wrap Dress",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 332,
+      "Delhi Warehouse": 465,
+      "Bangalore Warehouse": 329
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 11,
+      "DLF Mall Delhi": 40,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 32,
+      "Alpha One Mall Ahmedabad": 48,
+      "Inorbit Mall Hyderabad": 42,
+      "Express Avenue Chennai": 8,
+      "Lulu Mall Kochi": 49,
+      "World Trade Park Jaipur": 28
+    }
+  },
+  "SKU0038": {
+    "sku": "SKU0038",
+    "name": "Shirt Dress",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 93,
+      "Delhi Warehouse": 459,
+      "Bangalore Warehouse": 494
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 3,
+      "DLF Mall Delhi": 41,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 16,
+      "Alpha One Mall Ahmedabad": 48,
+      "Inorbit Mall Hyderabad": 19,
+      "Express Avenue Chennai": 18,
+      "Lulu Mall Kochi": 33,
+      "World Trade Park Jaipur": 30
+    }
+  },
+  "SKU0039": {
+    "sku": "SKU0039",
+    "name": "Crop Top",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 116,
+      "Delhi Warehouse": 226,
+      "Bangalore Warehouse": 402
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 48,
+      "DLF Mall Delhi": 10,
+      "Brigade Road Bangalore": 47,
+      "Phoenix Pune": 44,
+      "Alpha One Mall Ahmedabad": 47,
+      "Inorbit Mall Hyderabad": 16,
+      "Express Avenue Chennai": 27,
+      "Lulu Mall Kochi": 12,
+      "World Trade Park Jaipur": 27
+    }
+  },
+  "SKU0040": {
+    "sku": "SKU0040",
+    "name": "Peplum Top",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 364,
+      "Delhi Warehouse": 108,
+      "Bangalore Warehouse": 259
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 47,
+      "DLF Mall Delhi": 20,
+      "Brigade Road Bangalore": 5,
+      "Phoenix Pune": 16,
+      "Alpha One Mall Ahmedabad": 19,
+      "Inorbit Mall Hyderabad": 31,
+      "Express Avenue Chennai": 45,
+      "Lulu Mall Kochi": 34,
+      "World Trade Park Jaipur": 45
+    }
+  },
+  "SKU0041": {
+    "sku": "SKU0041",
+    "name": "Off-Shoulder Top",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 241,
+      "Delhi Warehouse": 81,
+      "Bangalore Warehouse": 123
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 41,
+      "DLF Mall Delhi": 3,
+      "Brigade Road Bangalore": 17,
+      "Phoenix Pune": 22,
+      "Alpha One Mall Ahmedabad": 27,
+      "Inorbit Mall Hyderabad": 41,
+      "Express Avenue Chennai": 15,
+      "Lulu Mall Kochi": 46,
+      "World Trade Park Jaipur": 31
+    }
+  },
+  "SKU0042": {
+    "sku": "SKU0042",
+    "name": "Cold-Shoulder Top",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 364,
+      "Delhi Warehouse": 126,
+      "Bangalore Warehouse": 365
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 23,
+      "DLF Mall Delhi": 14,
+      "Brigade Road Bangalore": 4,
+      "Phoenix Pune": 44,
+      "Alpha One Mall Ahmedabad": 5,
+      "Inorbit Mall Hyderabad": 17,
+      "Express Avenue Chennai": 15,
+      "Lulu Mall Kochi": 38,
+      "World Trade Park Jaipur": 31
+    }
+  },
+  "SKU0043": {
+    "sku": "SKU0043",
+    "name": "Halter Top",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 162,
+      "Delhi Warehouse": 425,
+      "Bangalore Warehouse": 313
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 33,
+      "DLF Mall Delhi": 33,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 46,
+      "Alpha One Mall Ahmedabad": 43,
+      "Inorbit Mall Hyderabad": 49,
+      "Express Avenue Chennai": 1,
+      "Lulu Mall Kochi": 44,
+      "World Trade Park Jaipur": 2
+    }
+  },
+  "SKU0044": {
+    "sku": "SKU0044",
+    "name": "Tank Top",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 149,
+      "Delhi Warehouse": 52,
+      "Bangalore Warehouse": 142
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 43,
+      "DLF Mall Delhi": 37,
+      "Brigade Road Bangalore": 36,
+      "Phoenix Pune": 19,
+      "Alpha One Mall Ahmedabad": 27,
+      "Inorbit Mall Hyderabad": 12,
+      "Express Avenue Chennai": 18,
+      "Lulu Mall Kochi": 27,
+      "World Trade Park Jaipur": 41
+    }
+  },
+  "SKU0045": {
+    "sku": "SKU0045",
+    "name": "Button-Down Top",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 342,
+      "Delhi Warehouse": 298,
+      "Bangalore Warehouse": 309
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 7,
+      "DLF Mall Delhi": 9,
+      "Brigade Road Bangalore": 24,
+      "Phoenix Pune": 23,
+      "Alpha One Mall Ahmedabad": 22,
+      "Inorbit Mall Hyderabad": 5,
+      "Express Avenue Chennai": 30,
+      "Lulu Mall Kochi": 20,
+      "World Trade Park Jaipur": 35
+    }
+  },
+  "SKU0046": {
+    "sku": "SKU0046",
+    "name": "Skinny Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 365,
+      "Delhi Warehouse": 344,
+      "Bangalore Warehouse": 207
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 30,
+      "DLF Mall Delhi": 33,
+      "Brigade Road Bangalore": 22,
+      "Phoenix Pune": 46,
+      "Alpha One Mall Ahmedabad": 22,
+      "Inorbit Mall Hyderabad": 13,
+      "Express Avenue Chennai": 15,
+      "Lulu Mall Kochi": 33,
+      "World Trade Park Jaipur": 41
+    }
+  },
+  "SKU0047": {
+    "sku": "SKU0047",
+    "name": "Boyfriend Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 430,
+      "Delhi Warehouse": 139,
+      "Bangalore Warehouse": 334
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 41,
+      "DLF Mall Delhi": 42,
+      "Brigade Road Bangalore": 11,
+      "Phoenix Pune": 41,
+      "Alpha One Mall Ahmedabad": 43,
+      "Inorbit Mall Hyderabad": 40,
+      "Express Avenue Chennai": 33,
+      "Lulu Mall Kochi": 5,
+      "World Trade Park Jaipur": 27
+    }
+  },
+  "SKU0048": {
+    "sku": "SKU0048",
+    "name": "Wide-Leg Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 338,
+      "Delhi Warehouse": 261,
+      "Bangalore Warehouse": 421
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 41,
+      "DLF Mall Delhi": 6,
+      "Brigade Road Bangalore": 50,
+      "Phoenix Pune": 11,
+      "Alpha One Mall Ahmedabad": 13,
+      "Inorbit Mall Hyderabad": 19,
+      "Express Avenue Chennai": 10,
+      "Lulu Mall Kochi": 40,
+      "World Trade Park Jaipur": 33
+    }
+  },
+  "SKU0049": {
+    "sku": "SKU0049",
+    "name": "Bootcut Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 252,
+      "Delhi Warehouse": 53,
+      "Bangalore Warehouse": 366
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 23,
+      "DLF Mall Delhi": 27,
+      "Brigade Road Bangalore": 32,
+      "Phoenix Pune": 0,
+      "Alpha One Mall Ahmedabad": 46,
+      "Inorbit Mall Hyderabad": 42,
+      "Express Avenue Chennai": 46,
+      "Lulu Mall Kochi": 36,
+      "World Trade Park Jaipur": 24
+    }
+  },
+  "SKU0050": {
+    "sku": "SKU0050",
+    "name": "High-Waist Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 450,
+      "Delhi Warehouse": 417,
+      "Bangalore Warehouse": 411
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 30,
+      "DLF Mall Delhi": 34,
+      "Brigade Road Bangalore": 9,
+      "Phoenix Pune": 49,
+      "Alpha One Mall Ahmedabad": 3,
+      "Inorbit Mall Hyderabad": 35,
+      "Express Avenue Chennai": 1,
+      "Lulu Mall Kochi": 9,
+      "World Trade Park Jaipur": 45
+    }
+  },
+  "SKU0051": {
+    "sku": "SKU0051",
+    "name": "Ripped Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 184,
+      "Delhi Warehouse": 396,
+      "Bangalore Warehouse": 93
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 8,
+      "DLF Mall Delhi": 22,
+      "Brigade Road Bangalore": 28,
+      "Phoenix Pune": 41,
+      "Alpha One Mall Ahmedabad": 8,
+      "Inorbit Mall Hyderabad": 45,
+      "Express Avenue Chennai": 47,
+      "Lulu Mall Kochi": 32,
+      "World Trade Park Jaipur": 15
+    }
+  },
+  "SKU0052": {
+    "sku": "SKU0052",
+    "name": "Pencil Skirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 133,
+      "Delhi Warehouse": 52,
+      "Bangalore Warehouse": 176
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 46,
+      "DLF Mall Delhi": 15,
+      "Brigade Road Bangalore": 17,
+      "Phoenix Pune": 37,
+      "Alpha One Mall Ahmedabad": 45,
+      "Inorbit Mall Hyderabad": 28,
+      "Express Avenue Chennai": 29,
+      "Lulu Mall Kochi": 21,
+      "World Trade Park Jaipur": 21
+    }
+  },
+  "SKU0053": {
+    "sku": "SKU0053",
+    "name": "A-Line Skirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 287,
+      "Delhi Warehouse": 191,
+      "Bangalore Warehouse": 122
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 40,
+      "DLF Mall Delhi": 6,
+      "Brigade Road Bangalore": 15,
+      "Phoenix Pune": 21,
+      "Alpha One Mall Ahmedabad": 15,
+      "Inorbit Mall Hyderabad": 8,
+      "Express Avenue Chennai": 19,
+      "Lulu Mall Kochi": 3,
+      "World Trade Park Jaipur": 10
+    }
+  },
+  "SKU0054": {
+    "sku": "SKU0054",
+    "name": "Pleated Skirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 342,
+      "Delhi Warehouse": 119,
+      "Bangalore Warehouse": 500
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 46,
+      "DLF Mall Delhi": 5,
+      "Brigade Road Bangalore": 6,
+      "Phoenix Pune": 18,
+      "Alpha One Mall Ahmedabad": 4,
+      "Inorbit Mall Hyderabad": 43,
+      "Express Avenue Chennai": 49,
+      "Lulu Mall Kochi": 30,
+      "World Trade Park Jaipur": 27
+    }
+  },
+  "SKU0055": {
+    "sku": "SKU0055",
+    "name": "Denim Skirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 214,
+      "Delhi Warehouse": 191,
+      "Bangalore Warehouse": 171
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 34,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 47,
+      "Phoenix Pune": 1,
+      "Alpha One Mall Ahmedabad": 6,
+      "Inorbit Mall Hyderabad": 13,
+      "Express Avenue Chennai": 33,
+      "Lulu Mall Kochi": 31,
+      "World Trade Park Jaipur": 32
+    }
+  },
+  "SKU0056": {
+    "sku": "SKU0056",
+    "name": "Maxi Skirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 132,
+      "Delhi Warehouse": 151,
+      "Bangalore Warehouse": 162
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 9,
+      "DLF Mall Delhi": 27,
+      "Brigade Road Bangalore": 20,
+      "Phoenix Pune": 35,
+      "Alpha One Mall Ahmedabad": 21,
+      "Inorbit Mall Hyderabad": 25,
+      "Express Avenue Chennai": 40,
+      "Lulu Mall Kochi": 14,
+      "World Trade Park Jaipur": 31
+    }
+  },
+  "SKU0057": {
+    "sku": "SKU0057",
     "name": "Denim Jacket",
     "warehouse_stock": {
-      "Mumbai Warehouse": 352,
-      "Delhi Warehouse": 161,
-      "Bangalore Warehouse": 187
+      "Mumbai Warehouse": 433,
+      "Delhi Warehouse": 210,
+      "Bangalore Warehouse": 128
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 23,
+      "DLF Mall Delhi": 47,
+      "Brigade Road Bangalore": 31,
+      "Phoenix Pune": 39,
+      "Alpha One Mall Ahmedabad": 30,
+      "Inorbit Mall Hyderabad": 47,
+      "Express Avenue Chennai": 42,
+      "Lulu Mall Kochi": 12,
+      "World Trade Park Jaipur": 33
+    }
+  },
+  "SKU0058": {
+    "sku": "SKU0058",
+    "name": "Leather Jacket",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 442,
+      "Delhi Warehouse": 128,
+      "Bangalore Warehouse": 137
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 38,
+      "DLF Mall Delhi": 12,
+      "Brigade Road Bangalore": 44,
+      "Phoenix Pune": 2,
+      "Alpha One Mall Ahmedabad": 46,
+      "Inorbit Mall Hyderabad": 7,
+      "Express Avenue Chennai": 17,
+      "Lulu Mall Kochi": 23,
+      "World Trade Park Jaipur": 21
+    }
+  },
+  "SKU0059": {
+    "sku": "SKU0059",
+    "name": "Bomber Jacket",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 463,
+      "Delhi Warehouse": 411,
+      "Bangalore Warehouse": 305
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 36,
+      "DLF Mall Delhi": 2,
+      "Brigade Road Bangalore": 39,
+      "Phoenix Pune": 48,
+      "Alpha One Mall Ahmedabad": 36,
+      "Inorbit Mall Hyderabad": 39,
+      "Express Avenue Chennai": 16,
+      "Lulu Mall Kochi": 0,
+      "World Trade Park Jaipur": 37
+    }
+  },
+  "SKU0060": {
+    "sku": "SKU0060",
+    "name": "Blazer Jacket",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 347,
+      "Delhi Warehouse": 202,
+      "Bangalore Warehouse": 60
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 12,
+      "DLF Mall Delhi": 18,
+      "Brigade Road Bangalore": 32,
+      "Phoenix Pune": 33,
+      "Alpha One Mall Ahmedabad": 0,
+      "Inorbit Mall Hyderabad": 33,
+      "Express Avenue Chennai": 49,
+      "Lulu Mall Kochi": 50,
+      "World Trade Park Jaipur": 48
+    }
+  },
+  "SKU0061": {
+    "sku": "SKU0061",
+    "name": "Trench Jacket",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 178,
+      "Delhi Warehouse": 192,
+      "Bangalore Warehouse": 414
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 43,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 36,
+      "Phoenix Pune": 9,
+      "Alpha One Mall Ahmedabad": 29,
+      "Inorbit Mall Hyderabad": 39,
+      "Express Avenue Chennai": 27,
+      "Lulu Mall Kochi": 30,
+      "World Trade Park Jaipur": 32
+    }
+  },
+  "SKU0062": {
+    "sku": "SKU0062",
+    "name": "White Formal Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 385,
+      "Delhi Warehouse": 415,
+      "Bangalore Warehouse": 288
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 0,
+      "DLF Mall Delhi": 21,
+      "Brigade Road Bangalore": 24,
+      "Phoenix Pune": 6,
+      "Alpha One Mall Ahmedabad": 47,
+      "Inorbit Mall Hyderabad": 35,
+      "Express Avenue Chennai": 50,
+      "Lulu Mall Kochi": 34,
+      "World Trade Park Jaipur": 7
+    }
+  },
+  "SKU0063": {
+    "sku": "SKU0063",
+    "name": "Blue Formal Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 395,
+      "Delhi Warehouse": 326,
+      "Bangalore Warehouse": 364
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 5,
+      "DLF Mall Delhi": 45,
+      "Brigade Road Bangalore": 45,
+      "Phoenix Pune": 2,
+      "Alpha One Mall Ahmedabad": 30,
+      "Inorbit Mall Hyderabad": 31,
+      "Express Avenue Chennai": 36,
+      "Lulu Mall Kochi": 31,
+      "World Trade Park Jaipur": 38
+    }
+  },
+  "SKU0064": {
+    "sku": "SKU0064",
+    "name": "Black Formal Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 270,
+      "Delhi Warehouse": 213,
+      "Bangalore Warehouse": 143
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 7,
+      "DLF Mall Delhi": 29,
+      "Brigade Road Bangalore": 31,
+      "Phoenix Pune": 1,
+      "Alpha One Mall Ahmedabad": 14,
+      "Inorbit Mall Hyderabad": 8,
+      "Express Avenue Chennai": 28,
+      "Lulu Mall Kochi": 28,
+      "World Trade Park Jaipur": 49
+    }
+  },
+  "SKU0065": {
+    "sku": "SKU0065",
+    "name": "Grey Formal Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 147,
+      "Delhi Warehouse": 228,
+      "Bangalore Warehouse": 244
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 17,
+      "DLF Mall Delhi": 14,
+      "Brigade Road Bangalore": 43,
+      "Phoenix Pune": 42,
+      "Alpha One Mall Ahmedabad": 43,
+      "Inorbit Mall Hyderabad": 28,
+      "Express Avenue Chennai": 21,
+      "Lulu Mall Kochi": 0,
+      "World Trade Park Jaipur": 6
+    }
+  },
+  "SKU0066": {
+    "sku": "SKU0066",
+    "name": "Light Blue Formal Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 244,
+      "Delhi Warehouse": 204,
+      "Bangalore Warehouse": 66
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 49,
+      "DLF Mall Delhi": 9,
+      "Brigade Road Bangalore": 42,
+      "Phoenix Pune": 11,
+      "Alpha One Mall Ahmedabad": 24,
+      "Inorbit Mall Hyderabad": 49,
+      "Express Avenue Chennai": 22,
+      "Lulu Mall Kochi": 28,
+      "World Trade Park Jaipur": 17
+    }
+  },
+  "SKU0067": {
+    "sku": "SKU0067",
+    "name": "Pink Formal Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 446,
+      "Delhi Warehouse": 482,
+      "Bangalore Warehouse": 339
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 21,
+      "DLF Mall Delhi": 21,
+      "Brigade Road Bangalore": 17,
+      "Phoenix Pune": 35,
+      "Alpha One Mall Ahmedabad": 30,
+      "Inorbit Mall Hyderabad": 16,
+      "Express Avenue Chennai": 20,
+      "Lulu Mall Kochi": 13,
+      "World Trade Park Jaipur": 16
+    }
+  },
+  "SKU0068": {
+    "sku": "SKU0068",
+    "name": "Lavender Formal Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 465,
+      "Delhi Warehouse": 284,
+      "Bangalore Warehouse": 135
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 29,
+      "DLF Mall Delhi": 19,
+      "Brigade Road Bangalore": 34,
+      "Phoenix Pune": 3,
+      "Alpha One Mall Ahmedabad": 32,
+      "Inorbit Mall Hyderabad": 12,
+      "Express Avenue Chennai": 23,
+      "Lulu Mall Kochi": 8,
+      "World Trade Park Jaipur": 44
+    }
+  },
+  "SKU0069": {
+    "sku": "SKU0069",
+    "name": "Black Formal Trousers",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 246,
+      "Delhi Warehouse": 349,
+      "Bangalore Warehouse": 236
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 48,
+      "DLF Mall Delhi": 28,
+      "Brigade Road Bangalore": 9,
+      "Phoenix Pune": 17,
+      "Alpha One Mall Ahmedabad": 25,
+      "Inorbit Mall Hyderabad": 15,
+      "Express Avenue Chennai": 33,
+      "Lulu Mall Kochi": 42,
+      "World Trade Park Jaipur": 22
+    }
+  },
+  "SKU0070": {
+    "sku": "SKU0070",
+    "name": "Grey Formal Trousers",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 224,
+      "Delhi Warehouse": 190,
+      "Bangalore Warehouse": 160
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 50,
+      "DLF Mall Delhi": 37,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 9,
+      "Alpha One Mall Ahmedabad": 8,
+      "Inorbit Mall Hyderabad": 27,
+      "Express Avenue Chennai": 19,
+      "Lulu Mall Kochi": 21,
+      "World Trade Park Jaipur": 15
+    }
+  },
+  "SKU0071": {
+    "sku": "SKU0071",
+    "name": "Navy Formal Trousers",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 184,
+      "Delhi Warehouse": 364,
+      "Bangalore Warehouse": 477
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 11,
+      "DLF Mall Delhi": 35,
+      "Brigade Road Bangalore": 7,
+      "Phoenix Pune": 10,
+      "Alpha One Mall Ahmedabad": 48,
+      "Inorbit Mall Hyderabad": 38,
+      "Express Avenue Chennai": 15,
+      "Lulu Mall Kochi": 22,
+      "World Trade Park Jaipur": 2
+    }
+  },
+  "SKU0072": {
+    "sku": "SKU0072",
+    "name": "Beige Formal Trousers",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 431,
+      "Delhi Warehouse": 384,
+      "Bangalore Warehouse": 225
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 14,
+      "DLF Mall Delhi": 5,
+      "Brigade Road Bangalore": 11,
+      "Phoenix Pune": 45,
+      "Alpha One Mall Ahmedabad": 46,
+      "Inorbit Mall Hyderabad": 9,
+      "Express Avenue Chennai": 44,
+      "Lulu Mall Kochi": 25,
+      "World Trade Park Jaipur": 12
+    }
+  },
+  "SKU0073": {
+    "sku": "SKU0073",
+    "name": "Brown Formal Trousers",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 325,
+      "Delhi Warehouse": 260,
+      "Bangalore Warehouse": 417
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 39,
+      "DLF Mall Delhi": 23,
+      "Brigade Road Bangalore": 19,
+      "Phoenix Pune": 15,
+      "Alpha One Mall Ahmedabad": 50,
+      "Inorbit Mall Hyderabad": 3,
+      "Express Avenue Chennai": 29,
+      "Lulu Mall Kochi": 28,
+      "World Trade Park Jaipur": 11
+    }
+  },
+  "SKU0074": {
+    "sku": "SKU0074",
+    "name": "Single-Breasted Blazer",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 363,
+      "Delhi Warehouse": 492,
+      "Bangalore Warehouse": 338
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 38,
+      "DLF Mall Delhi": 1,
+      "Brigade Road Bangalore": 11,
+      "Phoenix Pune": 16,
+      "Alpha One Mall Ahmedabad": 32,
+      "Inorbit Mall Hyderabad": 31,
+      "Express Avenue Chennai": 49,
+      "Lulu Mall Kochi": 40,
+      "World Trade Park Jaipur": 37
+    }
+  },
+  "SKU0075": {
+    "sku": "SKU0075",
+    "name": "Double-Breasted Blazer",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 115,
+      "Delhi Warehouse": 302,
+      "Bangalore Warehouse": 278
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 5,
+      "DLF Mall Delhi": 38,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 33,
+      "Alpha One Mall Ahmedabad": 11,
+      "Inorbit Mall Hyderabad": 16,
+      "Express Avenue Chennai": 5,
+      "Lulu Mall Kochi": 25,
+      "World Trade Park Jaipur": 10
+    }
+  },
+  "SKU0076": {
+    "sku": "SKU0076",
+    "name": "Slim-Fit Blazer",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 378,
+      "Delhi Warehouse": 285,
+      "Bangalore Warehouse": 245
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 0,
+      "DLF Mall Delhi": 20,
+      "Brigade Road Bangalore": 38,
+      "Phoenix Pune": 24,
+      "Alpha One Mall Ahmedabad": 23,
+      "Inorbit Mall Hyderabad": 47,
+      "Express Avenue Chennai": 34,
+      "Lulu Mall Kochi": 20,
+      "World Trade Park Jaipur": 45
+    }
+  },
+  "SKU0077": {
+    "sku": "SKU0077",
+    "name": "Regular-Fit Blazer",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 361,
+      "Delhi Warehouse": 438,
+      "Bangalore Warehouse": 122
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 48,
+      "DLF Mall Delhi": 43,
+      "Brigade Road Bangalore": 0,
+      "Phoenix Pune": 36,
+      "Alpha One Mall Ahmedabad": 48,
+      "Inorbit Mall Hyderabad": 10,
+      "Express Avenue Chennai": 26,
+      "Lulu Mall Kochi": 4,
+      "World Trade Park Jaipur": 12
+    }
+  },
+  "SKU0078": {
+    "sku": "SKU0078",
+    "name": "Textured Blazer",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 433,
+      "Delhi Warehouse": 211,
+      "Bangalore Warehouse": 252
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 32,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 40,
+      "Phoenix Pune": 31,
+      "Alpha One Mall Ahmedabad": 0,
+      "Inorbit Mall Hyderabad": 23,
+      "Express Avenue Chennai": 48,
+      "Lulu Mall Kochi": 13,
+      "World Trade Park Jaipur": 35
+    }
+  },
+  "SKU0079": {
+    "sku": "SKU0079",
+    "name": "Oxford Formal Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 254,
+      "Delhi Warehouse": 426,
+      "Bangalore Warehouse": 210
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 0,
+      "DLF Mall Delhi": 22,
+      "Brigade Road Bangalore": 32,
+      "Phoenix Pune": 40,
+      "Alpha One Mall Ahmedabad": 22,
+      "Inorbit Mall Hyderabad": 10,
+      "Express Avenue Chennai": 31,
+      "Lulu Mall Kochi": 23,
+      "World Trade Park Jaipur": 44
+    }
+  },
+  "SKU0080": {
+    "sku": "SKU0080",
+    "name": "Derby Formal Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 493,
+      "Delhi Warehouse": 131,
+      "Bangalore Warehouse": 153
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 2,
+      "DLF Mall Delhi": 16,
+      "Brigade Road Bangalore": 36,
+      "Phoenix Pune": 27,
+      "Alpha One Mall Ahmedabad": 17,
+      "Inorbit Mall Hyderabad": 11,
+      "Express Avenue Chennai": 13,
+      "Lulu Mall Kochi": 2,
+      "World Trade Park Jaipur": 15
+    }
+  },
+  "SKU0081": {
+    "sku": "SKU0081",
+    "name": "Monk Strap Formal Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 182,
+      "Delhi Warehouse": 321,
+      "Bangalore Warehouse": 63
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 49,
+      "DLF Mall Delhi": 11,
+      "Brigade Road Bangalore": 40,
+      "Phoenix Pune": 12,
+      "Alpha One Mall Ahmedabad": 46,
+      "Inorbit Mall Hyderabad": 20,
+      "Express Avenue Chennai": 11,
+      "Lulu Mall Kochi": 37,
+      "World Trade Park Jaipur": 28
+    }
+  },
+  "SKU0082": {
+    "sku": "SKU0082",
+    "name": "Loafers Formal Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 355,
+      "Delhi Warehouse": 297,
+      "Bangalore Warehouse": 364
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 23,
+      "DLF Mall Delhi": 41,
+      "Brigade Road Bangalore": 33,
+      "Phoenix Pune": 17,
+      "Alpha One Mall Ahmedabad": 1,
+      "Inorbit Mall Hyderabad": 34,
+      "Express Avenue Chennai": 49,
+      "Lulu Mall Kochi": 46,
+      "World Trade Park Jaipur": 34
+    }
+  },
+  "SKU0083": {
+    "sku": "SKU0083",
+    "name": "Brogues Formal Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 387,
+      "Delhi Warehouse": 362,
+      "Bangalore Warehouse": 200
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 26,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 18,
+      "Phoenix Pune": 26,
+      "Alpha One Mall Ahmedabad": 12,
+      "Inorbit Mall Hyderabad": 13,
+      "Express Avenue Chennai": 47,
+      "Lulu Mall Kochi": 33,
+      "World Trade Park Jaipur": 43
+    }
+  },
+  "SKU0084": {
+    "sku": "SKU0084",
+    "name": "Polo T-Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 115,
+      "Delhi Warehouse": 97,
+      "Bangalore Warehouse": 382
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 20,
+      "DLF Mall Delhi": 39,
+      "Brigade Road Bangalore": 38,
+      "Phoenix Pune": 42,
+      "Alpha One Mall Ahmedabad": 5,
+      "Inorbit Mall Hyderabad": 49,
+      "Express Avenue Chennai": 36,
+      "Lulu Mall Kochi": 35,
+      "World Trade Park Jaipur": 23
+    }
+  },
+  "SKU0085": {
+    "sku": "SKU0085",
+    "name": "Round Neck T-Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 317,
+      "Delhi Warehouse": 149,
+      "Bangalore Warehouse": 430
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 23,
+      "DLF Mall Delhi": 46,
+      "Brigade Road Bangalore": 36,
+      "Phoenix Pune": 31,
+      "Alpha One Mall Ahmedabad": 5,
+      "Inorbit Mall Hyderabad": 33,
+      "Express Avenue Chennai": 27,
+      "Lulu Mall Kochi": 9,
+      "World Trade Park Jaipur": 1
+    }
+  },
+  "SKU0086": {
+    "sku": "SKU0086",
+    "name": "V-Neck T-Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 339,
+      "Delhi Warehouse": 310,
+      "Bangalore Warehouse": 319
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 38,
+      "DLF Mall Delhi": 9,
+      "Brigade Road Bangalore": 21,
+      "Phoenix Pune": 47,
+      "Alpha One Mall Ahmedabad": 8,
+      "Inorbit Mall Hyderabad": 36,
+      "Express Avenue Chennai": 34,
+      "Lulu Mall Kochi": 21,
+      "World Trade Park Jaipur": 9
+    }
+  },
+  "SKU0087": {
+    "sku": "SKU0087",
+    "name": "Henley T-Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 349,
+      "Delhi Warehouse": 116,
+      "Bangalore Warehouse": 289
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 21,
+      "DLF Mall Delhi": 30,
+      "Brigade Road Bangalore": 36,
+      "Phoenix Pune": 45,
+      "Alpha One Mall Ahmedabad": 43,
+      "Inorbit Mall Hyderabad": 37,
+      "Express Avenue Chennai": 45,
+      "Lulu Mall Kochi": 8,
+      "World Trade Park Jaipur": 33
+    }
+  },
+  "SKU0088": {
+    "sku": "SKU0088",
+    "name": "Graphic Print T-Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 433,
+      "Delhi Warehouse": 451,
+      "Bangalore Warehouse": 196
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 30,
+      "DLF Mall Delhi": 10,
+      "Brigade Road Bangalore": 44,
+      "Phoenix Pune": 5,
+      "Alpha One Mall Ahmedabad": 10,
+      "Inorbit Mall Hyderabad": 44,
+      "Express Avenue Chennai": 12,
+      "Lulu Mall Kochi": 17,
+      "World Trade Park Jaipur": 45
+    }
+  },
+  "SKU0089": {
+    "sku": "SKU0089",
+    "name": "Striped T-Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 153,
+      "Delhi Warehouse": 118,
+      "Bangalore Warehouse": 437
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 10,
+      "DLF Mall Delhi": 21,
+      "Brigade Road Bangalore": 7,
+      "Phoenix Pune": 48,
+      "Alpha One Mall Ahmedabad": 43,
+      "Inorbit Mall Hyderabad": 42,
+      "Express Avenue Chennai": 49,
+      "Lulu Mall Kochi": 1,
+      "World Trade Park Jaipur": 32
+    }
+  },
+  "SKU0090": {
+    "sku": "SKU0090",
+    "name": "Solid T-Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 210,
+      "Delhi Warehouse": 400,
+      "Bangalore Warehouse": 412
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 6,
+      "DLF Mall Delhi": 40,
+      "Brigade Road Bangalore": 47,
+      "Phoenix Pune": 26,
+      "Alpha One Mall Ahmedabad": 19,
+      "Inorbit Mall Hyderabad": 37,
+      "Express Avenue Chennai": 0,
+      "Lulu Mall Kochi": 11,
+      "World Trade Park Jaipur": 26
+    }
+  },
+  "SKU0091": {
+    "sku": "SKU0091",
+    "name": "Denim Casual Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 159,
+      "Delhi Warehouse": 252,
+      "Bangalore Warehouse": 315
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 43,
+      "DLF Mall Delhi": 49,
+      "Brigade Road Bangalore": 22,
+      "Phoenix Pune": 48,
+      "Alpha One Mall Ahmedabad": 45,
+      "Inorbit Mall Hyderabad": 33,
+      "Express Avenue Chennai": 14,
+      "Lulu Mall Kochi": 44,
+      "World Trade Park Jaipur": 50
+    }
+  },
+  "SKU0092": {
+    "sku": "SKU0092",
+    "name": "Flannel Casual Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 387,
+      "Delhi Warehouse": 119,
+      "Bangalore Warehouse": 483
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 46,
+      "DLF Mall Delhi": 33,
+      "Brigade Road Bangalore": 24,
+      "Phoenix Pune": 5,
+      "Alpha One Mall Ahmedabad": 7,
+      "Inorbit Mall Hyderabad": 6,
+      "Express Avenue Chennai": 14,
+      "Lulu Mall Kochi": 31,
+      "World Trade Park Jaipur": 36
+    }
+  },
+  "SKU0093": {
+    "sku": "SKU0093",
+    "name": "Linen Casual Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 189,
+      "Delhi Warehouse": 327,
+      "Bangalore Warehouse": 209
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 33,
+      "DLF Mall Delhi": 29,
+      "Brigade Road Bangalore": 1,
+      "Phoenix Pune": 9,
+      "Alpha One Mall Ahmedabad": 18,
+      "Inorbit Mall Hyderabad": 11,
+      "Express Avenue Chennai": 22,
+      "Lulu Mall Kochi": 27,
+      "World Trade Park Jaipur": 29
+    }
+  },
+  "SKU0094": {
+    "sku": "SKU0094",
+    "name": "Checkered Casual Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 331,
+      "Delhi Warehouse": 319,
+      "Bangalore Warehouse": 477
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 25,
+      "DLF Mall Delhi": 12,
+      "Brigade Road Bangalore": 8,
+      "Phoenix Pune": 10,
+      "Alpha One Mall Ahmedabad": 1,
+      "Inorbit Mall Hyderabad": 4,
+      "Express Avenue Chennai": 22,
+      "Lulu Mall Kochi": 1,
+      "World Trade Park Jaipur": 27
+    }
+  },
+  "SKU0095": {
+    "sku": "SKU0095",
+    "name": "Printed Casual Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 149,
+      "Delhi Warehouse": 89,
+      "Bangalore Warehouse": 162
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 11,
+      "DLF Mall Delhi": 4,
+      "Brigade Road Bangalore": 25,
+      "Phoenix Pune": 18,
+      "Alpha One Mall Ahmedabad": 6,
+      "Inorbit Mall Hyderabad": 48,
+      "Express Avenue Chennai": 31,
+      "Lulu Mall Kochi": 46,
+      "World Trade Park Jaipur": 44
+    }
+  },
+  "SKU0096": {
+    "sku": "SKU0096",
+    "name": "Slim Fit Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 326,
+      "Delhi Warehouse": 244,
+      "Bangalore Warehouse": 459
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 11,
+      "DLF Mall Delhi": 36,
+      "Brigade Road Bangalore": 46,
+      "Phoenix Pune": 30,
+      "Alpha One Mall Ahmedabad": 35,
+      "Inorbit Mall Hyderabad": 10,
+      "Express Avenue Chennai": 27,
+      "Lulu Mall Kochi": 41,
+      "World Trade Park Jaipur": 19
+    }
+  },
+  "SKU0097": {
+    "sku": "SKU0097",
+    "name": "Regular Fit Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 405,
+      "Delhi Warehouse": 226,
+      "Bangalore Warehouse": 179
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 37,
+      "DLF Mall Delhi": 9,
+      "Brigade Road Bangalore": 36,
+      "Phoenix Pune": 27,
+      "Alpha One Mall Ahmedabad": 29,
+      "Inorbit Mall Hyderabad": 40,
+      "Express Avenue Chennai": 29,
+      "Lulu Mall Kochi": 28,
+      "World Trade Park Jaipur": 7
+    }
+  },
+  "SKU0098": {
+    "sku": "SKU0098",
+    "name": "Skinny Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 214,
+      "Delhi Warehouse": 187,
+      "Bangalore Warehouse": 144
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 25,
+      "DLF Mall Delhi": 31,
+      "Brigade Road Bangalore": 21,
+      "Phoenix Pune": 32,
+      "Alpha One Mall Ahmedabad": 47,
+      "Inorbit Mall Hyderabad": 45,
+      "Express Avenue Chennai": 15,
+      "Lulu Mall Kochi": 26,
+      "World Trade Park Jaipur": 19
+    }
+  },
+  "SKU0099": {
+    "sku": "SKU0099",
+    "name": "Relaxed Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 429,
+      "Delhi Warehouse": 460,
+      "Bangalore Warehouse": 275
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 49,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 6,
+      "Phoenix Pune": 48,
+      "Alpha One Mall Ahmedabad": 15,
+      "Inorbit Mall Hyderabad": 19,
+      "Express Avenue Chennai": 30,
+      "Lulu Mall Kochi": 27,
+      "World Trade Park Jaipur": 29
+    }
+  },
+  "SKU0100": {
+    "sku": "SKU0100",
+    "name": "Straight Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 426,
+      "Delhi Warehouse": 215,
+      "Bangalore Warehouse": 74
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 32,
+      "DLF Mall Delhi": 48,
+      "Brigade Road Bangalore": 34,
+      "Phoenix Pune": 38,
+      "Alpha One Mall Ahmedabad": 13,
+      "Inorbit Mall Hyderabad": 3,
+      "Express Avenue Chennai": 19,
+      "Lulu Mall Kochi": 43,
+      "World Trade Park Jaipur": 0
+    }
+  },
+  "SKU0101": {
+    "sku": "SKU0101",
+    "name": "Sneakers Casual Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 424,
+      "Delhi Warehouse": 414,
+      "Bangalore Warehouse": 443
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 33,
+      "DLF Mall Delhi": 11,
+      "Brigade Road Bangalore": 35,
+      "Phoenix Pune": 25,
+      "Alpha One Mall Ahmedabad": 10,
+      "Inorbit Mall Hyderabad": 5,
+      "Express Avenue Chennai": 7,
+      "Lulu Mall Kochi": 43,
+      "World Trade Park Jaipur": 38
+    }
+  },
+  "SKU0102": {
+    "sku": "SKU0102",
+    "name": "Loafers Casual Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 152,
+      "Delhi Warehouse": 381,
+      "Bangalore Warehouse": 318
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 25,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 24,
+      "Phoenix Pune": 35,
+      "Alpha One Mall Ahmedabad": 28,
+      "Inorbit Mall Hyderabad": 15,
+      "Express Avenue Chennai": 29,
+      "Lulu Mall Kochi": 37,
+      "World Trade Park Jaipur": 41
+    }
+  },
+  "SKU0103": {
+    "sku": "SKU0103",
+    "name": "Boat Shoes Casual Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 101,
+      "Delhi Warehouse": 229,
+      "Bangalore Warehouse": 140
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 9,
+      "DLF Mall Delhi": 27,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 3,
+      "Alpha One Mall Ahmedabad": 13,
+      "Inorbit Mall Hyderabad": 32,
+      "Express Avenue Chennai": 44,
+      "Lulu Mall Kochi": 8,
+      "World Trade Park Jaipur": 41
+    }
+  },
+  "SKU0104": {
+    "sku": "SKU0104",
+    "name": "Slip-Ons Casual Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 450,
+      "Delhi Warehouse": 119,
+      "Bangalore Warehouse": 214
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 22,
+      "DLF Mall Delhi": 40,
+      "Brigade Road Bangalore": 30,
+      "Phoenix Pune": 10,
+      "Alpha One Mall Ahmedabad": 48,
+      "Inorbit Mall Hyderabad": 36,
+      "Express Avenue Chennai": 5,
+      "Lulu Mall Kochi": 29,
+      "World Trade Park Jaipur": 7
+    }
+  },
+  "SKU0105": {
+    "sku": "SKU0105",
+    "name": "Canvas Casual Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 396,
+      "Delhi Warehouse": 224,
+      "Bangalore Warehouse": 489
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 28,
+      "DLF Mall Delhi": 34,
+      "Brigade Road Bangalore": 12,
+      "Phoenix Pune": 38,
+      "Alpha One Mall Ahmedabad": 9,
+      "Inorbit Mall Hyderabad": 3,
+      "Express Avenue Chennai": 32,
+      "Lulu Mall Kochi": 19,
+      "World Trade Park Jaipur": 13
+    }
+  },
+  "SKU0106": {
+    "sku": "SKU0106",
+    "name": "Plain Kurta Pajama Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 377,
+      "Delhi Warehouse": 108,
+      "Bangalore Warehouse": 126
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 21,
+      "DLF Mall Delhi": 6,
+      "Brigade Road Bangalore": 42,
+      "Phoenix Pune": 1,
+      "Alpha One Mall Ahmedabad": 17,
+      "Inorbit Mall Hyderabad": 28,
+      "Express Avenue Chennai": 16,
+      "Lulu Mall Kochi": 23,
+      "World Trade Park Jaipur": 12
+    }
+  },
+  "SKU0107": {
+    "sku": "SKU0107",
+    "name": "Embroidered Kurta Pajama Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 225,
+      "Delhi Warehouse": 427,
+      "Bangalore Warehouse": 472
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 36,
+      "DLF Mall Delhi": 6,
+      "Brigade Road Bangalore": 38,
+      "Phoenix Pune": 33,
+      "Alpha One Mall Ahmedabad": 18,
+      "Inorbit Mall Hyderabad": 38,
+      "Express Avenue Chennai": 39,
+      "Lulu Mall Kochi": 34,
+      "World Trade Park Jaipur": 8
+    }
+  },
+  "SKU0108": {
+    "sku": "SKU0108",
+    "name": "Printed Kurta Pajama Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 407,
+      "Delhi Warehouse": 496,
+      "Bangalore Warehouse": 208
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 45,
+      "DLF Mall Delhi": 29,
+      "Brigade Road Bangalore": 43,
+      "Phoenix Pune": 44,
+      "Alpha One Mall Ahmedabad": 14,
+      "Inorbit Mall Hyderabad": 3,
+      "Express Avenue Chennai": 1,
+      "Lulu Mall Kochi": 42,
+      "World Trade Park Jaipur": 25
+    }
+  },
+  "SKU0109": {
+    "sku": "SKU0109",
+    "name": "Designer Kurta Pajama Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 213,
+      "Delhi Warehouse": 126,
+      "Bangalore Warehouse": 161
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 22,
+      "DLF Mall Delhi": 8,
+      "Brigade Road Bangalore": 48,
+      "Phoenix Pune": 6,
+      "Alpha One Mall Ahmedabad": 44,
+      "Inorbit Mall Hyderabad": 4,
+      "Express Avenue Chennai": 11,
+      "Lulu Mall Kochi": 50,
+      "World Trade Park Jaipur": 40
+    }
+  },
+  "SKU0110": {
+    "sku": "SKU0110",
+    "name": "Wedding Kurta Pajama Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 489,
+      "Delhi Warehouse": 190,
+      "Bangalore Warehouse": 206
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 27,
+      "DLF Mall Delhi": 40,
+      "Brigade Road Bangalore": 0,
+      "Phoenix Pune": 46,
+      "Alpha One Mall Ahmedabad": 29,
+      "Inorbit Mall Hyderabad": 3,
+      "Express Avenue Chennai": 37,
+      "Lulu Mall Kochi": 19,
+      "World Trade Park Jaipur": 13
+    }
+  },
+  "SKU0111": {
+    "sku": "SKU0111",
+    "name": "Wedding Sherwani",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 490,
+      "Delhi Warehouse": 227,
+      "Bangalore Warehouse": 192
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 5,
+      "DLF Mall Delhi": 32,
+      "Brigade Road Bangalore": 14,
+      "Phoenix Pune": 47,
+      "Alpha One Mall Ahmedabad": 27,
+      "Inorbit Mall Hyderabad": 50,
+      "Express Avenue Chennai": 12,
+      "Lulu Mall Kochi": 43,
+      "World Trade Park Jaipur": 6
+    }
+  },
+  "SKU0112": {
+    "sku": "SKU0112",
+    "name": "Indo-Western Sherwani",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 104,
+      "Delhi Warehouse": 365,
+      "Bangalore Warehouse": 236
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 24,
+      "DLF Mall Delhi": 27,
+      "Brigade Road Bangalore": 16,
+      "Phoenix Pune": 38,
+      "Alpha One Mall Ahmedabad": 19,
+      "Inorbit Mall Hyderabad": 46,
+      "Express Avenue Chennai": 39,
+      "Lulu Mall Kochi": 8,
+      "World Trade Park Jaipur": 11
+    }
+  },
+  "SKU0113": {
+    "sku": "SKU0113",
+    "name": "Traditional Sherwani",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 70,
+      "Delhi Warehouse": 250,
+      "Bangalore Warehouse": 141
     },
     "store_stock": {
       "Phoenix Mall Mumbai": 1,
       "DLF Mall Delhi": 17,
-      "Brigade Road Bangalore": 40,
-      "Phoenix Pune": 0,
-      "Alpha One Mall Ahmedabad": 44,
-      "Inorbit Mall Hyderabad": 46,
-      "Express Avenue Chennai": 3,
-      "Lulu Mall Kochi": 0,
-      "World Trade Park Jaipur": 48
-    }
-  },
-  "ME001": {
-    "sku": "ME001",
-    "name": "Kurta Pajama Set",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 376,
-      "Delhi Warehouse": 232,
-      "Bangalore Warehouse": 390
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 9,
-      "DLF Mall Delhi": 0,
-      "Brigade Road Bangalore": 27,
-      "Phoenix Pune": 50,
-      "Alpha One Mall Ahmedabad": 11,
-      "Inorbit Mall Hyderabad": 42,
-      "Express Avenue Chennai": 25,
-      "Lulu Mall Kochi": 43,
-      "World Trade Park Jaipur": 18
-    }
-  },
-  "ME002": {
-    "sku": "ME002",
-    "name": "Nehru Jacket",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 386,
-      "Delhi Warehouse": 429,
-      "Bangalore Warehouse": 480
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 17,
-      "DLF Mall Delhi": 38,
-      "Brigade Road Bangalore": 0,
+      "Brigade Road Bangalore": 33,
       "Phoenix Pune": 32,
-      "Alpha One Mall Ahmedabad": 5,
-      "Inorbit Mall Hyderabad": 0,
-      "Express Avenue Chennai": 0,
-      "Lulu Mall Kochi": 7,
-      "World Trade Park Jaipur": 13
+      "Alpha One Mall Ahmedabad": 0,
+      "Inorbit Mall Hyderabad": 24,
+      "Express Avenue Chennai": 30,
+      "Lulu Mall Kochi": 16,
+      "World Trade Park Jaipur": 29
     }
   },
-  "FW001": {
-    "sku": "FW001",
-    "name": "Women's Heels",
+  "SKU0114": {
+    "sku": "SKU0114",
+    "name": "Designer Sherwani",
     "warehouse_stock": {
-      "Mumbai Warehouse": 254,
-      "Delhi Warehouse": 473,
-      "Bangalore Warehouse": 354
+      "Mumbai Warehouse": 447,
+      "Delhi Warehouse": 346,
+      "Bangalore Warehouse": 74
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 36,
+      "DLF Mall Delhi": 21,
+      "Brigade Road Bangalore": 30,
+      "Phoenix Pune": 43,
+      "Alpha One Mall Ahmedabad": 27,
+      "Inorbit Mall Hyderabad": 46,
+      "Express Avenue Chennai": 23,
+      "Lulu Mall Kochi": 21,
+      "World Trade Park Jaipur": 3
+    }
+  },
+  "SKU0115": {
+    "sku": "SKU0115",
+    "name": "Royal Sherwani",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 290,
+      "Delhi Warehouse": 262,
+      "Bangalore Warehouse": 106
     },
     "store_stock": {
       "Phoenix Mall Mumbai": 12,
-      "DLF Mall Delhi": 5,
-      "Brigade Road Bangalore": 6,
-      "Phoenix Pune": 8,
-      "Alpha One Mall Ahmedabad": 7,
-      "Inorbit Mall Hyderabad": 34,
-      "Express Avenue Chennai": 16,
-      "Lulu Mall Kochi": 14,
-      "World Trade Park Jaipur": 9
-    }
-  },
-  "FW002": {
-    "sku": "FW002",
-    "name": "Men's Formal Shoes",
-    "warehouse_stock": {
-      "Mumbai Warehouse": 143,
-      "Delhi Warehouse": 369,
-      "Bangalore Warehouse": 110
-    },
-    "store_stock": {
-      "Phoenix Mall Mumbai": 0,
       "DLF Mall Delhi": 39,
-      "Brigade Road Bangalore": 4,
-      "Phoenix Pune": 50,
-      "Alpha One Mall Ahmedabad": 16,
-      "Inorbit Mall Hyderabad": 0,
-      "Express Avenue Chennai": 24,
-      "Lulu Mall Kochi": 46,
-      "World Trade Park Jaipur": 27
+      "Brigade Road Bangalore": 35,
+      "Phoenix Pune": 42,
+      "Alpha One Mall Ahmedabad": 34,
+      "Inorbit Mall Hyderabad": 8,
+      "Express Avenue Chennai": 50,
+      "Lulu Mall Kochi": 37,
+      "World Trade Park Jaipur": 33
     }
   },
-  "FW003": {
-    "sku": "FW003",
-    "name": "Sneakers",
+  "SKU0116": {
+    "sku": "SKU0116",
+    "name": "Traditional Dhoti Kurta Set",
     "warehouse_stock": {
-      "Mumbai Warehouse": 447,
-      "Delhi Warehouse": 209,
-      "Bangalore Warehouse": 349
+      "Mumbai Warehouse": 334,
+      "Delhi Warehouse": 68,
+      "Bangalore Warehouse": 499
     },
     "store_stock": {
-      "Phoenix Mall Mumbai": 10,
-      "DLF Mall Delhi": 14,
-      "Brigade Road Bangalore": 26,
-      "Phoenix Pune": 4,
-      "Alpha One Mall Ahmedabad": 21,
+      "Phoenix Mall Mumbai": 11,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 27,
+      "Phoenix Pune": 11,
+      "Alpha One Mall Ahmedabad": 50,
+      "Inorbit Mall Hyderabad": 23,
+      "Express Avenue Chennai": 44,
+      "Lulu Mall Kochi": 12,
+      "World Trade Park Jaipur": 28
+    }
+  },
+  "SKU0117": {
+    "sku": "SKU0117",
+    "name": "Modern Dhoti Kurta Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 192,
+      "Delhi Warehouse": 54,
+      "Bangalore Warehouse": 281
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 16,
+      "DLF Mall Delhi": 47,
+      "Brigade Road Bangalore": 7,
+      "Phoenix Pune": 35,
+      "Alpha One Mall Ahmedabad": 3,
+      "Inorbit Mall Hyderabad": 48,
+      "Express Avenue Chennai": 37,
+      "Lulu Mall Kochi": 23,
+      "World Trade Park Jaipur": 13
+    }
+  },
+  "SKU0118": {
+    "sku": "SKU0118",
+    "name": "Festive Dhoti Kurta Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 388,
+      "Delhi Warehouse": 312,
+      "Bangalore Warehouse": 347
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 7,
+      "DLF Mall Delhi": 33,
+      "Brigade Road Bangalore": 14,
+      "Phoenix Pune": 3,
+      "Alpha One Mall Ahmedabad": 2,
+      "Inorbit Mall Hyderabad": 23,
+      "Express Avenue Chennai": 19,
+      "Lulu Mall Kochi": 36,
+      "World Trade Park Jaipur": 16
+    }
+  },
+  "SKU0119": {
+    "sku": "SKU0119",
+    "name": "Party Wear Dhoti Kurta Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 230,
+      "Delhi Warehouse": 468,
+      "Bangalore Warehouse": 385
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 45,
+      "DLF Mall Delhi": 38,
+      "Brigade Road Bangalore": 10,
+      "Phoenix Pune": 3,
+      "Alpha One Mall Ahmedabad": 4,
+      "Inorbit Mall Hyderabad": 30,
+      "Express Avenue Chennai": 48,
+      "Lulu Mall Kochi": 28,
+      "World Trade Park Jaipur": 15
+    }
+  },
+  "SKU0120": {
+    "sku": "SKU0120",
+    "name": "Casual Dhoti Kurta Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 369,
+      "Delhi Warehouse": 206,
+      "Bangalore Warehouse": 225
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 15,
+      "DLF Mall Delhi": 6,
+      "Brigade Road Bangalore": 17,
+      "Phoenix Pune": 2,
+      "Alpha One Mall Ahmedabad": 26,
+      "Inorbit Mall Hyderabad": 8,
+      "Express Avenue Chennai": 2,
+      "Lulu Mall Kochi": 32,
+      "World Trade Park Jaipur": 18
+    }
+  },
+  "SKU0121": {
+    "sku": "SKU0121",
+    "name": "Women's Heels",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 343,
+      "Delhi Warehouse": 401,
+      "Bangalore Warehouse": 150
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 27,
+      "DLF Mall Delhi": 41,
+      "Brigade Road Bangalore": 39,
+      "Phoenix Pune": 47,
+      "Alpha One Mall Ahmedabad": 38,
       "Inorbit Mall Hyderabad": 7,
-      "Express Avenue Chennai": 0,
-      "Lulu Mall Kochi": 37,
+      "Express Avenue Chennai": 36,
+      "Lulu Mall Kochi": 20,
+      "World Trade Park Jaipur": 23
+    }
+  },
+  "SKU0122": {
+    "sku": "SKU0122",
+    "name": "Women's Wedges",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 494,
+      "Delhi Warehouse": 144,
+      "Bangalore Warehouse": 463
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 37,
+      "DLF Mall Delhi": 34,
+      "Brigade Road Bangalore": 18,
+      "Phoenix Pune": 8,
+      "Alpha One Mall Ahmedabad": 0,
+      "Inorbit Mall Hyderabad": 50,
+      "Express Avenue Chennai": 40,
+      "Lulu Mall Kochi": 34,
+      "World Trade Park Jaipur": 16
+    }
+  },
+  "SKU0123": {
+    "sku": "SKU0123",
+    "name": "Women's Flats",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 134,
+      "Delhi Warehouse": 193,
+      "Bangalore Warehouse": 315
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 24,
+      "DLF Mall Delhi": 13,
+      "Brigade Road Bangalore": 44,
+      "Phoenix Pune": 36,
+      "Alpha One Mall Ahmedabad": 25,
+      "Inorbit Mall Hyderabad": 8,
+      "Express Avenue Chennai": 48,
+      "Lulu Mall Kochi": 7,
+      "World Trade Park Jaipur": 10
+    }
+  },
+  "SKU0124": {
+    "sku": "SKU0124",
+    "name": "Women's Sandals",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 83,
+      "Delhi Warehouse": 360,
+      "Bangalore Warehouse": 91
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 37,
+      "DLF Mall Delhi": 13,
+      "Brigade Road Bangalore": 34,
+      "Phoenix Pune": 1,
+      "Alpha One Mall Ahmedabad": 26,
+      "Inorbit Mall Hyderabad": 37,
+      "Express Avenue Chennai": 14,
+      "Lulu Mall Kochi": 49,
+      "World Trade Park Jaipur": 3
+    }
+  },
+  "SKU0125": {
+    "sku": "SKU0125",
+    "name": "Women's Boots",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 474,
+      "Delhi Warehouse": 98,
+      "Bangalore Warehouse": 373
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 31,
+      "DLF Mall Delhi": 15,
+      "Brigade Road Bangalore": 23,
+      "Phoenix Pune": 37,
+      "Alpha One Mall Ahmedabad": 12,
+      "Inorbit Mall Hyderabad": 7,
+      "Express Avenue Chennai": 15,
+      "Lulu Mall Kochi": 32,
+      "World Trade Park Jaipur": 12
+    }
+  },
+  "SKU0126": {
+    "sku": "SKU0126",
+    "name": "Women's Pumps",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 270,
+      "Delhi Warehouse": 66,
+      "Bangalore Warehouse": 457
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 8,
+      "DLF Mall Delhi": 12,
+      "Brigade Road Bangalore": 35,
+      "Phoenix Pune": 34,
+      "Alpha One Mall Ahmedabad": 16,
+      "Inorbit Mall Hyderabad": 3,
+      "Express Avenue Chennai": 50,
+      "Lulu Mall Kochi": 39,
+      "World Trade Park Jaipur": 35
+    }
+  },
+  "SKU0127": {
+    "sku": "SKU0127",
+    "name": "Women's Stilettos",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 129,
+      "Delhi Warehouse": 298,
+      "Bangalore Warehouse": 131
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 11,
+      "DLF Mall Delhi": 24,
+      "Brigade Road Bangalore": 18,
+      "Phoenix Pune": 1,
+      "Alpha One Mall Ahmedabad": 4,
+      "Inorbit Mall Hyderabad": 7,
+      "Express Avenue Chennai": 20,
+      "Lulu Mall Kochi": 26,
+      "World Trade Park Jaipur": 15
+    }
+  },
+  "SKU0128": {
+    "sku": "SKU0128",
+    "name": "Women's Ankle Boots",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 94,
+      "Delhi Warehouse": 232,
+      "Bangalore Warehouse": 416
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 46,
+      "DLF Mall Delhi": 34,
+      "Brigade Road Bangalore": 5,
+      "Phoenix Pune": 8,
+      "Alpha One Mall Ahmedabad": 21,
+      "Inorbit Mall Hyderabad": 33,
+      "Express Avenue Chennai": 12,
+      "Lulu Mall Kochi": 18,
       "World Trade Park Jaipur": 48
     }
   },
-  "AC001": {
-    "sku": "AC001",
-    "name": "Designer Watch",
+  "SKU0129": {
+    "sku": "SKU0129",
+    "name": "Men's Sports Shoes",
     "warehouse_stock": {
-      "Mumbai Warehouse": 80,
-      "Delhi Warehouse": 405,
-      "Bangalore Warehouse": 82
+      "Mumbai Warehouse": 87,
+      "Delhi Warehouse": 444,
+      "Bangalore Warehouse": 351
     },
     "store_stock": {
-      "Phoenix Mall Mumbai": 33,
+      "Phoenix Mall Mumbai": 36,
       "DLF Mall Delhi": 13,
-      "Brigade Road Bangalore": 13,
-      "Phoenix Pune": 21,
-      "Alpha One Mall Ahmedabad": 20,
-      "Inorbit Mall Hyderabad": 9,
-      "Express Avenue Chennai": 25,
-      "Lulu Mall Kochi": 27,
-      "World Trade Park Jaipur": 45
+      "Brigade Road Bangalore": 49,
+      "Phoenix Pune": 50,
+      "Alpha One Mall Ahmedabad": 1,
+      "Inorbit Mall Hyderabad": 18,
+      "Express Avenue Chennai": 4,
+      "Lulu Mall Kochi": 20,
+      "World Trade Park Jaipur": 32
     }
   },
-  "AC002": {
-    "sku": "AC002",
-    "name": "Leather Belt",
+  "SKU0130": {
+    "sku": "SKU0130",
+    "name": "Men's Running Shoes",
     "warehouse_stock": {
-      "Mumbai Warehouse": 356,
-      "Delhi Warehouse": 422,
-      "Bangalore Warehouse": 469
+      "Mumbai Warehouse": 499,
+      "Delhi Warehouse": 314,
+      "Bangalore Warehouse": 398
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 2,
+      "DLF Mall Delhi": 24,
+      "Brigade Road Bangalore": 13,
+      "Phoenix Pune": 17,
+      "Alpha One Mall Ahmedabad": 47,
+      "Inorbit Mall Hyderabad": 39,
+      "Express Avenue Chennai": 46,
+      "Lulu Mall Kochi": 10,
+      "World Trade Park Jaipur": 28
+    }
+  },
+  "SKU0131": {
+    "sku": "SKU0131",
+    "name": "Men's Boots",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 253,
+      "Delhi Warehouse": 74,
+      "Bangalore Warehouse": 406
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 46,
+      "DLF Mall Delhi": 0,
+      "Brigade Road Bangalore": 50,
+      "Phoenix Pune": 41,
+      "Alpha One Mall Ahmedabad": 39,
+      "Inorbit Mall Hyderabad": 21,
+      "Express Avenue Chennai": 33,
+      "Lulu Mall Kochi": 44,
+      "World Trade Park Jaipur": 21
+    }
+  },
+  "SKU0132": {
+    "sku": "SKU0132",
+    "name": "Men's Sandals",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 67,
+      "Delhi Warehouse": 97,
+      "Bangalore Warehouse": 261
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 20,
+      "DLF Mall Delhi": 5,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 26,
+      "Alpha One Mall Ahmedabad": 45,
+      "Inorbit Mall Hyderabad": 37,
+      "Express Avenue Chennai": 3,
+      "Lulu Mall Kochi": 47,
+      "World Trade Park Jaipur": 34
+    }
+  },
+  "SKU0133": {
+    "sku": "SKU0133",
+    "name": "Men's Flip Flops",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 184,
+      "Delhi Warehouse": 123,
+      "Bangalore Warehouse": 361
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 25,
+      "DLF Mall Delhi": 27,
+      "Brigade Road Bangalore": 30,
+      "Phoenix Pune": 5,
+      "Alpha One Mall Ahmedabad": 2,
+      "Inorbit Mall Hyderabad": 44,
+      "Express Avenue Chennai": 12,
+      "Lulu Mall Kochi": 27,
+      "World Trade Park Jaipur": 40
+    }
+  },
+  "SKU0134": {
+    "sku": "SKU0134",
+    "name": "Kids School Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 377,
+      "Delhi Warehouse": 500,
+      "Bangalore Warehouse": 444
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 26,
+      "DLF Mall Delhi": 8,
+      "Brigade Road Bangalore": 28,
+      "Phoenix Pune": 15,
+      "Alpha One Mall Ahmedabad": 12,
+      "Inorbit Mall Hyderabad": 36,
+      "Express Avenue Chennai": 20,
+      "Lulu Mall Kochi": 9,
+      "World Trade Park Jaipur": 6
+    }
+  },
+  "SKU0135": {
+    "sku": "SKU0135",
+    "name": "Kids Sneakers",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 130,
+      "Delhi Warehouse": 137,
+      "Bangalore Warehouse": 466
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 44,
+      "DLF Mall Delhi": 30,
+      "Brigade Road Bangalore": 8,
+      "Phoenix Pune": 29,
+      "Alpha One Mall Ahmedabad": 45,
+      "Inorbit Mall Hyderabad": 33,
+      "Express Avenue Chennai": 25,
+      "Lulu Mall Kochi": 48,
+      "World Trade Park Jaipur": 16
+    }
+  },
+  "SKU0136": {
+    "sku": "SKU0136",
+    "name": "Kids Sandals",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 213,
+      "Delhi Warehouse": 57,
+      "Bangalore Warehouse": 477
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 23,
+      "DLF Mall Delhi": 2,
+      "Brigade Road Bangalore": 18,
+      "Phoenix Pune": 38,
+      "Alpha One Mall Ahmedabad": 2,
+      "Inorbit Mall Hyderabad": 15,
+      "Express Avenue Chennai": 50,
+      "Lulu Mall Kochi": 46,
+      "World Trade Park Jaipur": 47
+    }
+  },
+  "SKU0137": {
+    "sku": "SKU0137",
+    "name": "Kids Boots",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 327,
+      "Delhi Warehouse": 275,
+      "Bangalore Warehouse": 349
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 1,
+      "DLF Mall Delhi": 21,
+      "Brigade Road Bangalore": 33,
+      "Phoenix Pune": 25,
+      "Alpha One Mall Ahmedabad": 1,
+      "Inorbit Mall Hyderabad": 24,
+      "Express Avenue Chennai": 11,
+      "Lulu Mall Kochi": 4,
+      "World Trade Park Jaipur": 41
+    }
+  },
+  "SKU0138": {
+    "sku": "SKU0138",
+    "name": "Analog Watch",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 136,
+      "Delhi Warehouse": 250,
+      "Bangalore Warehouse": 107
     },
     "store_stock": {
       "Phoenix Mall Mumbai": 22,
-      "DLF Mall Delhi": 19,
-      "Brigade Road Bangalore": 34,
-      "Phoenix Pune": 44,
-      "Alpha One Mall Ahmedabad": 0,
-      "Inorbit Mall Hyderabad": 45,
-      "Express Avenue Chennai": 0,
-      "Lulu Mall Kochi": 29,
-      "World Trade Park Jaipur": 31
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 12,
+      "Phoenix Pune": 14,
+      "Alpha One Mall Ahmedabad": 17,
+      "Inorbit Mall Hyderabad": 29,
+      "Express Avenue Chennai": 40,
+      "Lulu Mall Kochi": 27,
+      "World Trade Park Jaipur": 29
     }
   },
-  "AC003": {
-    "sku": "AC003",
-    "name": "Designer Handbag",
+  "SKU0139": {
+    "sku": "SKU0139",
+    "name": "Digital Watch",
     "warehouse_stock": {
-      "Mumbai Warehouse": 235,
-      "Delhi Warehouse": 304,
-      "Bangalore Warehouse": 357
+      "Mumbai Warehouse": 195,
+      "Delhi Warehouse": 77,
+      "Bangalore Warehouse": 380
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 14,
+      "DLF Mall Delhi": 20,
+      "Brigade Road Bangalore": 18,
+      "Phoenix Pune": 27,
+      "Alpha One Mall Ahmedabad": 8,
+      "Inorbit Mall Hyderabad": 23,
+      "Express Avenue Chennai": 43,
+      "Lulu Mall Kochi": 43,
+      "World Trade Park Jaipur": 47
+    }
+  },
+  "SKU0140": {
+    "sku": "SKU0140",
+    "name": "Smart Watch",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 469,
+      "Delhi Warehouse": 309,
+      "Bangalore Warehouse": 284
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 6,
+      "DLF Mall Delhi": 38,
+      "Brigade Road Bangalore": 37,
+      "Phoenix Pune": 11,
+      "Alpha One Mall Ahmedabad": 43,
+      "Inorbit Mall Hyderabad": 12,
+      "Express Avenue Chennai": 31,
+      "Lulu Mall Kochi": 47,
+      "World Trade Park Jaipur": 25
+    }
+  },
+  "SKU0141": {
+    "sku": "SKU0141",
+    "name": "Chronograph Watch",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 141,
+      "Delhi Warehouse": 257,
+      "Bangalore Warehouse": 263
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 10,
+      "DLF Mall Delhi": 38,
+      "Brigade Road Bangalore": 0,
+      "Phoenix Pune": 13,
+      "Alpha One Mall Ahmedabad": 18,
+      "Inorbit Mall Hyderabad": 32,
+      "Express Avenue Chennai": 9,
+      "Lulu Mall Kochi": 44,
+      "World Trade Park Jaipur": 13
+    }
+  },
+  "SKU0142": {
+    "sku": "SKU0142",
+    "name": "Designer Watch",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 437,
+      "Delhi Warehouse": 490,
+      "Bangalore Warehouse": 201
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 12,
+      "DLF Mall Delhi": 42,
+      "Brigade Road Bangalore": 6,
+      "Phoenix Pune": 25,
+      "Alpha One Mall Ahmedabad": 15,
+      "Inorbit Mall Hyderabad": 5,
+      "Express Avenue Chennai": 36,
+      "Lulu Mall Kochi": 7,
+      "World Trade Park Jaipur": 7
+    }
+  },
+  "SKU0143": {
+    "sku": "SKU0143",
+    "name": "Luxury Watch",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 144,
+      "Delhi Warehouse": 427,
+      "Bangalore Warehouse": 196
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 20,
+      "DLF Mall Delhi": 37,
+      "Brigade Road Bangalore": 20,
+      "Phoenix Pune": 32,
+      "Alpha One Mall Ahmedabad": 40,
+      "Inorbit Mall Hyderabad": 23,
+      "Express Avenue Chennai": 17,
+      "Lulu Mall Kochi": 12,
+      "World Trade Park Jaipur": 33
+    }
+  },
+  "SKU0144": {
+    "sku": "SKU0144",
+    "name": "Tote Handbag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 192,
+      "Delhi Warehouse": 111,
+      "Bangalore Warehouse": 120
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 2,
+      "DLF Mall Delhi": 8,
+      "Brigade Road Bangalore": 48,
+      "Phoenix Pune": 31,
+      "Alpha One Mall Ahmedabad": 42,
+      "Inorbit Mall Hyderabad": 9,
+      "Express Avenue Chennai": 18,
+      "Lulu Mall Kochi": 12,
+      "World Trade Park Jaipur": 21
+    }
+  },
+  "SKU0145": {
+    "sku": "SKU0145",
+    "name": "Satchel Handbag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 416,
+      "Delhi Warehouse": 343,
+      "Bangalore Warehouse": 176
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 26,
+      "DLF Mall Delhi": 33,
+      "Brigade Road Bangalore": 44,
+      "Phoenix Pune": 36,
+      "Alpha One Mall Ahmedabad": 41,
+      "Inorbit Mall Hyderabad": 22,
+      "Express Avenue Chennai": 50,
+      "Lulu Mall Kochi": 34,
+      "World Trade Park Jaipur": 5
+    }
+  },
+  "SKU0146": {
+    "sku": "SKU0146",
+    "name": "Clutch Handbag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 69,
+      "Delhi Warehouse": 101,
+      "Bangalore Warehouse": 316
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 0,
+      "DLF Mall Delhi": 31,
+      "Brigade Road Bangalore": 34,
+      "Phoenix Pune": 44,
+      "Alpha One Mall Ahmedabad": 6,
+      "Inorbit Mall Hyderabad": 38,
+      "Express Avenue Chennai": 41,
+      "Lulu Mall Kochi": 19,
+      "World Trade Park Jaipur": 14
+    }
+  },
+  "SKU0147": {
+    "sku": "SKU0147",
+    "name": "Crossbody Handbag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 227,
+      "Delhi Warehouse": 160,
+      "Bangalore Warehouse": 430
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 45,
+      "DLF Mall Delhi": 8,
+      "Brigade Road Bangalore": 44,
+      "Phoenix Pune": 2,
+      "Alpha One Mall Ahmedabad": 24,
+      "Inorbit Mall Hyderabad": 30,
+      "Express Avenue Chennai": 25,
+      "Lulu Mall Kochi": 39,
+      "World Trade Park Jaipur": 38
+    }
+  },
+  "SKU0148": {
+    "sku": "SKU0148",
+    "name": "Hobo Handbag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 195,
+      "Delhi Warehouse": 446,
+      "Bangalore Warehouse": 467
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 34,
+      "DLF Mall Delhi": 32,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 5,
+      "Alpha One Mall Ahmedabad": 39,
+      "Inorbit Mall Hyderabad": 11,
+      "Express Avenue Chennai": 10,
+      "Lulu Mall Kochi": 43,
+      "World Trade Park Jaipur": 8
+    }
+  },
+  "SKU0149": {
+    "sku": "SKU0149",
+    "name": "Backpack Handbag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 288,
+      "Delhi Warehouse": 156,
+      "Bangalore Warehouse": 202
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 29,
+      "DLF Mall Delhi": 2,
+      "Brigade Road Bangalore": 44,
+      "Phoenix Pune": 5,
+      "Alpha One Mall Ahmedabad": 18,
+      "Inorbit Mall Hyderabad": 28,
+      "Express Avenue Chennai": 39,
+      "Lulu Mall Kochi": 45,
+      "World Trade Park Jaipur": 5
+    }
+  },
+  "SKU0150": {
+    "sku": "SKU0150",
+    "name": "Men's Laptop Bag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 318,
+      "Delhi Warehouse": 392,
+      "Bangalore Warehouse": 327
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 43,
+      "DLF Mall Delhi": 14,
+      "Brigade Road Bangalore": 38,
+      "Phoenix Pune": 8,
+      "Alpha One Mall Ahmedabad": 31,
+      "Inorbit Mall Hyderabad": 34,
+      "Express Avenue Chennai": 6,
+      "Lulu Mall Kochi": 30,
+      "World Trade Park Jaipur": 5
+    }
+  },
+  "SKU0151": {
+    "sku": "SKU0151",
+    "name": "Men's Messenger Bag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 205,
+      "Delhi Warehouse": 122,
+      "Bangalore Warehouse": 384
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 42,
+      "DLF Mall Delhi": 10,
+      "Brigade Road Bangalore": 3,
+      "Phoenix Pune": 40,
+      "Alpha One Mall Ahmedabad": 4,
+      "Inorbit Mall Hyderabad": 17,
+      "Express Avenue Chennai": 32,
+      "Lulu Mall Kochi": 18,
+      "World Trade Park Jaipur": 28
+    }
+  },
+  "SKU0152": {
+    "sku": "SKU0152",
+    "name": "Men's Duffel Bag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 494,
+      "Delhi Warehouse": 423,
+      "Bangalore Warehouse": 144
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 19,
+      "DLF Mall Delhi": 40,
+      "Brigade Road Bangalore": 17,
+      "Phoenix Pune": 3,
+      "Alpha One Mall Ahmedabad": 39,
+      "Inorbit Mall Hyderabad": 17,
+      "Express Avenue Chennai": 14,
+      "Lulu Mall Kochi": 45,
+      "World Trade Park Jaipur": 30
+    }
+  },
+  "SKU0153": {
+    "sku": "SKU0153",
+    "name": "Men's Backpack Bag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 257,
+      "Delhi Warehouse": 465,
+      "Bangalore Warehouse": 476
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 46,
+      "DLF Mall Delhi": 39,
+      "Brigade Road Bangalore": 6,
+      "Phoenix Pune": 48,
+      "Alpha One Mall Ahmedabad": 49,
+      "Inorbit Mall Hyderabad": 18,
+      "Express Avenue Chennai": 32,
+      "Lulu Mall Kochi": 28,
+      "World Trade Park Jaipur": 12
+    }
+  },
+  "SKU0154": {
+    "sku": "SKU0154",
+    "name": "Necklace Jewelry Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 382,
+      "Delhi Warehouse": 406,
+      "Bangalore Warehouse": 289
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 29,
+      "DLF Mall Delhi": 2,
+      "Brigade Road Bangalore": 40,
+      "Phoenix Pune": 43,
+      "Alpha One Mall Ahmedabad": 33,
+      "Inorbit Mall Hyderabad": 17,
+      "Express Avenue Chennai": 29,
+      "Lulu Mall Kochi": 30,
+      "World Trade Park Jaipur": 25
+    }
+  },
+  "SKU0155": {
+    "sku": "SKU0155",
+    "name": "Earrings Jewelry Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 51,
+      "Delhi Warehouse": 167,
+      "Bangalore Warehouse": 107
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 17,
+      "DLF Mall Delhi": 3,
+      "Brigade Road Bangalore": 30,
+      "Phoenix Pune": 17,
+      "Alpha One Mall Ahmedabad": 4,
+      "Inorbit Mall Hyderabad": 35,
+      "Express Avenue Chennai": 42,
+      "Lulu Mall Kochi": 37,
+      "World Trade Park Jaipur": 49
+    }
+  },
+  "SKU0156": {
+    "sku": "SKU0156",
+    "name": "Bracelet Jewelry Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 251,
+      "Delhi Warehouse": 114,
+      "Bangalore Warehouse": 459
     },
     "store_stock": {
       "Phoenix Mall Mumbai": 0,
       "DLF Mall Delhi": 24,
-      "Brigade Road Bangalore": 15,
-      "Phoenix Pune": 18,
-      "Alpha One Mall Ahmedabad": 0,
-      "Inorbit Mall Hyderabad": 9,
-      "Express Avenue Chennai": 33,
-      "Lulu Mall Kochi": 15,
-      "World Trade Park Jaipur": 45
+      "Brigade Road Bangalore": 31,
+      "Phoenix Pune": 39,
+      "Alpha One Mall Ahmedabad": 27,
+      "Inorbit Mall Hyderabad": 12,
+      "Express Avenue Chennai": 35,
+      "Lulu Mall Kochi": 6,
+      "World Trade Park Jaipur": 8
     }
   },
-  "AC004": {
-    "sku": "AC004",
-    "name": "Earrings Set",
+  "SKU0157": {
+    "sku": "SKU0157",
+    "name": "Ring Jewelry Set",
     "warehouse_stock": {
-      "Mumbai Warehouse": 375,
-      "Delhi Warehouse": 468,
-      "Bangalore Warehouse": 170
+      "Mumbai Warehouse": 391,
+      "Delhi Warehouse": 249,
+      "Bangalore Warehouse": 381
     },
     "store_stock": {
-      "Phoenix Mall Mumbai": 41,
-      "DLF Mall Delhi": 19,
-      "Brigade Road Bangalore": 6,
-      "Phoenix Pune": 30,
+      "Phoenix Mall Mumbai": 4,
+      "DLF Mall Delhi": 44,
+      "Brigade Road Bangalore": 36,
+      "Phoenix Pune": 9,
+      "Alpha One Mall Ahmedabad": 2,
+      "Inorbit Mall Hyderabad": 23,
+      "Express Avenue Chennai": 34,
+      "Lulu Mall Kochi": 45,
+      "World Trade Park Jaipur": 29
+    }
+  },
+  "SKU0158": {
+    "sku": "SKU0158",
+    "name": "Pendant Jewelry Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 450,
+      "Delhi Warehouse": 249,
+      "Bangalore Warehouse": 104
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 3,
+      "DLF Mall Delhi": 14,
+      "Brigade Road Bangalore": 39,
+      "Phoenix Pune": 22,
       "Alpha One Mall Ahmedabad": 6,
-      "Inorbit Mall Hyderabad": 5,
+      "Inorbit Mall Hyderabad": 34,
+      "Express Avenue Chennai": 44,
+      "Lulu Mall Kochi": 17,
+      "World Trade Park Jaipur": 3
+    }
+  },
+  "SKU0159": {
+    "sku": "SKU0159",
+    "name": "Sunglasses",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 374,
+      "Delhi Warehouse": 193,
+      "Bangalore Warehouse": 333
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 42,
+      "DLF Mall Delhi": 0,
+      "Brigade Road Bangalore": 15,
+      "Phoenix Pune": 17,
+      "Alpha One Mall Ahmedabad": 48,
+      "Inorbit Mall Hyderabad": 44,
+      "Express Avenue Chennai": 13,
+      "Lulu Mall Kochi": 42,
+      "World Trade Park Jaipur": 6
+    }
+  },
+  "SKU0160": {
+    "sku": "SKU0160",
+    "name": "Belt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 363,
+      "Delhi Warehouse": 130,
+      "Bangalore Warehouse": 229
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 30,
+      "DLF Mall Delhi": 16,
+      "Brigade Road Bangalore": 10,
+      "Phoenix Pune": 23,
+      "Alpha One Mall Ahmedabad": 26,
+      "Inorbit Mall Hyderabad": 49,
+      "Express Avenue Chennai": 31,
+      "Lulu Mall Kochi": 0,
+      "World Trade Park Jaipur": 47
+    }
+  },
+  "SKU0161": {
+    "sku": "SKU0161",
+    "name": "Wallet",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 192,
+      "Delhi Warehouse": 239,
+      "Bangalore Warehouse": 492
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 47,
+      "DLF Mall Delhi": 45,
+      "Brigade Road Bangalore": 11,
+      "Phoenix Pune": 1,
+      "Alpha One Mall Ahmedabad": 30,
+      "Inorbit Mall Hyderabad": 40,
+      "Express Avenue Chennai": 9,
+      "Lulu Mall Kochi": 29,
+      "World Trade Park Jaipur": 24
+    }
+  },
+  "SKU0162": {
+    "sku": "SKU0162",
+    "name": "Scarf",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 290,
+      "Delhi Warehouse": 316,
+      "Bangalore Warehouse": 185
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 23,
+      "DLF Mall Delhi": 27,
+      "Brigade Road Bangalore": 38,
+      "Phoenix Pune": 34,
+      "Alpha One Mall Ahmedabad": 41,
+      "Inorbit Mall Hyderabad": 16,
       "Express Avenue Chennai": 0,
+      "Lulu Mall Kochi": 22,
+      "World Trade Park Jaipur": 20
+    }
+  },
+  "SKU0163": {
+    "sku": "SKU0163",
+    "name": "Hat",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 448,
+      "Delhi Warehouse": 354,
+      "Bangalore Warehouse": 172
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 24,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 23,
+      "Phoenix Pune": 11,
+      "Alpha One Mall Ahmedabad": 45,
+      "Inorbit Mall Hyderabad": 26,
+      "Express Avenue Chennai": 27,
+      "Lulu Mall Kochi": 44,
+      "World Trade Park Jaipur": 46
+    }
+  },
+  "SKU0164": {
+    "sku": "SKU0164",
+    "name": "Boy's T-Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 218,
+      "Delhi Warehouse": 63,
+      "Bangalore Warehouse": 465
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 16,
+      "DLF Mall Delhi": 47,
+      "Brigade Road Bangalore": 49,
+      "Phoenix Pune": 4,
+      "Alpha One Mall Ahmedabad": 3,
+      "Inorbit Mall Hyderabad": 13,
+      "Express Avenue Chennai": 8,
+      "Lulu Mall Kochi": 43,
+      "World Trade Park Jaipur": 34
+    }
+  },
+  "SKU0165": {
+    "sku": "SKU0165",
+    "name": "Boy's Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 474,
+      "Delhi Warehouse": 306,
+      "Bangalore Warehouse": 436
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 3,
+      "DLF Mall Delhi": 12,
+      "Brigade Road Bangalore": 44,
+      "Phoenix Pune": 6,
+      "Alpha One Mall Ahmedabad": 50,
+      "Inorbit Mall Hyderabad": 10,
+      "Express Avenue Chennai": 47,
+      "Lulu Mall Kochi": 15,
+      "World Trade Park Jaipur": 34
+    }
+  },
+  "SKU0166": {
+    "sku": "SKU0166",
+    "name": "Boy's Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 217,
+      "Delhi Warehouse": 481,
+      "Bangalore Warehouse": 74
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 45,
+      "DLF Mall Delhi": 32,
+      "Brigade Road Bangalore": 10,
+      "Phoenix Pune": 42,
+      "Alpha One Mall Ahmedabad": 16,
+      "Inorbit Mall Hyderabad": 10,
+      "Express Avenue Chennai": 46,
+      "Lulu Mall Kochi": 20,
+      "World Trade Park Jaipur": 31
+    }
+  },
+  "SKU0167": {
+    "sku": "SKU0167",
+    "name": "Boy's Shorts",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 283,
+      "Delhi Warehouse": 385,
+      "Bangalore Warehouse": 303
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 36,
+      "DLF Mall Delhi": 44,
+      "Brigade Road Bangalore": 19,
+      "Phoenix Pune": 23,
+      "Alpha One Mall Ahmedabad": 37,
+      "Inorbit Mall Hyderabad": 20,
+      "Express Avenue Chennai": 37,
+      "Lulu Mall Kochi": 11,
+      "World Trade Park Jaipur": 34
+    }
+  },
+  "SKU0168": {
+    "sku": "SKU0168",
+    "name": "Boy's Tracksuit",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 359,
+      "Delhi Warehouse": 296,
+      "Bangalore Warehouse": 271
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 17,
+      "DLF Mall Delhi": 20,
+      "Brigade Road Bangalore": 4,
+      "Phoenix Pune": 45,
+      "Alpha One Mall Ahmedabad": 38,
+      "Inorbit Mall Hyderabad": 24,
+      "Express Avenue Chennai": 37,
+      "Lulu Mall Kochi": 24,
+      "World Trade Park Jaipur": 22
+    }
+  },
+  "SKU0169": {
+    "sku": "SKU0169",
+    "name": "Boy's Ethnic Kurta",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 139,
+      "Delhi Warehouse": 416,
+      "Bangalore Warehouse": 335
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 38,
+      "DLF Mall Delhi": 38,
+      "Brigade Road Bangalore": 4,
+      "Phoenix Pune": 44,
+      "Alpha One Mall Ahmedabad": 15,
+      "Inorbit Mall Hyderabad": 10,
+      "Express Avenue Chennai": 18,
+      "Lulu Mall Kochi": 13,
+      "World Trade Park Jaipur": 14
+    }
+  },
+  "SKU0170": {
+    "sku": "SKU0170",
+    "name": "Boy's Polo T-Shirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 133,
+      "Delhi Warehouse": 317,
+      "Bangalore Warehouse": 483
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 33,
+      "DLF Mall Delhi": 6,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 1,
+      "Alpha One Mall Ahmedabad": 46,
+      "Inorbit Mall Hyderabad": 8,
+      "Express Avenue Chennai": 24,
+      "Lulu Mall Kochi": 2,
+      "World Trade Park Jaipur": 24
+    }
+  },
+  "SKU0171": {
+    "sku": "SKU0171",
+    "name": "Boy's Cargo Pants",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 482,
+      "Delhi Warehouse": 276,
+      "Bangalore Warehouse": 71
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 15,
+      "DLF Mall Delhi": 46,
+      "Brigade Road Bangalore": 14,
+      "Phoenix Pune": 15,
+      "Alpha One Mall Ahmedabad": 36,
+      "Inorbit Mall Hyderabad": 42,
+      "Express Avenue Chennai": 45,
+      "Lulu Mall Kochi": 13,
+      "World Trade Park Jaipur": 46
+    }
+  },
+  "SKU0172": {
+    "sku": "SKU0172",
+    "name": "Girl's Dress",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 186,
+      "Delhi Warehouse": 290,
+      "Bangalore Warehouse": 215
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 15,
+      "DLF Mall Delhi": 14,
+      "Brigade Road Bangalore": 9,
+      "Phoenix Pune": 32,
+      "Alpha One Mall Ahmedabad": 46,
+      "Inorbit Mall Hyderabad": 8,
+      "Express Avenue Chennai": 15,
+      "Lulu Mall Kochi": 21,
+      "World Trade Park Jaipur": 48
+    }
+  },
+  "SKU0173": {
+    "sku": "SKU0173",
+    "name": "Girl's Frock",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 259,
+      "Delhi Warehouse": 207,
+      "Bangalore Warehouse": 444
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 38,
+      "DLF Mall Delhi": 1,
+      "Brigade Road Bangalore": 19,
+      "Phoenix Pune": 47,
+      "Alpha One Mall Ahmedabad": 7,
+      "Inorbit Mall Hyderabad": 27,
+      "Express Avenue Chennai": 34,
+      "Lulu Mall Kochi": 42,
+      "World Trade Park Jaipur": 47
+    }
+  },
+  "SKU0174": {
+    "sku": "SKU0174",
+    "name": "Girl's Lehenga",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 313,
+      "Delhi Warehouse": 175,
+      "Bangalore Warehouse": 53
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 47,
+      "DLF Mall Delhi": 35,
+      "Brigade Road Bangalore": 44,
+      "Phoenix Pune": 24,
+      "Alpha One Mall Ahmedabad": 49,
+      "Inorbit Mall Hyderabad": 38,
+      "Express Avenue Chennai": 33,
+      "Lulu Mall Kochi": 44,
+      "World Trade Park Jaipur": 30
+    }
+  },
+  "SKU0175": {
+    "sku": "SKU0175",
+    "name": "Girl's Skirt Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 269,
+      "Delhi Warehouse": 382,
+      "Bangalore Warehouse": 491
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 23,
+      "DLF Mall Delhi": 33,
+      "Brigade Road Bangalore": 15,
+      "Phoenix Pune": 26,
+      "Alpha One Mall Ahmedabad": 2,
+      "Inorbit Mall Hyderabad": 36,
+      "Express Avenue Chennai": 26,
+      "Lulu Mall Kochi": 18,
+      "World Trade Park Jaipur": 2
+    }
+  },
+  "SKU0176": {
+    "sku": "SKU0176",
+    "name": "Girl's Top & Jeans",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 312,
+      "Delhi Warehouse": 434,
+      "Bangalore Warehouse": 392
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 43,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 24,
+      "Phoenix Pune": 38,
+      "Alpha One Mall Ahmedabad": 49,
+      "Inorbit Mall Hyderabad": 24,
+      "Express Avenue Chennai": 21,
+      "Lulu Mall Kochi": 7,
+      "World Trade Park Jaipur": 28
+    }
+  },
+  "SKU0177": {
+    "sku": "SKU0177",
+    "name": "Girl's Ethnic Dress",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 68,
+      "Delhi Warehouse": 206,
+      "Bangalore Warehouse": 307
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 32,
+      "DLF Mall Delhi": 50,
+      "Brigade Road Bangalore": 48,
+      "Phoenix Pune": 34,
+      "Alpha One Mall Ahmedabad": 18,
+      "Inorbit Mall Hyderabad": 9,
+      "Express Avenue Chennai": 31,
+      "Lulu Mall Kochi": 48,
+      "World Trade Park Jaipur": 25
+    }
+  },
+  "SKU0178": {
+    "sku": "SKU0178",
+    "name": "Girl's Party Gown",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 102,
+      "Delhi Warehouse": 203,
+      "Bangalore Warehouse": 188
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 48,
+      "DLF Mall Delhi": 4,
+      "Brigade Road Bangalore": 0,
+      "Phoenix Pune": 22,
+      "Alpha One Mall Ahmedabad": 32,
+      "Inorbit Mall Hyderabad": 32,
+      "Express Avenue Chennai": 12,
       "Lulu Mall Kochi": 0,
       "World Trade Park Jaipur": 0
     }
   },
-  "AC005": {
-    "sku": "AC005",
-    "name": "Necklace Set",
+  "SKU0179": {
+    "sku": "SKU0179",
+    "name": "Girl's Tutu Dress",
     "warehouse_stock": {
-      "Mumbai Warehouse": 231,
-      "Delhi Warehouse": 141,
-      "Bangalore Warehouse": 126
+      "Mumbai Warehouse": 221,
+      "Delhi Warehouse": 156,
+      "Bangalore Warehouse": 77
     },
     "store_stock": {
-      "Phoenix Mall Mumbai": 2,
+      "Phoenix Mall Mumbai": 38,
+      "DLF Mall Delhi": 35,
+      "Brigade Road Bangalore": 25,
+      "Phoenix Pune": 6,
+      "Alpha One Mall Ahmedabad": 46,
+      "Inorbit Mall Hyderabad": 17,
+      "Express Avenue Chennai": 28,
+      "Lulu Mall Kochi": 0,
+      "World Trade Park Jaipur": 10
+    }
+  },
+  "SKU0180": {
+    "sku": "SKU0180",
+    "name": "Kids Winter Jacket",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 411,
+      "Delhi Warehouse": 205,
+      "Bangalore Warehouse": 469
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 31,
+      "DLF Mall Delhi": 7,
+      "Brigade Road Bangalore": 13,
+      "Phoenix Pune": 28,
+      "Alpha One Mall Ahmedabad": 22,
+      "Inorbit Mall Hyderabad": 14,
+      "Express Avenue Chennai": 28,
+      "Lulu Mall Kochi": 5,
+      "World Trade Park Jaipur": 14
+    }
+  },
+  "SKU0181": {
+    "sku": "SKU0181",
+    "name": "Kids Sweater",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 185,
+      "Delhi Warehouse": 155,
+      "Bangalore Warehouse": 65
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 39,
+      "DLF Mall Delhi": 22,
+      "Brigade Road Bangalore": 6,
+      "Phoenix Pune": 8,
+      "Alpha One Mall Ahmedabad": 47,
+      "Inorbit Mall Hyderabad": 45,
+      "Express Avenue Chennai": 3,
+      "Lulu Mall Kochi": 29,
+      "World Trade Park Jaipur": 30
+    }
+  },
+  "SKU0182": {
+    "sku": "SKU0182",
+    "name": "Kids Raincoat",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 219,
+      "Delhi Warehouse": 409,
+      "Bangalore Warehouse": 196
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 50,
+      "DLF Mall Delhi": 16,
+      "Brigade Road Bangalore": 8,
+      "Phoenix Pune": 26,
+      "Alpha One Mall Ahmedabad": 45,
+      "Inorbit Mall Hyderabad": 7,
+      "Express Avenue Chennai": 7,
+      "Lulu Mall Kochi": 19,
+      "World Trade Park Jaipur": 3
+    }
+  },
+  "SKU0183": {
+    "sku": "SKU0183",
+    "name": "Kids School Uniform",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 56,
+      "Delhi Warehouse": 171,
+      "Bangalore Warehouse": 378
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 46,
       "DLF Mall Delhi": 47,
+      "Brigade Road Bangalore": 33,
+      "Phoenix Pune": 13,
+      "Alpha One Mall Ahmedabad": 18,
+      "Inorbit Mall Hyderabad": 21,
+      "Express Avenue Chennai": 38,
+      "Lulu Mall Kochi": 29,
+      "World Trade Park Jaipur": 48
+    }
+  },
+  "SKU0184": {
+    "sku": "SKU0184",
+    "name": "Kids Party Wear",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 311,
+      "Delhi Warehouse": 258,
+      "Bangalore Warehouse": 188
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 25,
+      "DLF Mall Delhi": 49,
+      "Brigade Road Bangalore": 19,
+      "Phoenix Pune": 21,
+      "Alpha One Mall Ahmedabad": 45,
+      "Inorbit Mall Hyderabad": 19,
+      "Express Avenue Chennai": 30,
+      "Lulu Mall Kochi": 19,
+      "World Trade Park Jaipur": 5
+    }
+  },
+  "SKU0185": {
+    "sku": "SKU0185",
+    "name": "Kids Hoodie",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 312,
+      "Delhi Warehouse": 100,
+      "Bangalore Warehouse": 54
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 45,
+      "DLF Mall Delhi": 10,
+      "Brigade Road Bangalore": 45,
+      "Phoenix Pune": 2,
+      "Alpha One Mall Ahmedabad": 28,
+      "Inorbit Mall Hyderabad": 49,
+      "Express Avenue Chennai": 7,
+      "Lulu Mall Kochi": 13,
+      "World Trade Park Jaipur": 0
+    }
+  },
+  "SKU0186": {
+    "sku": "SKU0186",
+    "name": "Kids Sweatshirt",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 477,
+      "Delhi Warehouse": 486,
+      "Bangalore Warehouse": 471
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 42,
+      "DLF Mall Delhi": 40,
+      "Brigade Road Bangalore": 29,
+      "Phoenix Pune": 15,
+      "Alpha One Mall Ahmedabad": 1,
+      "Inorbit Mall Hyderabad": 27,
+      "Express Avenue Chennai": 49,
+      "Lulu Mall Kochi": 8,
+      "World Trade Park Jaipur": 6
+    }
+  },
+  "SKU0187": {
+    "sku": "SKU0187",
+    "name": "Running Sports Wear",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 241,
+      "Delhi Warehouse": 293,
+      "Bangalore Warehouse": 467
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 48,
+      "DLF Mall Delhi": 18,
+      "Brigade Road Bangalore": 12,
+      "Phoenix Pune": 25,
+      "Alpha One Mall Ahmedabad": 5,
+      "Inorbit Mall Hyderabad": 27,
+      "Express Avenue Chennai": 12,
+      "Lulu Mall Kochi": 38,
+      "World Trade Park Jaipur": 27
+    }
+  },
+  "SKU0188": {
+    "sku": "SKU0188",
+    "name": "Gym Sports Wear",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 497,
+      "Delhi Warehouse": 237,
+      "Bangalore Warehouse": 320
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 37,
+      "DLF Mall Delhi": 6,
+      "Brigade Road Bangalore": 48,
+      "Phoenix Pune": 4,
+      "Alpha One Mall Ahmedabad": 22,
+      "Inorbit Mall Hyderabad": 26,
+      "Express Avenue Chennai": 8,
+      "Lulu Mall Kochi": 2,
+      "World Trade Park Jaipur": 29
+    }
+  },
+  "SKU0189": {
+    "sku": "SKU0189",
+    "name": "Yoga Sports Wear",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 288,
+      "Delhi Warehouse": 68,
+      "Bangalore Warehouse": 382
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 35,
+      "DLF Mall Delhi": 6,
+      "Brigade Road Bangalore": 19,
+      "Phoenix Pune": 29,
+      "Alpha One Mall Ahmedabad": 36,
+      "Inorbit Mall Hyderabad": 4,
+      "Express Avenue Chennai": 20,
+      "Lulu Mall Kochi": 22,
+      "World Trade Park Jaipur": 0
+    }
+  },
+  "SKU0190": {
+    "sku": "SKU0190",
+    "name": "Training Sports Wear",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 307,
+      "Delhi Warehouse": 454,
+      "Bangalore Warehouse": 274
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 1,
+      "DLF Mall Delhi": 36,
+      "Brigade Road Bangalore": 39,
+      "Phoenix Pune": 4,
+      "Alpha One Mall Ahmedabad": 10,
+      "Inorbit Mall Hyderabad": 21,
+      "Express Avenue Chennai": 8,
+      "Lulu Mall Kochi": 23,
+      "World Trade Park Jaipur": 43
+    }
+  },
+  "SKU0191": {
+    "sku": "SKU0191",
+    "name": "Track Suit Sports Wear",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 203,
+      "Delhi Warehouse": 251,
+      "Bangalore Warehouse": 55
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 13,
+      "DLF Mall Delhi": 31,
+      "Brigade Road Bangalore": 5,
+      "Phoenix Pune": 11,
+      "Alpha One Mall Ahmedabad": 35,
+      "Inorbit Mall Hyderabad": 12,
+      "Express Avenue Chennai": 49,
+      "Lulu Mall Kochi": 46,
+      "World Trade Park Jaipur": 23
+    }
+  },
+  "SKU0192": {
+    "sku": "SKU0192",
+    "name": "Sports Shoes",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 302,
+      "Delhi Warehouse": 486,
+      "Bangalore Warehouse": 488
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 27,
+      "DLF Mall Delhi": 15,
+      "Brigade Road Bangalore": 34,
+      "Phoenix Pune": 15,
+      "Alpha One Mall Ahmedabad": 32,
+      "Inorbit Mall Hyderabad": 22,
+      "Express Avenue Chennai": 37,
+      "Lulu Mall Kochi": 47,
+      "World Trade Park Jaipur": 1
+    }
+  },
+  "SKU0193": {
+    "sku": "SKU0193",
+    "name": "Sports Bag",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 481,
+      "Delhi Warehouse": 420,
+      "Bangalore Warehouse": 236
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 3,
+      "DLF Mall Delhi": 35,
+      "Brigade Road Bangalore": 27,
+      "Phoenix Pune": 17,
+      "Alpha One Mall Ahmedabad": 25,
+      "Inorbit Mall Hyderabad": 30,
+      "Express Avenue Chennai": 39,
+      "Lulu Mall Kochi": 6,
+      "World Trade Park Jaipur": 30
+    }
+  },
+  "SKU0194": {
+    "sku": "SKU0194",
+    "name": "Sports Water Bottle",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 299,
+      "Delhi Warehouse": 355,
+      "Bangalore Warehouse": 471
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 14,
+      "DLF Mall Delhi": 33,
+      "Brigade Road Bangalore": 30,
+      "Phoenix Pune": 22,
+      "Alpha One Mall Ahmedabad": 11,
+      "Inorbit Mall Hyderabad": 49,
+      "Express Avenue Chennai": 45,
+      "Lulu Mall Kochi": 4,
+      "World Trade Park Jaipur": 18
+    }
+  },
+  "SKU0195": {
+    "sku": "SKU0195",
+    "name": "Sports Cap",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 494,
+      "Delhi Warehouse": 184,
+      "Bangalore Warehouse": 261
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 5,
+      "DLF Mall Delhi": 43,
+      "Brigade Road Bangalore": 44,
+      "Phoenix Pune": 27,
+      "Alpha One Mall Ahmedabad": 17,
+      "Inorbit Mall Hyderabad": 2,
+      "Express Avenue Chennai": 1,
+      "Lulu Mall Kochi": 44,
+      "World Trade Park Jaipur": 47
+    }
+  },
+  "SKU0196": {
+    "sku": "SKU0196",
+    "name": "Sports Gloves",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 430,
+      "Delhi Warehouse": 419,
+      "Bangalore Warehouse": 111
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 37,
+      "DLF Mall Delhi": 9,
+      "Brigade Road Bangalore": 18,
+      "Phoenix Pune": 48,
+      "Alpha One Mall Ahmedabad": 47,
+      "Inorbit Mall Hyderabad": 36,
+      "Express Avenue Chennai": 31,
+      "Lulu Mall Kochi": 46,
+      "World Trade Park Jaipur": 3
+    }
+  },
+  "SKU0197": {
+    "sku": "SKU0197",
+    "name": "Sports Socks",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 466,
+      "Delhi Warehouse": 361,
+      "Bangalore Warehouse": 66
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 36,
+      "DLF Mall Delhi": 4,
+      "Brigade Road Bangalore": 45,
+      "Phoenix Pune": 45,
+      "Alpha One Mall Ahmedabad": 41,
+      "Inorbit Mall Hyderabad": 11,
+      "Express Avenue Chennai": 32,
+      "Lulu Mall Kochi": 46,
+      "World Trade Park Jaipur": 31
+    }
+  },
+  "SKU0198": {
+    "sku": "SKU0198",
+    "name": "Women's Yoga Activewear Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 296,
+      "Delhi Warehouse": 484,
+      "Bangalore Warehouse": 380
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 38,
+      "DLF Mall Delhi": 20,
+      "Brigade Road Bangalore": 20,
+      "Phoenix Pune": 24,
+      "Alpha One Mall Ahmedabad": 5,
+      "Inorbit Mall Hyderabad": 5,
+      "Express Avenue Chennai": 12,
+      "Lulu Mall Kochi": 8,
+      "World Trade Park Jaipur": 18
+    }
+  },
+  "SKU0199": {
+    "sku": "SKU0199",
+    "name": "Men's Gym Activewear Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 210,
+      "Delhi Warehouse": 250,
+      "Bangalore Warehouse": 73
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 21,
+      "DLF Mall Delhi": 37,
+      "Brigade Road Bangalore": 7,
+      "Phoenix Pune": 9,
+      "Alpha One Mall Ahmedabad": 30,
+      "Inorbit Mall Hyderabad": 3,
+      "Express Avenue Chennai": 24,
+      "Lulu Mall Kochi": 0,
+      "World Trade Park Jaipur": 25
+    }
+  },
+  "SKU0200": {
+    "sku": "SKU0200",
+    "name": "Running Activewear Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 394,
+      "Delhi Warehouse": 265,
+      "Bangalore Warehouse": 112
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 30,
+      "DLF Mall Delhi": 35,
+      "Brigade Road Bangalore": 43,
+      "Phoenix Pune": 19,
+      "Alpha One Mall Ahmedabad": 28,
+      "Inorbit Mall Hyderabad": 37,
+      "Express Avenue Chennai": 8,
+      "Lulu Mall Kochi": 13,
+      "World Trade Park Jaipur": 45
+    }
+  },
+  "SKU0201": {
+    "sku": "SKU0201",
+    "name": "Cycling Activewear Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 401,
+      "Delhi Warehouse": 271,
+      "Bangalore Warehouse": 442
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 33,
+      "DLF Mall Delhi": 26,
+      "Brigade Road Bangalore": 4,
+      "Phoenix Pune": 34,
+      "Alpha One Mall Ahmedabad": 3,
+      "Inorbit Mall Hyderabad": 29,
+      "Express Avenue Chennai": 45,
+      "Lulu Mall Kochi": 13,
+      "World Trade Park Jaipur": 19
+    }
+  },
+  "SKU0202": {
+    "sku": "SKU0202",
+    "name": "Swimming Activewear Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 185,
+      "Delhi Warehouse": 90,
+      "Bangalore Warehouse": 202
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 34,
+      "DLF Mall Delhi": 46,
       "Brigade Road Bangalore": 0,
-      "Phoenix Pune": 38,
-      "Alpha One Mall Ahmedabad": 27,
-      "Inorbit Mall Hyderabad": 0,
+      "Phoenix Pune": 28,
+      "Alpha One Mall Ahmedabad": 42,
+      "Inorbit Mall Hyderabad": 49,
+      "Express Avenue Chennai": 35,
+      "Lulu Mall Kochi": 42,
+      "World Trade Park Jaipur": 46
+    }
+  },
+  "SKU0203": {
+    "sku": "SKU0203",
+    "name": "CrossFit Activewear Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 65,
+      "Delhi Warehouse": 106,
+      "Bangalore Warehouse": 172
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 30,
+      "DLF Mall Delhi": 42,
+      "Brigade Road Bangalore": 45,
+      "Phoenix Pune": 39,
+      "Alpha One Mall Ahmedabad": 0,
+      "Inorbit Mall Hyderabad": 30,
       "Express Avenue Chennai": 0,
-      "Lulu Mall Kochi": 24,
-      "World Trade Park Jaipur": 11
+      "Lulu Mall Kochi": 31,
+      "World Trade Park Jaipur": 44
+    }
+  },
+  "SKU0204": {
+    "sku": "SKU0204",
+    "name": "Boxing Activewear Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 105,
+      "Delhi Warehouse": 385,
+      "Bangalore Warehouse": 257
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 36,
+      "DLF Mall Delhi": 17,
+      "Brigade Road Bangalore": 21,
+      "Phoenix Pune": 20,
+      "Alpha One Mall Ahmedabad": 12,
+      "Inorbit Mall Hyderabad": 29,
+      "Express Avenue Chennai": 43,
+      "Lulu Mall Kochi": 19,
+      "World Trade Park Jaipur": 1
+    }
+  },
+  "SKU0205": {
+    "sku": "SKU0205",
+    "name": "Tennis Activewear Set",
+    "warehouse_stock": {
+      "Mumbai Warehouse": 439,
+      "Delhi Warehouse": 63,
+      "Bangalore Warehouse": 100
+    },
+    "store_stock": {
+      "Phoenix Mall Mumbai": 1,
+      "DLF Mall Delhi": 28,
+      "Brigade Road Bangalore": 45,
+      "Phoenix Pune": 48,
+      "Alpha One Mall Ahmedabad": 38,
+      "Inorbit Mall Hyderabad": 15,
+      "Express Avenue Chennai": 29,
+      "Lulu Mall Kochi": 36,
+      "World Trade Park Jaipur": 34
     }
   }
 }

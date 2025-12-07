@@ -634,6 +634,7 @@ const App = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [showScanner, setShowScanner] = useState(false);
   const [sessionId, setSessionId] = useState(null);
+  const [checkoutStatus, setCheckoutStatus] = useState('idle');
 
   // Fetch products from API
   useEffect(() => {
@@ -756,8 +757,64 @@ const App = () => {
   const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
   const cartTotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-  const handleCheckout = () => {
-    alert('Checkout functionality coming soon!');
+  const handleCheckout = async () => {
+    if (cart.length === 0) return;
+    
+    setCheckoutStatus('processing');
+    try {
+      const response = await fetch(`${API_URL}/api/checkout`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          session_id: sessionId
+        })
+      });
+      const data = await response.json();
+      
+      if (data.success) {
+        setCheckoutStatus('success');
+        setCart([]);
+        alert(`Order Confirmed!\nOrder ID: ${data.order.order_id}\nTotal: $${cartTotal.toFixed(2)}`);
+        setCurrentScreen('home');
+      } else {
+        setCheckoutStatus('error');
+        alert(`Checkout Failed: ${data.message}`);
+      }
+    } catch (error) {
+      console.error("Checkout error:", error);
+      setCheckoutStatus('error');
+      alert("Checkout failed. Please try again.");
+    } finally {
+      setCheckoutStatus('idle');
+    }
+  };
+
+  const handleSwitchToKiosk = async () => {
+    try {
+      const response = await fetch(`${API_URL}/api/switch_channel`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          session_id: sessionId,
+          new_channel: 'kiosk'
+        })
+      });
+      const data = await response.json();
+      if (data.message) {
+        alert("Switched to Kiosk Mode! \n" + data.message);
+        // Add bot message
+        const botResponse = {
+            id: Date.now().toString(),
+            type: 'bot',
+            message: data.message
+        };
+        setMessages(prev => [...prev, botResponse]);
+        setApexVisible(true);
+      }
+    } catch (error) {
+      console.error("Switch channel failed", error);
+      alert("Failed to switch to Kiosk mode");
+    }
   };
 
   if (loading) {
@@ -804,7 +861,7 @@ const App = () => {
             
             <TouchableOpacity 
               style={styles.headerActionButton}
-              onPress={() => setShowScanner(true)}
+              onPress={handleSwitchToKiosk}
               activeOpacity={0.7}
             >
               <Ionicons name="scan-outline" size={22} color={COLORS.pureBlack} />

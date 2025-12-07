@@ -250,6 +250,8 @@ Return ONLY the category name."""
                 # If available or check failed (assume available on fail to not block), keep it
                 if not inv_result.get('success') or inv_result.get('availability', {}).get('status') == 'available':
                     available_recs.append(prod)
+                else:
+                    self.log(f"⚠️ Filtering out {prod['name']} (SKU: {prod['sku']}) due to inventory status: {inv_result.get('availability', {}).get('status')}")
             
             recommendations['recommendations'] = available_recs
             
