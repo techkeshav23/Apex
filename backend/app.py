@@ -40,11 +40,8 @@ def health():
     return jsonify({"status": "ok", "message": "Backend server is running"})
 
 # Sales Agent Routes
-@app.route('/api/start_session', methods=['POST', 'OPTIONS'])
+@app.route('/api/start_session', methods=['POST'])
 def start_session():
-    if request.method == 'OPTIONS':
-        return jsonify({}), 200
-        
     data = request.json
     customer_id = data.get('customer_id', 'CUST001')
     channel = data.get('channel', 'web')
@@ -75,12 +72,9 @@ def start_session():
 @app.route('/api/chat', methods=['POST', 'OPTIONS'])
 def chat():
     if request.method == 'OPTIONS':
-        return jsonify({}), 200
-
+@app.route('/api/chat', methods=['POST'])
+def chat():
     data = request.json
-    session_id = data.get('session_id')
-    user_message = data.get('message')
-    
     # Load session state
     state = session_manager.load_session(session_id)
     if not state:
