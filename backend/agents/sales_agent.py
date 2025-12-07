@@ -126,10 +126,6 @@ class SalesAgent:
         
         # Restore conversation history from session
         self.conversation_history = self.current_session.get('conversation_history', [])
-
-    def get_state(self):
-        """Return the current session state"""
-        return self.current_session
     
     def handle_conversation(self, user_input: str) -> Dict[str, Any]:
         """Handle user conversation and orchestrate appropriate agents"""
@@ -234,13 +230,54 @@ class SalesAgent:
             for i, prod in enumerate(recommendations['recommendations'][:5], 1):
                 self.log(f"  {i}. {prod['name']}")
             
-            # Create response message
-            message = recommendations['personalized_message'] + "\n\n"
-            message += "Here are my top recommendations:\n\n"
+            # Use Gemini to create natural response if available
+            message = ""
+            if GEMINI_ENABLED and gemini_assistant.is_available():
+                try:
+                    # Create context-aware prompt
+                    num_products = len(recommendations['recommendations'])
+                    product_list = "\n".join([
+                        f"{i+1}. {p['name']} - ₹{p['price']} (was ₹{p['mrp']}, {p['discount']}% off) - {p.get('description', '')[:80]}..."
+                        for i, p in enumerate(recommendations['recommendations'][:min(3, num_products)])
+                    ])
+                    
+                    gemini_prompt = f"""You are a friendly shopping assistant. The customer asked: "{user_input}"
+
+You found {num_products} products for them:
+{product_list}
+
+Create a natural, conversational response that:
+1. Acknowledges their request naturally (in Hindi-English mix if appropriate)
+2. Shows the products in a friendly way
+3. Keeps it brief and helpful
+
+Format the response like:
+"[Your friendly message acknowledging their request]
+
+Here are my top recommendations:
+
+1. **[Product Name]** - ₹[Price] (was ₹[MRP], [Discount]% off)
+   [Description]
+
+[Repeat for each product]"
+
+Make it sound natural and helpful, not robotic!"""
+                    
+                    response = gemini_assistant.model.generate_content(gemini_prompt)
+                    message = response.text.strip()
+                    self.log(f"🤖 Using Gemini-generated response")
+                except Exception as e:
+                    self.log(f"⚠️ Gemini response generation failed: {e}")
             
-            for i, product in enumerate(recommendations['recommendations'][:3], 1):
-                message += f"{i}. **{product['name']}** - ₹{product['price']} (was ₹{product['mrp']}, {product['discount']}% off)\n"
-                message += f"   {product['description']}\n"
+            # Fallback to template if Gemini unavailable or failed
+            if not message:
+                message = recommendations['personalized_message'] + "\n\n"
+                message += "Here are my top recommendations:\n\n"
+                
+                num_to_show = min(3, len(recommendations['recommendations']))
+                for i, product in enumerate(recommendations['recommendations'][:num_to_show], 1):
+                    message += f"{i}. **{product['name']}** - ₹{product['price']} (was ₹{product['mrp']}, {product['discount']}% off)\n"
+                    message += f"   {product['description']}\n"
             
             if recommendations.get('complementary_items'):
                 message += "\n💡 **You might also like:** "

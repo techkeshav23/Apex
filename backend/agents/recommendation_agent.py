@@ -132,27 +132,76 @@ class RecommendationAgent(BaseAgent):
                     self.log(f"💰 Detected explicit budget constraint: max ₹{max_budget}")
                     break
         
-        # Use Gemini to extract product keywords from context
+        # Use Gemini to intelligently parse user query
         context_keywords = []
+        requested_count = None  # How many items user wants to see
+        
         if context and GEMINI_ENABLED and gemini_assistant.is_available():
             try:
-                prompt = f"""Extract the specific product type the customer is looking for from this request: "{context}"
-                
-Return ONLY the product type keywords as a comma-separated list (e.g., "watch" or "shirt,formal" or "shoes,running").
-If no specific product is mentioned, return "none".
-Keep it simple - just the core product category words."""
+                prompt = f"""Analyze this customer request and extract information in JSON format: "{context}"
+
+Extract:
+1. product_type: What product category (e.g., "shirt", "watch", "shoes") - just the category name
+2. quantity_requested: How many products they want to see (e.g., if they say "2 shirts" or "3 watches", extract the number. If not mentioned, return null)
+3. modifiers: Any specific requirements (color, style, occasion, etc.)
+
+Return ONLY valid JSON like:
+{{"product_type": "shirt", "quantity_requested": 2, "modifiers": ["blue", "formal"]}}
+
+or if no specific product:
+{{"product_type": null, "quantity_requested": null, "modifiers": []}}"""
                 
                 response = gemini_assistant.model.generate_content(prompt)
-                extracted = response.text.strip().lower()
-                if extracted != "none":
-                    context_keywords = [k.strip() for k in extracted.split(',')]
-                    self.log(f"Gemini extracted keywords: {context_keywords}")
+                result_text = response.text.strip()
+                
+                # Extract JSON from response (handle markdown code blocks)
+                import json
+                if '```json' in result_text:
+                    result_text = result_text.split('```json')[1].split('```')[0].strip()
+                elif '```' in result_text:
+                    result_text = result_text.split('```')[1].split('```')[0].strip()
+                
+                parsed = json.loads(result_text)
+                
+                if parsed.get('product_type'):
+                    context_keywords = [parsed['product_type']]
+                    if parsed.get('modifiers'):
+                        context_keywords.extend(parsed['modifiers'])
+                
+                if parsed.get('quantity_requested'):
+                    requested_count = int(parsed['quantity_requested'])
+                    self.log(f"📊 User requested {requested_count} products")
+                
+                self.log(f"🤖 Gemini parsed: {parsed}")
             except Exception as e:
-                self.log(f"Gemini extraction failed, using fallback: {e}")
+                self.log(f"Gemini parsing failed, using fallback: {e}")
         
-        # Fallback: Extract keywords manually if Gemini failed or unavailable
+        # Fallback: Extract keywords and quantity manually if Gemini failed or unavailable
         if not context_keywords and context:
             context_lower = context.lower()
+            
+            # Extract quantity manually
+            import re
+            if not requested_count:
+                # Look for patterns like "2 shirts", "3 watches", etc.
+                quantity_patterns = [
+                    r'(\d+)\s+(shirt|watch|shoe|dress|saree|jean|bag)',
+                    r'(two|three|four|five|six|seven|eight|nine|ten)\s+(shirt|watch|shoe|dress|saree|jean|bag)'
+                ]
+                word_to_num = {'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10}
+                
+                for pattern in quantity_patterns:
+                    match = re.search(pattern, context_lower)
+                    if match:
+                        qty = match.group(1)
+                        if qty.isdigit():
+                            requested_count = int(qty)
+                        else:
+                            requested_count = word_to_num.get(qty, None)
+                        self.log(f"📊 Manually extracted quantity: {requested_count}")
+                        break
+            
+            # Extract product keywords
             if 'watch' in context_lower:
                 context_keywords.append('watch')
             if 'shoe' in context_lower or 'shoes' in context_lower:
@@ -228,9 +277,13 @@ Keep it simple - just the core product category words."""
         # Sort by score and get top recommendations
         scored_products.sort(key=lambda x: x['score'], reverse=True)
         
-        # Log top 5 scored products
-        self.log(f"🏆 Top 5 products by score:")
-        for idx, item in enumerate(scored_products[:5], 1):
+        # Determine how many products to return
+        num_to_return = requested_count if requested_count and requested_count > 0 else 5
+        self.log(f"🔢 Will return {num_to_return} products")
+        
+        # Log top scored products
+        self.log(f"🏆 Top {min(num_to_return, len(scored_products))} products by score:")
+        for idx, item in enumerate(scored_products[:num_to_return], 1):
             self.log(f"  {idx}. {item['product']['name']} - Score: {item['score']}")
         
         # If user has specific request (context keywords), filter strictly to relevant items ONLY
@@ -244,13 +297,15 @@ Keep it simple - just the core product category words."""
                 relevant_products = [item for item in scored_products if item['score'] >= 100]
                 self.log(f"✅ Found {len(relevant_products)} products with score >= 100")
                 if relevant_products:
-                    self.log(f"✅ Filtering to {len(relevant_products)} products matching user's specific request")
-                    recommendations = [item['product'] for item in relevant_products]
+                    # Limit to requested count
+                    limited_products = relevant_products[:num_to_return]
+                    self.log(f"✅ Returning {len(limited_products)} products matching user's request")
+                    recommendations = [item['product'] for item in limited_products]
                     return recommendations
         
-        # Otherwise, show top 5 by score (for general browsing)
-        self.log(f"📋 No specific filtering - showing top 5 products")
-        recommendations = [item['product'] for item in scored_products[:5]]
+        # Otherwise, show top N by score
+        self.log(f"📋 Showing top {num_to_return} products")
+        recommendations = [item['product'] for item in scored_products[:num_to_return]]
         
         return recommendations
     

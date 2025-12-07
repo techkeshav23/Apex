@@ -14,7 +14,7 @@ function App() {
   const [isListening, setIsListening] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [voiceSupported, setVoiceSupported] = useState(true);
-  const [wakeWordActive, setWakeWordActive] = useState(true); // New state for Wake Word
+  const [wakeWordActive, setWakeWordActive] = useState(false); // Changed to false by default
 
   const messagesEndRef = useRef(null);
   const recognitionRef = useRef(null);
@@ -108,15 +108,12 @@ function App() {
         console.error('Speech error:', event.error);
         if (event.error === 'not-allowed') {
            setWakeWordActive(false);
+           setIsListening(false);
         }
       };
       
-      // Start listening immediately
-      try {
-        recognitionRef.current.start();
-      } catch(e) {
-        console.log("Autostart blocked, waiting for interaction");
-      }
+      // Don't start automatically - wait for user interaction
+      // Users can click the microphone button to start
 
     } else {
       setVoiceSupported(false);
@@ -133,13 +130,28 @@ function App() {
 
 
   const toggleListening = () => {
-    if (isListening) {
+    if (!recognitionRef.current) return;
+    
+    if (isListening || wakeWordActive) {
+      // Stop listening
       setIsListening(false);
-      // Don't stop recognition, just go back to wake word mode
+      setWakeWordActive(false);
+      try {
+        recognitionRef.current.stop();
+      } catch(e) {
+        console.log("Recognition already stopped");
+      }
     } else {
+      // Start listening
       synthesisRef.current.cancel();
       setIsSpeaking(false);
       setIsListening(true);
+      setWakeWordActive(true);
+      try {
+        recognitionRef.current.start();
+      } catch(e) {
+        console.log("Recognition already started");
+      }
     }
   };
 
@@ -331,16 +343,15 @@ function App() {
               {/* Voice Button */}
               <button 
                 onClick={toggleListening}
+                disabled={!voiceSupported}
                 className={`w-16 h-16 rounded-xl flex items-center justify-center text-2xl transition-all shadow-sm border relative ${
-                  isListening 
-                    ? 'bg-red-50 border-red-200 text-red-500 animate-pulse shadow-red-100' 
-                    : 'bg-gray-50 border-gray-200 text-gray-500 hover:text-blue-600 hover:border-blue-200 hover:bg-blue-50'
-                }`}
+                  isListening || wakeWordActive
+                    ? 'bg-red-500 border-red-600 text-white animate-pulse shadow-red-200' 
+                    : 'bg-gray-100 border-gray-300 text-gray-600 hover:text-blue-600 hover:border-blue-400 hover:bg-blue-50'
+                } ${!voiceSupported ? 'opacity-50 cursor-not-allowed' : ''}`}
+                title={!voiceSupported ? 'Voice not supported' : (isListening || wakeWordActive) ? 'Click to stop listening' : 'Click to start voice input'}
               >
-                {isListening ? '🎤' : '🎙️'}
-                {wakeWordActive && !isListening && (
-                  <span className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white animate-pulse" title="Listening for 'Hey Apex'"></span>
-                )}
+                {isListening || wakeWordActive ? '🔴' : '🎙️'}
               </button>
 
               <input
@@ -348,7 +359,7 @@ function App() {
                 value={inputMessage}
                 onChange={(e) => setInputMessage(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-                placeholder={isListening ? "Listening..." : "Say 'Hey Apex' or type to search..."}
+                placeholder={isListening || wakeWordActive ? "🎤 Listening... (Say 'Hey Apex' to wake)" : "Type to search or click mic for voice..."}
                 className="flex-1 bg-gray-50 text-gray-900 px-6 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 text-lg placeholder-gray-400 transition-all"
               />
               <button 
