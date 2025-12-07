@@ -4,7 +4,7 @@ Test script to verify Gemini API key
 import google.generativeai as genai
 import sys
 
-API_KEY = "AIzaSyAOAFYAtGP09amVczd2EDqLLnXDbc8LYU8"
+API_KEY = "AIzaSyAjLngtcN_Jeg5QY9UUwa4KbbPyZUo5joA"
 
 def test_gemini_api():
     try:
@@ -12,7 +12,7 @@ def test_gemini_api():
         genai.configure(api_key=API_KEY)
         
         # Try to create a model
-        model = genai.GenerativeModel('gemini-2.0-flash-exp')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         # Test with a simple prompt
         print("Testing Gemini API...")

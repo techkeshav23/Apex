@@ -1,0 +1,707 @@
+[
+  {
+    "sku": "WE001",
+    "name": "Premium Suit",
+    "category": "Women's Ethnic",
+    "subcategory": "Sarees",
+    "price": 8999,
+    "mrp": 12999,
+    "discount": 31,
+    "description": "Elegant silk saree with traditional motifs",
+    "attributes": {
+      "color": [
+        "Royal Blue",
+        "Maroon",
+        "Green"
+      ],
+      "size": [
+        "Free Size"
+      ],
+      "material": "Pure Silk",
+      "occasion": "Festive"
+    },
+    "image_url": "https://example.com/saree1.jpg",
+    "rating": 4.5,
+    "reviews": 234
+  },
+  {
+    "sku": "WE002",
+    "name": "Cotton Kurta Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 1999,
+    "mrp": 3499,
+    "discount": 43,
+    "description": "Comfortable cotton kurta with dupatta",
+    "attributes": {
+      "color": [
+        "White",
+        "Blue",
+        "Pink"
+      ],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://example.com/kurta1.jpg",
+    "rating": 4.3,
+    "reviews": 456
+  },
+  {
+    "sku": "WE003",
+    "name": "Anarkali Suit Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Anarkali",
+    "price": 4999,
+    "mrp": 7999,
+    "discount": 37,
+    "description": "Stunning anarkali with embroidery work",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Purple",
+        "Green"
+      ],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Georgette",
+      "occasion": "Party"
+    },
+    "image_url": "https://example.com/anarkali1.jpg",
+    "rating": 4.6,
+    "reviews": 189
+  },
+  {
+    "sku": "WW001",
+    "name": "Formal Blazer",
+    "category": "Women's Western",
+    "subcategory": "Blazers",
+    "price": 3999,
+    "mrp": 5999,
+    "discount": 33,
+    "description": "Professional blazer for office wear",
+    "attributes": {
+      "color": [
+        "Black",
+        "Navy Blue",
+        "Grey"
+      ],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Polyester Blend",
+      "occasion": "Formal"
+    },
+    "image_url": "https://example.com/blazer1.jpg",
+    "rating": 4.4,
+    "reviews": 312
+  },
+  {
+    "sku": "WW002",
+    "name": "Party Dress",
+    "category": "Women's Western",
+    "subcategory": "Dresses",
+    "price": 2999,
+    "mrp": 4999,
+    "discount": 40,
+    "description": "Elegant dress for evening parties",
+    "attributes": {
+      "color": [
+        "Red",
+        "Black",
+        "Gold"
+      ],
+      "size": [
+        "S",
+        "M",
+        "L"
+      ],
+      "material": "Satin",
+      "occasion": "Party"
+    },
+    "image_url": "https://example.com/dress1.jpg",
+    "rating": 4.7,
+    "reviews": 567
+  },
+  {
+    "sku": "WW003",
+    "name": "Casual Jeans",
+    "category": "Women's Western",
+    "subcategory": "Jeans",
+    "price": 1799,
+    "mrp": 2999,
+    "discount": 40,
+    "description": "Comfortable skinny fit jeans",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Black"
+      ],
+      "size": [
+        "26",
+        "28",
+        "30",
+        "32"
+      ],
+      "material": "Denim",
+      "occasion": "Casual"
+    },
+    "image_url": "https://example.com/jeans1.jpg",
+    "rating": 4.2,
+    "reviews": 890
+  },
+  {
+    "sku": "MF001",
+    "name": "Designer Silk Saree",
+    "category": "Men's Formal",
+    "subcategory": "Suits",
+    "price": 14999,
+    "mrp": 24999,
+    "discount": 40,
+    "description": "Two-piece premium suit with jacket and trousers",
+    "attributes": {
+      "color": [
+        "Charcoal",
+        "Navy Blue",
+        "Black"
+      ],
+      "size": [
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
+      "material": "Wool Blend",
+      "occasion": "Formal"
+    },
+    "image_url": "https://example.com/suit1.jpg",
+    "rating": 4.8,
+    "reviews": 234
+  },
+  {
+    "sku": "MF002",
+    "name": "Formal Shirt",
+    "category": "Men's Formal",
+    "subcategory": "Shirts",
+    "price": 1499,
+    "mrp": 2499,
+    "discount": 40,
+    "description": "Classic formal shirt for office wear",
+    "attributes": {
+      "color": [
+        "White",
+        "Light Blue",
+        "Pink"
+      ],
+      "size": [
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
+      "material": "Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://example.com/formalshirt1.jpg",
+    "rating": 4.3,
+    "reviews": 1234
+  },
+  {
+    "sku": "MF003",
+    "name": "Formal Trousers",
+    "category": "Men's Formal",
+    "subcategory": "Trousers",
+    "price": 1999,
+    "mrp": 3499,
+    "discount": 43,
+    "description": "Slim fit formal trousers",
+    "attributes": {
+      "color": [
+        "Black",
+        "Grey",
+        "Navy Blue"
+      ],
+      "size": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "material": "Polyester Blend",
+      "occasion": "Formal"
+    },
+    "image_url": "https://example.com/trousers1.jpg",
+    "rating": 4.4,
+    "reviews": 876
+  },
+  {
+    "sku": "MC001",
+    "name": "Polo T-Shirt",
+    "category": "Men's Casual",
+    "subcategory": "T-Shirts",
+    "price": 899,
+    "mrp": 1499,
+    "discount": 40,
+    "description": "Classic polo t-shirt for casual wear",
+    "attributes": {
+      "color": [
+        "Navy Blue",
+        "Black",
+        "White",
+        "Olive"
+      ],
+      "size": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://example.com/polo1.jpg",
+    "rating": 4.5,
+    "reviews": 2345
+  },
+  {
+    "sku": "MC002",
+    "name": "Casual Chinos",
+    "category": "Men's Casual",
+    "subcategory": "Chinos",
+    "price": 1799,
+    "mrp": 2999,
+    "discount": 40,
+    "description": "Comfortable chinos for smart casual look",
+    "attributes": {
+      "color": [
+        "Beige",
+        "Olive",
+        "Navy Blue"
+      ],
+      "size": [
+        "30",
+        "32",
+        "34",
+        "36"
+      ],
+      "material": "Cotton Blend",
+      "occasion": "Casual"
+    },
+    "image_url": "https://example.com/chinos1.jpg",
+    "rating": 4.6,
+    "reviews": 1567
+  },
+  {
+    "sku": "MC003",
+    "name": "Denim Jacket",
+    "category": "Men's Casual",
+    "subcategory": "Jackets",
+    "price": 2499,
+    "mrp": 3999,
+    "discount": 37,
+    "description": "Trendy denim jacket",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Black"
+      ],
+      "size": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "material": "Denim",
+      "occasion": "Casual"
+    },
+    "image_url": "https://example.com/jacket1.jpg",
+    "rating": 4.7,
+    "reviews": 678
+  },
+  {
+    "sku": "ME001",
+    "name": "Kurta Pajama Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 3499,
+    "mrp": 5999,
+    "discount": 42,
+    "description": "Traditional kurta pajama for festive occasions",
+    "attributes": {
+      "color": [
+        "Cream",
+        "White",
+        "Maroon"
+      ],
+      "size": [
+        "38",
+        "40",
+        "42",
+        "44"
+      ],
+      "material": "Cotton Silk",
+      "occasion": "Festive"
+    },
+    "image_url": "https://example.com/kurta_mens1.jpg",
+    "rating": 4.5,
+    "reviews": 456
+  },
+  {
+    "sku": "ME002",
+    "name": "Nehru Jacket",
+    "category": "Men's Ethnic",
+    "subcategory": "Jackets",
+    "price": 2999,
+    "mrp": 4999,
+    "discount": 40,
+    "description": "Classic Nehru jacket with embroidery",
+    "attributes": {
+      "color": [
+        "Gold",
+        "Maroon",
+        "Black"
+      ],
+      "size": [
+        "38",
+        "40",
+        "42"
+      ],
+      "material": "Silk Blend",
+      "occasion": "Festive"
+    },
+    "image_url": "https://example.com/nehru1.jpg",
+    "rating": 4.6,
+    "reviews": 234
+  },
+  {
+    "sku": "FW001",
+    "name": "Women's Heels",
+    "category": "Footwear",
+    "subcategory": "Women's Heels",
+    "price": 2499,
+    "mrp": 3999,
+    "discount": 37,
+    "description": "Elegant heels for formal occasions",
+    "attributes": {
+      "color": [
+        "Black",
+        "Nude",
+        "Red"
+      ],
+      "size": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "material": "Synthetic",
+      "occasion": "Formal"
+    },
+    "image_url": "https://example.com/heels1.jpg",
+    "rating": 4.3,
+    "reviews": 567
+  },
+  {
+    "sku": "FW002",
+    "name": "Men's Formal Shoes",
+    "category": "Footwear",
+    "subcategory": "Men's Formal",
+    "price": 3499,
+    "mrp": 5999,
+    "discount": 42,
+    "description": "Premium leather formal shoes",
+    "attributes": {
+      "color": [
+        "Black",
+        "Brown"
+      ],
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Genuine Leather",
+      "occasion": "Formal"
+    },
+    "image_url": "https://example.com/formalshoes1.jpg",
+    "rating": 4.6,
+    "reviews": 789
+  },
+  {
+    "sku": "FW003",
+    "name": "Sneakers",
+    "category": "Footwear",
+    "subcategory": "Casual",
+    "price": 1999,
+    "mrp": 2999,
+    "discount": 33,
+    "description": "Comfortable casual sneakers",
+    "attributes": {
+      "color": [
+        "White",
+        "Black",
+        "Blue"
+      ],
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Mesh",
+      "occasion": "Casual"
+    },
+    "image_url": "https://example.com/sneakers1.jpg",
+    "rating": 4.5,
+    "reviews": 1234
+  },
+  {
+    "sku": "AC001",
+    "name": "Designer Watch",
+    "category": "Accessories",
+    "subcategory": "Watches",
+    "price": 4999,
+    "mrp": 7999,
+    "discount": 37,
+    "description": "Premium analog watch",
+    "attributes": {
+      "color": [
+        "Silver",
+        "Gold",
+        "Black"
+      ],
+      "size": [
+        "Free Size"
+      ],
+      "material": "Stainless Steel",
+      "occasion": "Formal"
+    },
+    "image_url": "https://example.com/watch1.jpg",
+    "rating": 4.7,
+    "reviews": 456
+  },
+  {
+    "sku": "AC002",
+    "name": "Leather Belt",
+    "category": "Accessories",
+    "subcategory": "Belts",
+    "price": 899,
+    "mrp": 1499,
+    "discount": 40,
+    "description": "Genuine leather belt",
+    "attributes": {
+      "color": [
+        "Black",
+        "Brown"
+      ],
+      "size": [
+        "32",
+        "34",
+        "36",
+        "38"
+      ],
+      "material": "Genuine Leather",
+      "occasion": "Formal"
+    },
+    "image_url": "https://example.com/belt1.jpg",
+    "rating": 4.4,
+    "reviews": 890
+  },
+  {
+    "sku": "AC003",
+    "name": "Designer Handbag",
+    "category": "Accessories",
+    "subcategory": "Handbags",
+    "price": 3999,
+    "mrp": 6999,
+    "discount": 43,
+    "description": "Stylish handbag for women",
+    "attributes": {
+      "color": [
+        "Black",
+        "Brown",
+        "Beige"
+      ],
+      "size": [
+        "Medium"
+      ],
+      "material": "Synthetic Leather",
+      "occasion": "Casual"
+    },
+    "image_url": "https://example.com/handbag1.jpg",
+    "rating": 4.5,
+    "reviews": 678
+  },
+  {
+    "sku": "AC004",
+    "name": "Earrings Set",
+    "category": "Accessories",
+    "subcategory": "Jewelry",
+    "price": 1299,
+    "mrp": 1999,
+    "discount": 35,
+    "description": "Elegant earrings for special occasions",
+    "attributes": {
+      "color": [
+        "Gold",
+        "Silver"
+      ],
+      "size": [
+        "Free Size"
+      ],
+      "material": "Brass",
+      "occasion": "Party"
+    },
+    "image_url": "https://example.com/earrings1.jpg",
+    "rating": 4.6,
+    "reviews": 345
+  },
+  {
+    "sku": "AC005",
+    "name": "Necklace Set",
+    "category": "Accessories",
+    "subcategory": "Jewelry",
+    "price": 2999,
+    "mrp": 4999,
+    "discount": 40,
+    "description": "Beautiful necklace set with earrings",
+    "attributes": {
+      "color": [
+        "Gold",
+        "Silver"
+      ],
+      "size": [
+        "Free Size"
+      ],
+      "material": "Brass",
+      "occasion": "Festive"
+    },
+    "image_url": "https://example.com/necklace1.jpg",
+    "rating": 4.7,
+    "reviews": 234
+  },
+  {
+    "sku": "KG001",
+    "name": "Girl's Party Dress",
+    "category": "Kids",
+    "subcategory": "Girls Dresses",
+    "price": 1499,
+    "mrp": 2499,
+    "discount": 40,
+    "description": "Cute party dress for girls with floral print",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Blue",
+        "Purple"
+      ],
+      "size": [
+        "2-3Y",
+        "4-5Y",
+        "6-7Y",
+        "8-9Y"
+      ],
+      "material": "Cotton Blend",
+      "occasion": "Party"
+    },
+    "image_url": "https://example.com/girl_dress1.jpg",
+    "rating": 4.5,
+    "reviews": 156
+  },
+  {
+    "sku": "KG002",
+    "name": "Girl's Ethnic Lehenga",
+    "category": "Kids",
+    "subcategory": "Girls Ethnic",
+    "price": 2499,
+    "mrp": 3999,
+    "discount": 37,
+    "description": "Traditional lehenga choli for festive occasions",
+    "attributes": {
+      "color": [
+        "Red",
+        "Pink",
+        "Green"
+      ],
+      "size": [
+        "2-3Y",
+        "4-5Y",
+        "6-7Y",
+        "8-9Y"
+      ],
+      "material": "Silk Blend",
+      "occasion": "Festive"
+    },
+    "image_url": "https://example.com/girl_lehenga1.jpg",
+    "rating": 4.6,
+    "reviews": 89
+  },
+  {
+    "sku": "KB001",
+    "name": "Boy's Casual T-Shirt",
+    "category": "Kids",
+    "subcategory": "Boys Casual",
+    "price": 599,
+    "mrp": 999,
+    "discount": 40,
+    "description": "Comfortable cotton t-shirt for boys",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Red",
+        "Green",
+        "Yellow"
+      ],
+      "size": [
+        "2-3Y",
+        "4-5Y",
+        "6-7Y",
+        "8-9Y"
+      ],
+      "material": "Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://example.com/boy_tshirt1.jpg",
+    "rating": 4.4,
+    "reviews": 234
+  },
+  {
+    "sku": "KB002",
+    "name": "Boy's Denim Jeans",
+    "category": "Kids",
+    "subcategory": "Boys Casual",
+    "price": 1299,
+    "mrp": 1999,
+    "discount": 35,
+    "description": "Stylish denim jeans for boys",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Black"
+      ],
+      "size": [
+        "2-3Y",
+        "4-5Y",
+        "6-7Y",
+        "8-9Y"
+      ],
+      "material": "Denim",
+      "occasion": "Casual"
+    },
+    "image_url": "https://example.com/boy_jeans1.jpg",
+    "rating": 4.5,
+    "reviews": 178
+  }
+]

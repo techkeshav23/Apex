@@ -97,15 +97,24 @@ Be friendly, acknowledge their loyalty tier, and make them feel valued. Keep it 
             product_names = [p['name'] for p in products[:3]]
             preferences = customer.get('preferences', {})
             
-            prompt = f"""You are a helpful sales assistant. Create a friendly, natural message (2-3 sentences) recommending products:
+            prompt = f"""You are a helpful sales assistant. Create a friendly, natural message (2-3 sentences) recommending products.
 
 Customer preferences: {preferences.get('favorite_colors', [])}, Budget: {preferences.get('budget_range', 'flexible')}
-Recommended products: {', '.join(product_names)}
 
-Make it sound like a friend giving advice, not a salesperson. Be enthusiastic but genuine."""
+IMPORTANT: The products are listed in priority order. The FIRST product "{product_names[0]}" is the main recommendation based on what the customer specifically asked for. Mention it first and emphasize it.
+
+Recommended products (in priority order):
+1. {product_names[0]} (PRIMARY - what they asked for)
+2. {product_names[1] if len(product_names) > 1 else 'N/A'}
+3. {product_names[2] if len(product_names) > 2 else 'N/A'}
+
+Make it sound natural and friendly, but ALWAYS lead with the first product."""
 
             response = self.model.generate_content(prompt)
-            return response.text.strip()
+            result = response.text.strip()
+            print(f"🤖 Gemini generated message: {result[:150]}...")
+            print(f"🎯 Products sent to Gemini: {product_names}")
+            return result
         except Exception as e:
             print(f"⚠️  Gemini API error: {str(e)}")
             return self._fallback_recommendation(products)

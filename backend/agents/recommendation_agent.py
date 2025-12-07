@@ -94,6 +94,8 @@ class RecommendationAgent(BaseAgent):
         """Generate personalized recommendations"""
         recommendations = []
         
+        self.log(f"🔍 Generating recommendations with context: '{context}'")
+        
         # Get customer preferences
         browsing_history = customer.get('browsing_history', [])
         purchase_history = customer.get('purchase_history', [])
@@ -107,10 +109,84 @@ class RecommendationAgent(BaseAgent):
         else:
             min_budget, max_budget = 0, budget
         
+        # Check if user explicitly mentioned budget constraint in context
+        has_explicit_budget = False
+        if context:
+            context_lower = context.lower()
+            # Check for price mentions like "under 700", "below 1000", "less than 500"
+            import re
+            price_patterns = [
+                r'under\s+(\d+)',
+                r'below\s+(\d+)', 
+                r'less\s+than\s+(\d+)',
+                r'within\s+(\d+)',
+                r'max\s+(\d+)',
+                r'maximum\s+(\d+)',
+                r'up\s+to\s+(\d+)'
+            ]
+            for pattern in price_patterns:
+                match = re.search(pattern, context_lower)
+                if match:
+                    max_budget = int(match.group(1))
+                    has_explicit_budget = True
+                    self.log(f"💰 Detected explicit budget constraint: max ₹{max_budget}")
+                    break
+        
+        # Use Gemini to extract product keywords from context
+        context_keywords = []
+        if context and GEMINI_ENABLED and gemini_assistant.is_available():
+            try:
+                prompt = f"""Extract the specific product type the customer is looking for from this request: "{context}"
+                
+Return ONLY the product type keywords as a comma-separated list (e.g., "watch" or "shirt,formal" or "shoes,running").
+If no specific product is mentioned, return "none".
+Keep it simple - just the core product category words."""
+                
+                response = gemini_assistant.model.generate_content(prompt)
+                extracted = response.text.strip().lower()
+                if extracted != "none":
+                    context_keywords = [k.strip() for k in extracted.split(',')]
+                    self.log(f"Gemini extracted keywords: {context_keywords}")
+            except Exception as e:
+                self.log(f"Gemini extraction failed, using fallback: {e}")
+        
+        # Fallback: Extract keywords manually if Gemini failed or unavailable
+        if not context_keywords and context:
+            context_lower = context.lower()
+            if 'watch' in context_lower:
+                context_keywords.append('watch')
+            if 'shoe' in context_lower or 'shoes' in context_lower:
+                context_keywords.extend(['shoe', 'shoes'])
+            if 'shirt' in context_lower:
+                context_keywords.append('shirt')
+            if 'dress' in context_lower:
+                context_keywords.append('dress')
+            if 'saree' in context_lower or 'sari' in context_lower:
+                context_keywords.append('saree')
+            if 'jeans' in context_lower:
+                context_keywords.append('jeans')
+            if 'bag' in context_lower or 'handbag' in context_lower:
+                context_keywords.extend(['bag', 'handbag'])
+            self.log(f"📋 Fallback keywords extracted: {context_keywords}")
+        
         # Score products
         scored_products = []
         for product in all_products:
+            # HARD FILTER: Skip products over budget if user explicitly mentioned price limit
+            if has_explicit_budget and product['price'] > max_budget:
+                continue
+            
             score = 0
+            product_name_lower = product['name'].lower()
+            product_category_lower = product.get('category', '').lower()
+            
+            # HIGHEST PRIORITY: Direct match with user's request
+            if context_keywords:
+                for keyword in context_keywords:
+                    if keyword in product_name_lower or keyword in product_category_lower:
+                        score += 100  # Very high priority for direct match
+                        self.log(f"✅ Keyword match '{keyword}' in '{product['name']}' - score: {score}")
+                        break
             
             # Category match with browsing history
             if product['category'] in browsing_history:
@@ -151,6 +227,29 @@ class RecommendationAgent(BaseAgent):
         
         # Sort by score and get top recommendations
         scored_products.sort(key=lambda x: x['score'], reverse=True)
+        
+        # Log top 5 scored products
+        self.log(f"🏆 Top 5 products by score:")
+        for idx, item in enumerate(scored_products[:5], 1):
+            self.log(f"  {idx}. {item['product']['name']} - Score: {item['score']}")
+        
+        # If user has specific request (context keywords), filter strictly to relevant items ONLY
+        if context_keywords and scored_products:
+            self.log(f"🔍 User has specific request with keywords: {context_keywords}")
+            top_score = scored_products[0]['score']
+            self.log(f"🔍 Top score: {top_score}")
+            
+            # Only show products with score >= 100 (direct keyword match) when user has specific request
+            if top_score >= 100:
+                relevant_products = [item for item in scored_products if item['score'] >= 100]
+                self.log(f"✅ Found {len(relevant_products)} products with score >= 100")
+                if relevant_products:
+                    self.log(f"✅ Filtering to {len(relevant_products)} products matching user's specific request")
+                    recommendations = [item['product'] for item in relevant_products]
+                    return recommendations
+        
+        # Otherwise, show top 5 by score (for general browsing)
+        self.log(f"📋 No specific filtering - showing top 5 products")
         recommendations = [item['product'] for item in scored_products[:5]]
         
         return recommendations
@@ -197,11 +296,13 @@ class RecommendationAgent(BaseAgent):
             try:
                 message = gemini_assistant.generate_recommendation_message(customer, recommendations)
                 if message:
+                    self.log(f"📝 Using Gemini message: {message[:100]}...")
                     return message
             except Exception as e:
                 print(f"Gemini error: {str(e)}")
         
         # Fallback messages
+        self.log(f"📝 Using fallback message (Gemini unavailable)")
         main_product = recommendations[0]
         
         messages = [

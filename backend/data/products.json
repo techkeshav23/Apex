@@ -1,707 +1,6594 @@
 [
   {
-    "sku": "WE001",
-    "name": "Premium Suit",
+    "sku": "SKU0001",
+    "name": "Banarasi Silk Saree",
     "category": "Women's Ethnic",
     "subcategory": "Sarees",
-    "price": 8999,
-    "mrp": 12999,
-    "discount": 31,
-    "description": "Elegant silk saree with traditional motifs",
+    "price": 11500,
+    "mrp": 18532,
+    "discount": 37,
+    "description": "Premium quality banarasi silk saree made from Silk. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
-        "Royal Blue",
-        "Maroon",
+        "Yellow",
+        "Purple",
+        "Navy",
+        "Grey"
+      ],
+      "size": [
+        "S",
+        "XXL",
+        "Free Size",
+        "M"
+      ],
+      "material": "Silk",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 227,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0002",
+    "name": "Kanjivaram Silk Saree",
+    "category": "Women's Ethnic",
+    "subcategory": "Sarees",
+    "price": 10500,
+    "mrp": 16141,
+    "discount": 34,
+    "description": "Premium quality kanjivaram silk saree made from Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Black",
+        "Orange"
+      ],
+      "size": [
+        "L",
+        "Free Size",
+        "XL",
+        "XXL",
+        "XS"
+      ],
+      "material": "Silk",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 423,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0003",
+    "name": "Tussar Silk Saree",
+    "category": "Women's Ethnic",
+    "subcategory": "Sarees",
+    "price": 14200,
+    "mrp": 23464,
+    "discount": 39,
+    "description": "Premium quality tussar silk saree made from Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Green",
+        "Blue"
+      ],
+      "size": [
+        "XS",
+        "L",
+        "XXL",
+        "Free Size",
+        "M"
+      ],
+      "material": "Silk",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 74,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0004",
+    "name": "Mysore Silk Saree",
+    "category": "Women's Ethnic",
+    "subcategory": "Sarees",
+    "price": 6800,
+    "mrp": 11195,
+    "discount": 39,
+    "description": "Premium quality mysore silk saree made from Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Grey",
+        "Yellow",
+        "Purple"
+      ],
+      "size": [
+        "Free Size",
+        "S",
+        "M",
+        "L"
+      ],
+      "material": "Silk",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+    "rating": 3.8,
+    "reviews": 214,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0005",
+    "name": "Paithani Silk Saree",
+    "category": "Women's Ethnic",
+    "subcategory": "Sarees",
+    "price": 14100,
+    "mrp": 22018,
+    "discount": 35,
+    "description": "Premium quality paithani silk saree made from Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Blue",
         "Green"
       ],
       "size": [
-        "Free Size"
+        "XXL",
+        "M",
+        "Free Size",
+        "XS"
       ],
-      "material": "Pure Silk",
-      "occasion": "Festive"
+      "material": "Silk",
+      "occasion": "Wedding"
     },
-    "image_url": "https://example.com/saree1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
     "rating": 4.5,
-    "reviews": 234
+    "reviews": 255,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop"
+    ]
   },
   {
-    "sku": "WE002",
-    "name": "Cotton Kurta Set",
+    "sku": "SKU0006",
+    "name": "Blue Cotton Saree",
     "category": "Women's Ethnic",
-    "subcategory": "Kurta Sets",
-    "price": 1999,
-    "mrp": 3499,
-    "discount": 43,
-    "description": "Comfortable cotton kurta with dupatta",
+    "subcategory": "Sarees",
+    "price": 2500,
+    "mrp": 3804,
+    "discount": 34,
+    "description": "Premium quality blue cotton saree made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Orange",
+        "Green"
+      ],
+      "size": [
+        "XXL",
+        "L",
+        "Free Size"
+      ],
+      "material": "Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 486,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0007",
+    "name": "Red Cotton Saree",
+    "category": "Women's Ethnic",
+    "subcategory": "Sarees",
+    "price": 2700,
+    "mrp": 3776,
+    "discount": 28,
+    "description": "Premium quality red cotton saree made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Red",
+        "Brown",
+        "Blue"
+      ],
+      "size": [
+        "L",
+        "S",
+        "M",
+        "XS",
+        "XL"
+      ],
+      "material": "Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 110,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0008",
+    "name": "Green Cotton Saree",
+    "category": "Women's Ethnic",
+    "subcategory": "Sarees",
+    "price": 2800,
+    "mrp": 3973,
+    "discount": 29,
+    "description": "Premium quality green cotton saree made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Orange",
+        "Brown",
+        "Green"
+      ],
+      "size": [
+        "XXL",
+        "M",
+        "Free Size",
+        "XS",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop",
+    "rating": 4.9,
+    "reviews": 396,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0009",
+    "name": "Yellow Cotton Saree",
+    "category": "Women's Ethnic",
+    "subcategory": "Sarees",
+    "price": 4800,
+    "mrp": 6356,
+    "discount": 24,
+    "description": "Premium quality yellow cotton saree made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Purple",
+        "Orange"
+      ],
+      "size": [
+        "XS",
+        "M",
+        "Free Size",
+        "L",
+        "XL"
+      ],
+      "material": "Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 485,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0010",
+    "name": "Pink Cotton Saree",
+    "category": "Women's Ethnic",
+    "subcategory": "Sarees",
+    "price": 4400,
+    "mrp": 6636,
+    "discount": 33,
+    "description": "Premium quality pink cotton saree made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Purple"
+      ],
+      "size": [
+        "XXL",
+        "XL",
+        "M",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+    "rating": 4.9,
+    "reviews": 120,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0011",
+    "name": "Anarkali Suit Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Suits",
+    "price": 5900,
+    "mrp": 9902,
+    "discount": 40,
+    "description": "Premium quality anarkali suit set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Navy",
+        "Blue",
+        "White"
+      ],
+      "size": [
+        "S",
+        "XXL",
+        "M",
+        "XL",
+        "Free Size"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+    "rating": 4.1,
+    "reviews": 82,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0012",
+    "name": "Palazzo Suit Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Suits",
+    "price": 4200,
+    "mrp": 7001,
+    "discount": 40,
+    "description": "Premium quality palazzo suit set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Navy",
+        "Pink"
+      ],
+      "size": [
+        "XL",
+        "XS",
+        "Free Size",
+        "S",
+        "L"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 198,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0013",
+    "name": "Straight Cut Suit Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Suits",
+    "price": 8700,
+    "mrp": 11699,
+    "discount": 25,
+    "description": "Premium quality straight cut suit set made from Cotton/Silk. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
         "White",
         "Blue",
+        "Orange"
+      ],
+      "size": [
+        "L",
+        "XXL",
+        "XS",
+        "M"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 439,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0014",
+    "name": "A-Line Suit Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Suits",
+    "price": 3600,
+    "mrp": 4828,
+    "discount": 25,
+    "description": "Premium quality a-line suit set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Navy",
+        "Brown",
+        "Red"
+      ],
+      "size": [
+        "XXL",
+        "L",
+        "XS"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 166,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0015",
+    "name": "Pakistani Suit Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Suits",
+    "price": 7300,
+    "mrp": 11631,
+    "discount": 37,
+    "description": "Premium quality pakistani suit set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Purple",
+        "Pink",
+        "Red"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "L",
+        "Free Size"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+    "rating": 4.0,
+    "reviews": 293,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0016",
+    "name": "Printed Kurta Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 3400,
+    "mrp": 5373,
+    "discount": 36,
+    "description": "Premium quality printed kurta set made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "White",
+        "Navy"
+      ],
+      "size": [
+        "XL",
+        "L",
+        "S",
+        "XXL"
+      ],
+      "material": "Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 148,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0017",
+    "name": "Embroidered Kurta Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 3900,
+    "mrp": 5919,
+    "discount": 34,
+    "description": "Premium quality embroidered kurta set made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Grey"
+      ],
+      "size": [
+        "XL",
+        "S",
+        "Free Size"
+      ],
+      "material": "Cotton",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.9,
+    "reviews": 469,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0018",
+    "name": "Block Print Kurta Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 1700,
+    "mrp": 2749,
+    "discount": 38,
+    "description": "Premium quality block print kurta set made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Green"
+      ],
+      "size": [
+        "XXL",
+        "XS",
+        "M",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 162,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0019",
+    "name": "Bandhani Kurta Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 3400,
+    "mrp": 4999,
+    "discount": 31,
+    "description": "Premium quality bandhani kurta set made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Orange"
+      ],
+      "size": [
+        "M",
+        "XS",
+        "XXL",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 93,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0020",
+    "name": "Chikankari Kurta Set",
+    "category": "Women's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 2700,
+    "mrp": 4814,
+    "discount": 43,
+    "description": "Premium quality chikankari kurta set made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "Purple"
+      ],
+      "size": [
+        "S",
+        "XS",
+        "M",
+        "L",
+        "Free Size"
+      ],
+      "material": "Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 425,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0021",
+    "name": "Bridal Lehenga Choli",
+    "category": "Women's Ethnic",
+    "subcategory": "Lehengas",
+    "price": 9700,
+    "mrp": 15836,
+    "discount": 38,
+    "description": "Premium quality bridal lehenga choli made from Silk/Velvet. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Brown"
+      ],
+      "size": [
+        "XXL",
+        "XS",
+        "S",
+        "Free Size",
+        "XL"
+      ],
+      "material": "Silk/Velvet",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 290,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0022",
+    "name": "Party Wear Lehenga Choli",
+    "category": "Women's Ethnic",
+    "subcategory": "Lehengas",
+    "price": 14100,
+    "mrp": 23048,
+    "discount": 38,
+    "description": "Premium quality party wear lehenga choli made from Silk/Velvet. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Purple",
         "Pink"
+      ],
+      "size": [
+        "XL",
+        "Free Size",
+        "XS",
+        "L"
+      ],
+      "material": "Silk/Velvet",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+    "rating": 3.8,
+    "reviews": 359,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0023",
+    "name": "Designer Lehenga Choli",
+    "category": "Women's Ethnic",
+    "subcategory": "Lehengas",
+    "price": 18700,
+    "mrp": 27716,
+    "discount": 32,
+    "description": "Premium quality designer lehenga choli made from Silk/Velvet. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Pink",
+        "Blue"
+      ],
+      "size": [
+        "L",
+        "M",
+        "XS"
+      ],
+      "material": "Silk/Velvet",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 260,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0024",
+    "name": "Floral Lehenga Choli",
+    "category": "Women's Ethnic",
+    "subcategory": "Lehengas",
+    "price": 14600,
+    "mrp": 22574,
+    "discount": 35,
+    "description": "Premium quality floral lehenga choli made from Silk/Velvet. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "White",
+        "Orange",
+        "Blue"
+      ],
+      "size": [
+        "Free Size",
+        "XL",
+        "S",
+        "XXL",
+        "M"
+      ],
+      "material": "Silk/Velvet",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 188,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0025",
+    "name": "Heavy Work Lehenga Choli",
+    "category": "Women's Ethnic",
+    "subcategory": "Lehengas",
+    "price": 17000,
+    "mrp": 25887,
+    "discount": 34,
+    "description": "Premium quality heavy work lehenga choli made from Silk/Velvet. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Pink",
+        "Red"
+      ],
+      "size": [
+        "S",
+        "Free Size",
+        "XS",
+        "M",
+        "XL"
+      ],
+      "material": "Silk/Velvet",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+    "rating": 3.9,
+    "reviews": 241,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0026",
+    "name": "Silk Dupatta",
+    "category": "Women's Ethnic",
+    "subcategory": "Dupattas",
+    "price": 1500,
+    "mrp": 2545,
+    "discount": 41,
+    "description": "Premium quality silk dupatta made from Chiffon/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Navy",
+        "Green",
+        "Grey"
+      ],
+      "size": [
+        "S",
+        "XXL",
+        "L",
+        "Free Size",
+        "M"
+      ],
+      "material": "Chiffon/Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.6,
+    "reviews": 320,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0027",
+    "name": "Chiffon Dupatta",
+    "category": "Women's Ethnic",
+    "subcategory": "Dupattas",
+    "price": 1000,
+    "mrp": 1586,
+    "discount": 36,
+    "description": "Premium quality chiffon dupatta made from Chiffon/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Red",
+        "Grey"
+      ],
+      "size": [
+        "S",
+        "XXL",
+        "L"
+      ],
+      "material": "Chiffon/Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.1,
+    "reviews": 129,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0028",
+    "name": "Net Dupatta",
+    "category": "Women's Ethnic",
+    "subcategory": "Dupattas",
+    "price": 1500,
+    "mrp": 2260,
+    "discount": 33,
+    "description": "Premium quality net dupatta made from Chiffon/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Navy",
+        "Green"
+      ],
+      "size": [
+        "S",
+        "L",
+        "Free Size",
+        "XXL",
+        "XL"
+      ],
+      "material": "Chiffon/Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 3.9,
+    "reviews": 285,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0029",
+    "name": "Georgette Dupatta",
+    "category": "Women's Ethnic",
+    "subcategory": "Dupattas",
+    "price": 700,
+    "mrp": 1202,
+    "discount": 41,
+    "description": "Premium quality georgette dupatta made from Chiffon/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Pink",
+        "White",
+        "Red"
+      ],
+      "size": [
+        "Free Size",
+        "XS",
+        "XXL",
+        "XL"
+      ],
+      "material": "Chiffon/Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.2,
+    "reviews": 143,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0030",
+    "name": "Bandhej Dupatta",
+    "category": "Women's Ethnic",
+    "subcategory": "Dupattas",
+    "price": 1600,
+    "mrp": 2632,
+    "discount": 39,
+    "description": "Premium quality bandhej dupatta made from Chiffon/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Pink",
+        "Blue"
+      ],
+      "size": [
+        "XS",
+        "XXL",
+        "XL"
+      ],
+      "material": "Chiffon/Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.6,
+    "reviews": 447,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0031",
+    "name": "Maxi Dress",
+    "category": "Women's Western",
+    "subcategory": "Dresses",
+    "price": 3400,
+    "mrp": 4532,
+    "discount": 24,
+    "description": "Premium quality maxi dress made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Navy",
+        "Green",
+        "Brown"
+      ],
+      "size": [
+        "XXL",
+        "XS",
+        "XL",
+        "M"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+    "rating": 4.7,
+    "reviews": 94,
+    "images": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0032",
+    "name": "Midi Dress",
+    "category": "Women's Western",
+    "subcategory": "Dresses",
+    "price": 5200,
+    "mrp": 8173,
+    "discount": 36,
+    "description": "Premium quality midi dress made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Yellow",
+        "Pink",
+        "Navy"
+      ],
+      "size": [
+        "XL",
+        "L",
+        "XXL"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 170,
+    "images": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0033",
+    "name": "Mini Dress",
+    "category": "Women's Western",
+    "subcategory": "Dresses",
+    "price": 4000,
+    "mrp": 5279,
+    "discount": 24,
+    "description": "Premium quality mini dress made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Grey",
+        "White"
+      ],
+      "size": [
+        "XS",
+        "M",
+        "Free Size",
+        "L"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 413,
+    "images": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0034",
+    "name": "A-Line Dress",
+    "category": "Women's Western",
+    "subcategory": "Dresses",
+    "price": 2300,
+    "mrp": 3543,
+    "discount": 35,
+    "description": "Premium quality a-line dress made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Navy"
+      ],
+      "size": [
+        "L",
+        "XXL",
+        "Free Size",
+        "XS",
+        "M"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 89,
+    "images": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0035",
+    "name": "Bodycon Dress",
+    "category": "Women's Western",
+    "subcategory": "Dresses",
+    "price": 5300,
+    "mrp": 7511,
+    "discount": 29,
+    "description": "Premium quality bodycon dress made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Orange",
+        "Grey"
+      ],
+      "size": [
+        "Free Size",
+        "XXL",
+        "L",
+        "XL"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop",
+    "rating": 4.0,
+    "reviews": 192,
+    "images": [
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0036",
+    "name": "Shift Dress",
+    "category": "Women's Western",
+    "subcategory": "Dresses",
+    "price": 4600,
+    "mrp": 6013,
+    "discount": 23,
+    "description": "Premium quality shift dress made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Grey"
+      ],
+      "size": [
+        "XXL",
+        "M",
+        "XS"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop",
+    "rating": 4.7,
+    "reviews": 415,
+    "images": [
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0037",
+    "name": "Wrap Dress",
+    "category": "Women's Western",
+    "subcategory": "Dresses",
+    "price": 5400,
+    "mrp": 8707,
+    "discount": 37,
+    "description": "Premium quality wrap dress made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Navy",
+        "Purple",
+        "Brown"
+      ],
+      "size": [
+        "L",
+        "M",
+        "S",
+        "XS"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop",
+    "rating": 4.9,
+    "reviews": 269,
+    "images": [
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0038",
+    "name": "Shirt Dress",
+    "category": "Women's Western",
+    "subcategory": "Dresses",
+    "price": 5500,
+    "mrp": 8795,
+    "discount": 37,
+    "description": "Premium quality shirt dress made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Red"
+      ],
+      "size": [
+        "XL",
+        "XXL",
+        "Free Size",
+        "S"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop",
+    "rating": 4.6,
+    "reviews": 105,
+    "images": [
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0039",
+    "name": "Crop Top",
+    "category": "Women's Western",
+    "subcategory": "Tops",
+    "price": 1600,
+    "mrp": 2118,
+    "discount": 24,
+    "description": "Premium quality crop top made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Pink"
+      ],
+      "size": [
+        "XS",
+        "L",
+        "XXL"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+    "rating": 4.1,
+    "reviews": 420,
+    "images": [
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0040",
+    "name": "Peplum Top",
+    "category": "Women's Western",
+    "subcategory": "Tops",
+    "price": 1700,
+    "mrp": 2355,
+    "discount": 27,
+    "description": "Premium quality peplum top made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Black",
+        "Pink",
+        "Navy"
+      ],
+      "size": [
+        "XL",
+        "XXL",
+        "XS",
+        "S",
+        "M"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+    "rating": 4.1,
+    "reviews": 289,
+    "images": [
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0041",
+    "name": "Off-Shoulder Top",
+    "category": "Women's Western",
+    "subcategory": "Tops",
+    "price": 700,
+    "mrp": 1190,
+    "discount": 41,
+    "description": "Premium quality off-shoulder top made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Green",
+        "Pink"
+      ],
+      "size": [
+        "XXL",
+        "M",
+        "L",
+        "XS",
+        "S"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 113,
+    "images": [
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0042",
+    "name": "Cold-Shoulder Top",
+    "category": "Women's Western",
+    "subcategory": "Tops",
+    "price": 2400,
+    "mrp": 3182,
+    "discount": 24,
+    "description": "Premium quality cold-shoulder top made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Orange"
+      ],
+      "size": [
+        "XS",
+        "XL",
+        "Free Size",
+        "S",
+        "L"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+    "rating": 4.7,
+    "reviews": 56,
+    "images": [
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0043",
+    "name": "Halter Top",
+    "category": "Women's Western",
+    "subcategory": "Tops",
+    "price": 1900,
+    "mrp": 3361,
+    "discount": 43,
+    "description": "Premium quality halter top made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Brown",
+        "Yellow"
       ],
       "size": [
         "S",
         "M",
         "L",
-        "XL"
+        "Free Size"
       ],
-      "material": "Cotton",
+      "material": "Cotton/Polyester",
       "occasion": "Casual"
     },
-    "image_url": "https://example.com/kurta1.jpg",
-    "rating": 4.3,
-    "reviews": 456
+    "image_url": "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+    "rating": 4.6,
+    "reviews": 457,
+    "images": [
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop"
+    ]
   },
   {
-    "sku": "WE003",
-    "name": "Anarkali Suit Set",
-    "category": "Women's Ethnic",
-    "subcategory": "Anarkali",
-    "price": 4999,
-    "mrp": 7999,
-    "discount": 37,
-    "description": "Stunning anarkali with embroidery work",
+    "sku": "SKU0044",
+    "name": "Tank Top",
+    "category": "Women's Western",
+    "subcategory": "Tops",
+    "price": 2000,
+    "mrp": 3535,
+    "discount": 43,
+    "description": "Premium quality tank top made from Cotton/Polyester. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
-        "Pink",
+        "Black",
+        "Brown"
+      ],
+      "size": [
+        "XS",
+        "XL",
+        "L",
+        "XXL"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 338,
+    "images": [
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0045",
+    "name": "Button-Down Top",
+    "category": "Women's Western",
+    "subcategory": "Tops",
+    "price": 900,
+    "mrp": 1252,
+    "discount": 28,
+    "description": "Premium quality button-down top made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Blue",
+        "Brown",
+        "Grey"
+      ],
+      "size": [
+        "L",
+        "M",
+        "XS",
+        "S"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+    "rating": 4.0,
+    "reviews": 51,
+    "images": [
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0046",
+    "name": "Skinny Jeans",
+    "category": "Women's Western",
+    "subcategory": "Bottoms",
+    "price": 1700,
+    "mrp": 2514,
+    "discount": 32,
+    "description": "Premium quality skinny jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Green",
+        "Blue"
+      ],
+      "size": [
+        "S",
+        "Free Size",
+        "XL",
+        "XXL",
+        "L"
+      ],
+      "material": "Denim",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 357,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0047",
+    "name": "Boyfriend Jeans",
+    "category": "Women's Western",
+    "subcategory": "Bottoms",
+    "price": 3300,
+    "mrp": 5291,
+    "discount": 37,
+    "description": "Premium quality boyfriend jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Grey",
+        "White",
+        "Green"
+      ],
+      "size": [
+        "XL",
+        "XS",
+        "L",
+        "XXL"
+      ],
+      "material": "Denim",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.7,
+    "reviews": 200,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0048",
+    "name": "Wide-Leg Jeans",
+    "category": "Women's Western",
+    "subcategory": "Bottoms",
+    "price": 3900,
+    "mrp": 6867,
+    "discount": 43,
+    "description": "Premium quality wide-leg jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Blue",
+        "Red",
+        "Black"
+      ],
+      "size": [
+        "S",
+        "M",
+        "XL"
+      ],
+      "material": "Denim",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 281,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0049",
+    "name": "Bootcut Jeans",
+    "category": "Women's Western",
+    "subcategory": "Bottoms",
+    "price": 3500,
+    "mrp": 4856,
+    "discount": 27,
+    "description": "Premium quality bootcut jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Blue",
+        "Orange",
+        "Purple"
+      ],
+      "size": [
+        "L",
+        "M",
+        "XL",
+        "XS"
+      ],
+      "material": "Denim",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 399,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0050",
+    "name": "High-Waist Jeans",
+    "category": "Women's Western",
+    "subcategory": "Bottoms",
+    "price": 2000,
+    "mrp": 2698,
+    "discount": 25,
+    "description": "Premium quality high-waist jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "White",
+        "Black",
+        "Orange"
+      ],
+      "size": [
+        "XXL",
+        "XL",
+        "S"
+      ],
+      "material": "Denim",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.1,
+    "reviews": 494,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0051",
+    "name": "Ripped Jeans",
+    "category": "Women's Western",
+    "subcategory": "Bottoms",
+    "price": 3000,
+    "mrp": 5039,
+    "discount": 40,
+    "description": "Premium quality ripped jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Yellow",
+        "Black"
+      ],
+      "size": [
+        "L",
+        "XL",
+        "M",
+        "S",
+        "XXL"
+      ],
+      "material": "Denim",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 439,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0052",
+    "name": "Pencil Skirt",
+    "category": "Women's Western",
+    "subcategory": "Skirts",
+    "price": 2600,
+    "mrp": 3904,
+    "discount": 33,
+    "description": "Premium quality pencil skirt made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Blue",
+        "Purple"
+      ],
+      "size": [
+        "XXL",
+        "L",
+        "M",
+        "XS",
+        "XL"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.1,
+    "reviews": 347,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0053",
+    "name": "A-Line Skirt",
+    "category": "Women's Western",
+    "subcategory": "Skirts",
+    "price": 1500,
+    "mrp": 2273,
+    "discount": 34,
+    "description": "Premium quality a-line skirt made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Orange"
+      ],
+      "size": [
+        "L",
+        "S",
+        "XL",
+        "XS",
+        "XXL"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.9,
+    "reviews": 464,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0054",
+    "name": "Pleated Skirt",
+    "category": "Women's Western",
+    "subcategory": "Skirts",
+    "price": 2900,
+    "mrp": 4729,
+    "discount": 38,
+    "description": "Premium quality pleated skirt made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Navy",
         "Purple",
         "Green"
       ],
       "size": [
         "S",
-        "M",
-        "L",
+        "XS",
         "XL"
       ],
-      "material": "Georgette",
-      "occasion": "Party"
-    },
-    "image_url": "https://example.com/anarkali1.jpg",
-    "rating": 4.6,
-    "reviews": 189
-  },
-  {
-    "sku": "WW001",
-    "name": "Formal Blazer",
-    "category": "Women's Western",
-    "subcategory": "Blazers",
-    "price": 3999,
-    "mrp": 5999,
-    "discount": 33,
-    "description": "Professional blazer for office wear",
-    "attributes": {
-      "color": [
-        "Black",
-        "Navy Blue",
-        "Grey"
-      ],
-      "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "material": "Polyester Blend",
+      "material": "Cotton/Polyester",
       "occasion": "Formal"
     },
-    "image_url": "https://example.com/blazer1.jpg",
-    "rating": 4.4,
-    "reviews": 312
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.6,
+    "reviews": 55,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
   },
   {
-    "sku": "WW002",
-    "name": "Party Dress",
+    "sku": "SKU0055",
+    "name": "Denim Skirt",
     "category": "Women's Western",
-    "subcategory": "Dresses",
-    "price": 2999,
-    "mrp": 4999,
-    "discount": 40,
-    "description": "Elegant dress for evening parties",
+    "subcategory": "Skirts",
+    "price": 2900,
+    "mrp": 4928,
+    "discount": 41,
+    "description": "Premium quality denim skirt made from Cotton/Polyester. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
         "Red",
-        "Black",
-        "Gold"
+        "Brown",
+        "Black"
       ],
       "size": [
-        "S",
-        "M",
-        "L"
+        "Free Size",
+        "XL",
+        "S"
       ],
-      "material": "Satin",
-      "occasion": "Party"
+      "material": "Cotton/Polyester",
+      "occasion": "Wedding"
     },
-    "image_url": "https://example.com/dress1.jpg",
-    "rating": 4.7,
-    "reviews": 567
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.4,
+    "reviews": 492,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
   },
   {
-    "sku": "WW003",
-    "name": "Casual Jeans",
+    "sku": "SKU0056",
+    "name": "Maxi Skirt",
     "category": "Women's Western",
-    "subcategory": "Jeans",
-    "price": 1799,
-    "mrp": 2999,
-    "discount": 40,
-    "description": "Comfortable skinny fit jeans",
+    "subcategory": "Skirts",
+    "price": 2300,
+    "mrp": 3026,
+    "discount": 23,
+    "description": "Premium quality maxi skirt made from Cotton/Polyester. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
-        "Blue",
-        "Black"
+        "Black",
+        "Purple",
+        "Orange"
       ],
       "size": [
-        "26",
-        "28",
-        "30",
-        "32"
+        "Free Size",
+        "M",
+        "S",
+        "XS",
+        "XL"
       ],
-      "material": "Denim",
-      "occasion": "Casual"
-    },
-    "image_url": "https://example.com/jeans1.jpg",
-    "rating": 4.2,
-    "reviews": 890
-  },
-  {
-    "sku": "MF001",
-    "name": "Designer Silk Saree",
-    "category": "Men's Formal",
-    "subcategory": "Suits",
-    "price": 14999,
-    "mrp": 24999,
-    "discount": 40,
-    "description": "Two-piece premium suit with jacket and trousers",
-    "attributes": {
-      "color": [
-        "Charcoal",
-        "Navy Blue",
-        "Black"
-      ],
-      "size": [
-        "38",
-        "40",
-        "42",
-        "44"
-      ],
-      "material": "Wool Blend",
+      "material": "Cotton/Polyester",
       "occasion": "Formal"
     },
-    "image_url": "https://example.com/suit1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
     "rating": 4.8,
-    "reviews": 234
+    "reviews": 347,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
   },
   {
-    "sku": "MF002",
-    "name": "Formal Shirt",
-    "category": "Men's Formal",
-    "subcategory": "Shirts",
-    "price": 1499,
-    "mrp": 2499,
-    "discount": 40,
-    "description": "Classic formal shirt for office wear",
-    "attributes": {
-      "color": [
-        "White",
-        "Light Blue",
-        "Pink"
-      ],
-      "size": [
-        "38",
-        "40",
-        "42",
-        "44"
-      ],
-      "material": "Cotton",
-      "occasion": "Formal"
-    },
-    "image_url": "https://example.com/formalshirt1.jpg",
-    "rating": 4.3,
-    "reviews": 1234
-  },
-  {
-    "sku": "MF003",
-    "name": "Formal Trousers",
-    "category": "Men's Formal",
-    "subcategory": "Trousers",
-    "price": 1999,
-    "mrp": 3499,
-    "discount": 43,
-    "description": "Slim fit formal trousers",
+    "sku": "SKU0057",
+    "name": "Denim Jacket",
+    "category": "Women's Western",
+    "subcategory": "Outerwear",
+    "price": 6000,
+    "mrp": 8527,
+    "discount": 29,
+    "description": "Premium quality denim jacket made from Polyester/Cotton. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
         "Black",
         "Grey",
-        "Navy Blue"
+        "Blue",
+        "Yellow"
       ],
       "size": [
-        "30",
-        "32",
-        "34",
-        "36"
+        "M",
+        "S",
+        "XL",
+        "Free Size",
+        "L"
       ],
-      "material": "Polyester Blend",
+      "material": "Polyester/Cotton",
       "occasion": "Formal"
     },
-    "image_url": "https://example.com/trousers1.jpg",
-    "rating": 4.4,
-    "reviews": 876
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 3.8,
+    "reviews": 371,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
   },
   {
-    "sku": "MC001",
+    "sku": "SKU0058",
+    "name": "Leather Jacket",
+    "category": "Women's Western",
+    "subcategory": "Outerwear",
+    "price": 3500,
+    "mrp": 5048,
+    "discount": 30,
+    "description": "Premium quality leather jacket made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Blue",
+        "Red",
+        "Brown"
+      ],
+      "size": [
+        "XL",
+        "Free Size",
+        "XS"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 3.9,
+    "reviews": 366,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0059",
+    "name": "Bomber Jacket",
+    "category": "Women's Western",
+    "subcategory": "Outerwear",
+    "price": 6000,
+    "mrp": 9203,
+    "discount": 34,
+    "description": "Premium quality bomber jacket made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Green",
+        "Black"
+      ],
+      "size": [
+        "L",
+        "Free Size",
+        "XL"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 3.8,
+    "reviews": 91,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0060",
+    "name": "Blazer Jacket",
+    "category": "Women's Western",
+    "subcategory": "Outerwear",
+    "price": 2600,
+    "mrp": 4498,
+    "discount": 42,
+    "description": "Premium quality blazer jacket made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Orange",
+        "Grey",
+        "White"
+      ],
+      "size": [
+        "XL",
+        "M",
+        "XS",
+        "S",
+        "XXL"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 4.0,
+    "reviews": 440,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0061",
+    "name": "Trench Jacket",
+    "category": "Women's Western",
+    "subcategory": "Outerwear",
+    "price": 2400,
+    "mrp": 3946,
+    "discount": 39,
+    "description": "Premium quality trench jacket made from Polyester/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "White",
+        "Purple",
+        "Yellow"
+      ],
+      "size": [
+        "M",
+        "S",
+        "XS",
+        "XXL",
+        "XL"
+      ],
+      "material": "Polyester/Cotton",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 4.1,
+    "reviews": 342,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0062",
+    "name": "White Formal Shirt",
+    "category": "Men's Formal",
+    "subcategory": "Shirts",
+    "price": 1900,
+    "mrp": 3411,
+    "discount": 44,
+    "description": "Premium quality white formal shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Navy"
+      ],
+      "size": [
+        "XL",
+        "XS",
+        "Free Size",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 215,
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0063",
+    "name": "Blue Formal Shirt",
+    "category": "Men's Formal",
+    "subcategory": "Shirts",
+    "price": 2000,
+    "mrp": 3515,
+    "discount": 43,
+    "description": "Premium quality blue formal shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Brown",
+        "Black"
+      ],
+      "size": [
+        "XXL",
+        "XS",
+        "S"
+      ],
+      "material": "Cotton",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 116,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0064",
+    "name": "Black Formal Shirt",
+    "category": "Men's Formal",
+    "subcategory": "Shirts",
+    "price": 2100,
+    "mrp": 3674,
+    "discount": 42,
+    "description": "Premium quality black formal shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "Green",
+        "Pink"
+      ],
+      "size": [
+        "M",
+        "Free Size",
+        "S"
+      ],
+      "material": "Cotton",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 359,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0065",
+    "name": "Grey Formal Shirt",
+    "category": "Men's Formal",
+    "subcategory": "Shirts",
+    "price": 2000,
+    "mrp": 2741,
+    "discount": 27,
+    "description": "Premium quality grey formal shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Blue",
+        "Black",
+        "White"
+      ],
+      "size": [
+        "M",
+        "XL",
+        "XS",
+        "Free Size"
+      ],
+      "material": "Cotton",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+    "rating": 3.9,
+    "reviews": 499,
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0066",
+    "name": "Light Blue Formal Shirt",
+    "category": "Men's Formal",
+    "subcategory": "Shirts",
+    "price": 2900,
+    "mrp": 3937,
+    "discount": 26,
+    "description": "Premium quality light blue formal shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Purple",
+        "Orange",
+        "Pink"
+      ],
+      "size": [
+        "S",
+        "XL",
+        "XS",
+        "Free Size",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 243,
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0067",
+    "name": "Pink Formal Shirt",
+    "category": "Men's Formal",
+    "subcategory": "Shirts",
+    "price": 2000,
+    "mrp": 3350,
+    "discount": 40,
+    "description": "Premium quality pink formal shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Red"
+      ],
+      "size": [
+        "M",
+        "XL",
+        "Free Size",
+        "S"
+      ],
+      "material": "Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 308,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0068",
+    "name": "Lavender Formal Shirt",
+    "category": "Men's Formal",
+    "subcategory": "Shirts",
+    "price": 2500,
+    "mrp": 3388,
+    "discount": 26,
+    "description": "Premium quality lavender formal shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Brown",
+        "Pink"
+      ],
+      "size": [
+        "L",
+        "Free Size",
+        "XL"
+      ],
+      "material": "Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 215,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0069",
+    "name": "Black Formal Trousers",
+    "category": "Men's Formal",
+    "subcategory": "Trousers",
+    "price": 2400,
+    "mrp": 3915,
+    "discount": 38,
+    "description": "Premium quality black formal trousers made from Polyester/Wool. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "White",
+        "Pink",
+        "Navy"
+      ],
+      "size": [
+        "Free Size",
+        "M",
+        "XXL"
+      ],
+      "material": "Polyester/Wool",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 106,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0070",
+    "name": "Grey Formal Trousers",
+    "category": "Men's Formal",
+    "subcategory": "Trousers",
+    "price": 1500,
+    "mrp": 2452,
+    "discount": 38,
+    "description": "Premium quality grey formal trousers made from Polyester/Wool. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Navy"
+      ],
+      "size": [
+        "XL",
+        "M",
+        "XS",
+        "L"
+      ],
+      "material": "Polyester/Wool",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 3.9,
+    "reviews": 266,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0071",
+    "name": "Navy Formal Trousers",
+    "category": "Men's Formal",
+    "subcategory": "Trousers",
+    "price": 3000,
+    "mrp": 4934,
+    "discount": 39,
+    "description": "Premium quality navy formal trousers made from Polyester/Wool. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Brown"
+      ],
+      "size": [
+        "L",
+        "Free Size",
+        "M",
+        "XL"
+      ],
+      "material": "Polyester/Wool",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 338,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0072",
+    "name": "Beige Formal Trousers",
+    "category": "Men's Formal",
+    "subcategory": "Trousers",
+    "price": 1600,
+    "mrp": 2195,
+    "discount": 27,
+    "description": "Premium quality beige formal trousers made from Polyester/Wool. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Purple",
+        "Black"
+      ],
+      "size": [
+        "XXL",
+        "XS",
+        "S"
+      ],
+      "material": "Polyester/Wool",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 150,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0073",
+    "name": "Brown Formal Trousers",
+    "category": "Men's Formal",
+    "subcategory": "Trousers",
+    "price": 2500,
+    "mrp": 3890,
+    "discount": 35,
+    "description": "Premium quality brown formal trousers made from Polyester/Wool. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Black"
+      ],
+      "size": [
+        "L",
+        "XL",
+        "Free Size",
+        "XS"
+      ],
+      "material": "Polyester/Wool",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 195,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0074",
+    "name": "Single-Breasted Blazer",
+    "category": "Men's Formal",
+    "subcategory": "Blazers",
+    "price": 9900,
+    "mrp": 17266,
+    "discount": 42,
+    "description": "Premium quality single-breasted blazer made from Wool/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Green",
+        "Blue",
+        "Yellow"
+      ],
+      "size": [
+        "XXL",
+        "L",
+        "XL",
+        "M",
+        "XS"
+      ],
+      "material": "Wool/Polyester",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 366,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0075",
+    "name": "Double-Breasted Blazer",
+    "category": "Men's Formal",
+    "subcategory": "Blazers",
+    "price": 6100,
+    "mrp": 8137,
+    "discount": 25,
+    "description": "Premium quality double-breasted blazer made from Wool/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Yellow"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "XXL",
+        "XL",
+        "L"
+      ],
+      "material": "Wool/Polyester",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 106,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0076",
+    "name": "Slim-Fit Blazer",
+    "category": "Men's Formal",
+    "subcategory": "Blazers",
+    "price": 4500,
+    "mrp": 6128,
+    "discount": 26,
+    "description": "Premium quality slim-fit blazer made from Wool/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Red"
+      ],
+      "size": [
+        "S",
+        "L",
+        "M",
+        "XL"
+      ],
+      "material": "Wool/Polyester",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 246,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0077",
+    "name": "Regular-Fit Blazer",
+    "category": "Men's Formal",
+    "subcategory": "Blazers",
+    "price": 6700,
+    "mrp": 9470,
+    "discount": 29,
+    "description": "Premium quality regular-fit blazer made from Wool/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Pink",
+        "Brown"
+      ],
+      "size": [
+        "Free Size",
+        "M",
+        "XS",
+        "XL",
+        "XXL"
+      ],
+      "material": "Wool/Polyester",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 4.1,
+    "reviews": 309,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0078",
+    "name": "Textured Blazer",
+    "category": "Men's Formal",
+    "subcategory": "Blazers",
+    "price": 8900,
+    "mrp": 13397,
+    "discount": 33,
+    "description": "Premium quality textured blazer made from Wool/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Brown"
+      ],
+      "size": [
+        "L",
+        "XS",
+        "XXL"
+      ],
+      "material": "Wool/Polyester",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 427,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0079",
+    "name": "Oxford Formal Shoes",
+    "category": "Men's Formal",
+    "subcategory": "Shoes",
+    "price": 5300,
+    "mrp": 8453,
+    "discount": 37,
+    "description": "Premium quality oxford formal shoes made from Leather. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Yellow",
+        "Navy"
+      ],
+      "size": [
+        "XL",
+        "Free Size",
+        "S"
+      ],
+      "material": "Leather",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+    "rating": 4.5,
+    "reviews": 51,
+    "images": [
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0080",
+    "name": "Derby Formal Shoes",
+    "category": "Men's Formal",
+    "subcategory": "Shoes",
+    "price": 2700,
+    "mrp": 3896,
+    "discount": 30,
+    "description": "Premium quality derby formal shoes made from Leather. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Brown"
+      ],
+      "size": [
+        "Free Size",
+        "S",
+        "XXL",
+        "XL",
+        "L"
+      ],
+      "material": "Leather",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+    "rating": 4.7,
+    "reviews": 433,
+    "images": [
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0081",
+    "name": "Monk Strap Formal Shoes",
+    "category": "Men's Formal",
+    "subcategory": "Shoes",
+    "price": 3100,
+    "mrp": 4878,
+    "discount": 36,
+    "description": "Premium quality monk strap formal shoes made from Leather. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Navy",
+        "Brown",
+        "Grey"
+      ],
+      "size": [
+        "L",
+        "M",
+        "S",
+        "Free Size"
+      ],
+      "material": "Leather",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 3.9,
+    "reviews": 94,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0082",
+    "name": "Loafers Formal Shoes",
+    "category": "Men's Formal",
+    "subcategory": "Shoes",
+    "price": 3300,
+    "mrp": 4525,
+    "discount": 27,
+    "description": "Premium quality loafers formal shoes made from Leather. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "White",
+        "Brown",
+        "Red"
+      ],
+      "size": [
+        "XXL",
+        "S",
+        "L",
+        "XS",
+        "XL"
+      ],
+      "material": "Leather",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+    "rating": 4.1,
+    "reviews": 432,
+    "images": [
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0083",
+    "name": "Brogues Formal Shoes",
+    "category": "Men's Formal",
+    "subcategory": "Shoes",
+    "price": 4600,
+    "mrp": 6795,
+    "discount": 32,
+    "description": "Premium quality brogues formal shoes made from Leather. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Navy",
+        "Brown"
+      ],
+      "size": [
+        "L",
+        "Free Size",
+        "XXL",
+        "S"
+      ],
+      "material": "Leather",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 4.9,
+    "reviews": 493,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0084",
     "name": "Polo T-Shirt",
     "category": "Men's Casual",
     "subcategory": "T-Shirts",
-    "price": 899,
-    "mrp": 1499,
-    "discount": 40,
-    "description": "Classic polo t-shirt for casual wear",
+    "price": 1100,
+    "mrp": 1928,
+    "discount": 42,
+    "description": "Premium quality polo t-shirt made from Cotton. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
-        "Navy Blue",
-        "Black",
+        "Orange",
+        "Pink"
+      ],
+      "size": [
+        "L",
+        "M",
+        "Free Size",
+        "XS"
+      ],
+      "material": "Cotton",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 317,
+    "images": [
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0085",
+    "name": "Round Neck T-Shirt",
+    "category": "Men's Casual",
+    "subcategory": "T-Shirts",
+    "price": 1100,
+    "mrp": 1817,
+    "discount": 39,
+    "description": "Premium quality round neck t-shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Yellow",
+        "Black"
+      ],
+      "size": [
+        "XXL",
+        "S",
+        "XS"
+      ],
+      "material": "Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 348,
+    "images": [
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0086",
+    "name": "V-Neck T-Shirt",
+    "category": "Men's Casual",
+    "subcategory": "T-Shirts",
+    "price": 700,
+    "mrp": 1212,
+    "discount": 42,
+    "description": "Premium quality v-neck t-shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "Blue",
         "White",
-        "Olive"
+        "Grey"
+      ],
+      "size": [
+        "XS",
+        "XXL",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 103,
+    "images": [
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0087",
+    "name": "Henley T-Shirt",
+    "category": "Men's Casual",
+    "subcategory": "T-Shirts",
+    "price": 1200,
+    "mrp": 1798,
+    "discount": 33,
+    "description": "Premium quality henley t-shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Yellow"
+      ],
+      "size": [
+        "M",
+        "Free Size",
+        "XS"
+      ],
+      "material": "Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 456,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0088",
+    "name": "Graphic Print T-Shirt",
+    "category": "Men's Casual",
+    "subcategory": "T-Shirts",
+    "price": 1400,
+    "mrp": 2335,
+    "discount": 40,
+    "description": "Premium quality graphic print t-shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Brown",
+        "Black"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "Free Size",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 341,
+    "images": [
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0089",
+    "name": "Striped T-Shirt",
+    "category": "Men's Casual",
+    "subcategory": "T-Shirts",
+    "price": 1000,
+    "mrp": 1313,
+    "discount": 23,
+    "description": "Premium quality striped t-shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Navy",
+        "Black"
+      ],
+      "size": [
+        "M",
+        "XS",
+        "S",
+        "XXL",
+        "Free Size"
+      ],
+      "material": "Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 200,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0090",
+    "name": "Solid T-Shirt",
+    "category": "Men's Casual",
+    "subcategory": "T-Shirts",
+    "price": 900,
+    "mrp": 1307,
+    "discount": 31,
+    "description": "Premium quality solid t-shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Green",
+        "Black"
+      ],
+      "size": [
+        "L",
+        "XL",
+        "S",
+        "Free Size"
+      ],
+      "material": "Cotton",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop",
+    "rating": 4.7,
+    "reviews": 396,
+    "images": [
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0091",
+    "name": "Denim Casual Shirt",
+    "category": "Men's Casual",
+    "subcategory": "Shirts",
+    "price": 1900,
+    "mrp": 3281,
+    "discount": 42,
+    "description": "Premium quality denim casual shirt made from Cotton/Linen. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Orange",
+        "Green",
+        "Brown"
       ],
       "size": [
         "S",
         "M",
-        "L",
         "XL"
       ],
-      "material": "Cotton",
-      "occasion": "Casual"
+      "material": "Cotton/Linen",
+      "occasion": "Formal"
     },
-    "image_url": "https://example.com/polo1.jpg",
-    "rating": 4.5,
-    "reviews": 2345
-  },
-  {
-    "sku": "MC002",
-    "name": "Casual Chinos",
-    "category": "Men's Casual",
-    "subcategory": "Chinos",
-    "price": 1799,
-    "mrp": 2999,
-    "discount": 40,
-    "description": "Comfortable chinos for smart casual look",
-    "attributes": {
-      "color": [
-        "Beige",
-        "Olive",
-        "Navy Blue"
-      ],
-      "size": [
-        "30",
-        "32",
-        "34",
-        "36"
-      ],
-      "material": "Cotton Blend",
-      "occasion": "Casual"
-    },
-    "image_url": "https://example.com/chinos1.jpg",
-    "rating": 4.6,
-    "reviews": 1567
-  },
-  {
-    "sku": "MC003",
-    "name": "Denim Jacket",
-    "category": "Men's Casual",
-    "subcategory": "Jackets",
-    "price": 2499,
-    "mrp": 3999,
-    "discount": 37,
-    "description": "Trendy denim jacket",
-    "attributes": {
-      "color": [
-        "Blue",
-        "Black"
-      ],
-      "size": [
-        "M",
-        "L",
-        "XL"
-      ],
-      "material": "Denim",
-      "occasion": "Casual"
-    },
-    "image_url": "https://example.com/jacket1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
     "rating": 4.7,
-    "reviews": 678
+    "reviews": 330,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop"
+    ]
   },
   {
-    "sku": "ME001",
-    "name": "Kurta Pajama Set",
-    "category": "Men's Ethnic",
-    "subcategory": "Kurta Sets",
-    "price": 3499,
-    "mrp": 5999,
-    "discount": 42,
-    "description": "Traditional kurta pajama for festive occasions",
+    "sku": "SKU0092",
+    "name": "Flannel Casual Shirt",
+    "category": "Men's Casual",
+    "subcategory": "Shirts",
+    "price": 1700,
+    "mrp": 2389,
+    "discount": 28,
+    "description": "Premium quality flannel casual shirt made from Cotton/Linen. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
-        "Cream",
-        "White",
-        "Maroon"
-      ],
-      "size": [
-        "38",
-        "40",
-        "42",
-        "44"
-      ],
-      "material": "Cotton Silk",
-      "occasion": "Festive"
-    },
-    "image_url": "https://example.com/kurta_mens1.jpg",
-    "rating": 4.5,
-    "reviews": 456
-  },
-  {
-    "sku": "ME002",
-    "name": "Nehru Jacket",
-    "category": "Men's Ethnic",
-    "subcategory": "Jackets",
-    "price": 2999,
-    "mrp": 4999,
-    "discount": 40,
-    "description": "Classic Nehru jacket with embroidery",
-    "attributes": {
-      "color": [
-        "Gold",
-        "Maroon",
-        "Black"
-      ],
-      "size": [
-        "38",
-        "40",
-        "42"
-      ],
-      "material": "Silk Blend",
-      "occasion": "Festive"
-    },
-    "image_url": "https://example.com/nehru1.jpg",
-    "rating": 4.6,
-    "reviews": 234
-  },
-  {
-    "sku": "FW001",
-    "name": "Women's Heels",
-    "category": "Footwear",
-    "subcategory": "Women's Heels",
-    "price": 2499,
-    "mrp": 3999,
-    "discount": 37,
-    "description": "Elegant heels for formal occasions",
-    "attributes": {
-      "color": [
-        "Black",
-        "Nude",
-        "Red"
-      ],
-      "size": [
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
-      "material": "Synthetic",
-      "occasion": "Formal"
-    },
-    "image_url": "https://example.com/heels1.jpg",
-    "rating": 4.3,
-    "reviews": 567
-  },
-  {
-    "sku": "FW002",
-    "name": "Men's Formal Shoes",
-    "category": "Footwear",
-    "subcategory": "Men's Formal",
-    "price": 3499,
-    "mrp": 5999,
-    "discount": 42,
-    "description": "Premium leather formal shoes",
-    "attributes": {
-      "color": [
-        "Black",
-        "Brown"
-      ],
-      "size": [
-        "7",
-        "8",
-        "9",
-        "10"
-      ],
-      "material": "Genuine Leather",
-      "occasion": "Formal"
-    },
-    "image_url": "https://example.com/formalshoes1.jpg",
-    "rating": 4.6,
-    "reviews": 789
-  },
-  {
-    "sku": "FW003",
-    "name": "Sneakers",
-    "category": "Footwear",
-    "subcategory": "Casual",
-    "price": 1999,
-    "mrp": 2999,
-    "discount": 33,
-    "description": "Comfortable casual sneakers",
-    "attributes": {
-      "color": [
-        "White",
+        "Purple",
+        "Red",
         "Black",
         "Blue"
       ],
       "size": [
+        "XXL",
+        "M",
+        "S",
+        "XL"
+      ],
+      "material": "Cotton/Linen",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 79,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0093",
+    "name": "Linen Casual Shirt",
+    "category": "Men's Casual",
+    "subcategory": "Shirts",
+    "price": 1600,
+    "mrp": 2149,
+    "discount": 25,
+    "description": "Premium quality linen casual shirt made from Cotton/Linen. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Navy",
+        "Orange",
+        "Purple"
+      ],
+      "size": [
+        "M",
+        "S",
+        "XL",
+        "L",
+        "Free Size"
+      ],
+      "material": "Cotton/Linen",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 446,
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0094",
+    "name": "Checkered Casual Shirt",
+    "category": "Men's Casual",
+    "subcategory": "Shirts",
+    "price": 1400,
+    "mrp": 2305,
+    "discount": 39,
+    "description": "Premium quality checkered casual shirt made from Cotton/Linen. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Grey",
+        "Navy"
+      ],
+      "size": [
+        "XXL",
+        "L",
+        "XL",
+        "M"
+      ],
+      "material": "Cotton/Linen",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+    "rating": 3.9,
+    "reviews": 250,
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0095",
+    "name": "Printed Casual Shirt",
+    "category": "Men's Casual",
+    "subcategory": "Shirts",
+    "price": 1500,
+    "mrp": 2102,
+    "discount": 28,
+    "description": "Premium quality printed casual shirt made from Cotton/Linen. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "Navy",
+        "Purple",
+        "Blue"
+      ],
+      "size": [
+        "L",
+        "S",
+        "XL"
+      ],
+      "material": "Cotton/Linen",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+    "rating": 4.7,
+    "reviews": 466,
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0096",
+    "name": "Slim Fit Jeans",
+    "category": "Men's Casual",
+    "subcategory": "Jeans",
+    "price": 2700,
+    "mrp": 4680,
+    "discount": 42,
+    "description": "Premium quality slim fit jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Yellow"
+      ],
+      "size": [
+        "S",
+        "XS",
+        "XL",
+        "M"
+      ],
+      "material": "Denim",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 381,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0097",
+    "name": "Regular Fit Jeans",
+    "category": "Men's Casual",
+    "subcategory": "Jeans",
+    "price": 2000,
+    "mrp": 2609,
+    "discount": 23,
+    "description": "Premium quality regular fit jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Red",
+        "Yellow"
+      ],
+      "size": [
+        "L",
+        "XXL",
+        "XL",
+        "Free Size"
+      ],
+      "material": "Denim",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 130,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0098",
+    "name": "Skinny Jeans",
+    "category": "Men's Casual",
+    "subcategory": "Jeans",
+    "price": 2700,
+    "mrp": 4251,
+    "discount": 36,
+    "description": "Premium quality skinny jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Grey",
+        "Orange"
+      ],
+      "size": [
+        "L",
+        "XXL",
+        "S",
+        "M",
+        "Free Size"
+      ],
+      "material": "Denim",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 225,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0099",
+    "name": "Relaxed Jeans",
+    "category": "Men's Casual",
+    "subcategory": "Jeans",
+    "price": 3000,
+    "mrp": 4717,
+    "discount": 36,
+    "description": "Premium quality relaxed jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Yellow",
+        "Blue"
+      ],
+      "size": [
+        "XXL",
+        "L",
+        "XL",
+        "Free Size",
+        "S"
+      ],
+      "material": "Denim",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 173,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0100",
+    "name": "Straight Jeans",
+    "category": "Men's Casual",
+    "subcategory": "Jeans",
+    "price": 3300,
+    "mrp": 5084,
+    "discount": 35,
+    "description": "Premium quality straight jeans made from Denim. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Pink",
+        "Orange"
+      ],
+      "size": [
+        "XL",
+        "M",
+        "XXL",
+        "L",
+        "Free Size"
+      ],
+      "material": "Denim",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 341,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0101",
+    "name": "Sneakers Casual Shoes",
+    "category": "Men's Casual",
+    "subcategory": "Shoes",
+    "price": 2700,
+    "mrp": 3849,
+    "discount": 29,
+    "description": "Premium quality sneakers casual shoes made from Canvas/Leather. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "Black",
+        "Orange",
+        "Navy"
+      ],
+      "size": [
+        "XXL",
+        "XL",
+        "S"
+      ],
+      "material": "Canvas/Leather",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+    "rating": 4.7,
+    "reviews": 445,
+    "images": [
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0102",
+    "name": "Loafers Casual Shoes",
+    "category": "Men's Casual",
+    "subcategory": "Shoes",
+    "price": 3200,
+    "mrp": 4748,
+    "discount": 32,
+    "description": "Premium quality loafers casual shoes made from Canvas/Leather. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Navy",
+        "Green"
+      ],
+      "size": [
+        "S",
+        "M",
+        "Free Size",
+        "XS",
+        "L"
+      ],
+      "material": "Canvas/Leather",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+    "rating": 3.9,
+    "reviews": 346,
+    "images": [
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0103",
+    "name": "Boat Shoes Casual Shoes",
+    "category": "Men's Casual",
+    "subcategory": "Shoes",
+    "price": 4200,
+    "mrp": 7268,
+    "discount": 42,
+    "description": "Premium quality boat shoes casual shoes made from Canvas/Leather. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "Black",
+        "Blue"
+      ],
+      "size": [
+        "XL",
+        "L",
+        "XXL",
+        "XS",
+        "M"
+      ],
+      "material": "Canvas/Leather",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 4.6,
+    "reviews": 199,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0104",
+    "name": "Slip-Ons Casual Shoes",
+    "category": "Men's Casual",
+    "subcategory": "Shoes",
+    "price": 3900,
+    "mrp": 6725,
+    "discount": 42,
+    "description": "Premium quality slip-ons casual shoes made from Canvas/Leather. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Yellow",
+        "Navy"
+      ],
+      "size": [
+        "XS",
+        "Free Size",
+        "M",
+        "XL"
+      ],
+      "material": "Canvas/Leather",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 3.9,
+    "reviews": 331,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0105",
+    "name": "Canvas Casual Shoes",
+    "category": "Men's Casual",
+    "subcategory": "Shoes",
+    "price": 3700,
+    "mrp": 5910,
+    "discount": 37,
+    "description": "Premium quality canvas casual shoes made from Canvas/Leather. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Brown"
+      ],
+      "size": [
+        "M",
+        "XS",
+        "XL",
+        "Free Size",
+        "S"
+      ],
+      "material": "Canvas/Leather",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+    "rating": 3.9,
+    "reviews": 147,
+    "images": [
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0106",
+    "name": "Plain Kurta Pajama Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 3000,
+    "mrp": 4177,
+    "discount": 28,
+    "description": "Premium quality plain kurta pajama set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Purple",
+        "Navy",
+        "Green"
+      ],
+      "size": [
+        "XXL",
+        "XS",
+        "XL"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 92,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0107",
+    "name": "Embroidered Kurta Pajama Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 3500,
+    "mrp": 6259,
+    "discount": 44,
+    "description": "Premium quality embroidered kurta pajama set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Black",
+        "Yellow",
+        "Purple"
+      ],
+      "size": [
+        "XXL",
+        "S",
+        "M"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 53,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0108",
+    "name": "Printed Kurta Pajama Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 2800,
+    "mrp": 4685,
+    "discount": 40,
+    "description": "Premium quality printed kurta pajama set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Red"
+      ],
+      "size": [
+        "S",
+        "L",
+        "XL"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 317,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0109",
+    "name": "Designer Kurta Pajama Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 3300,
+    "mrp": 5406,
+    "discount": 38,
+    "description": "Premium quality designer kurta pajama set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Purple",
+        "Green"
+      ],
+      "size": [
+        "XXL",
+        "XS",
+        "Free Size"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.0,
+    "reviews": 50,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0110",
+    "name": "Wedding Kurta Pajama Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Kurta Sets",
+    "price": 3200,
+    "mrp": 4680,
+    "discount": 31,
+    "description": "Premium quality wedding kurta pajama set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Blue"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "XXL",
+        "Free Size",
+        "M"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.6,
+    "reviews": 93,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0111",
+    "name": "Wedding Sherwani",
+    "category": "Men's Ethnic",
+    "subcategory": "Sherwanis",
+    "price": 21900,
+    "mrp": 38542,
+    "discount": 43,
+    "description": "Premium quality wedding sherwani made from Silk/Brocade. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Brown",
+        "Blue",
+        "Purple"
+      ],
+      "size": [
+        "S",
+        "Free Size",
+        "L",
+        "XS"
+      ],
+      "material": "Silk/Brocade",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.1,
+    "reviews": 497,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0112",
+    "name": "Indo-Western Sherwani",
+    "category": "Men's Ethnic",
+    "subcategory": "Sherwanis",
+    "price": 18600,
+    "mrp": 25994,
+    "discount": 28,
+    "description": "Premium quality indo-western sherwani made from Silk/Brocade. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Yellow"
+      ],
+      "size": [
+        "Free Size",
+        "M",
+        "L"
+      ],
+      "material": "Silk/Brocade",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.7,
+    "reviews": 274,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0113",
+    "name": "Traditional Sherwani",
+    "category": "Men's Ethnic",
+    "subcategory": "Sherwanis",
+    "price": 16000,
+    "mrp": 26662,
+    "discount": 39,
+    "description": "Premium quality traditional sherwani made from Silk/Brocade. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Yellow"
+      ],
+      "size": [
+        "XS",
+        "L",
+        "M",
+        "XXL"
+      ],
+      "material": "Silk/Brocade",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.6,
+    "reviews": 156,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0114",
+    "name": "Designer Sherwani",
+    "category": "Men's Ethnic",
+    "subcategory": "Sherwanis",
+    "price": 20800,
+    "mrp": 33208,
+    "discount": 37,
+    "description": "Premium quality designer sherwani made from Silk/Brocade. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Blue",
+        "Brown"
+      ],
+      "size": [
+        "XL",
+        "M",
+        "L",
+        "S",
+        "Free Size"
+      ],
+      "material": "Silk/Brocade",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.8,
+    "reviews": 405,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0115",
+    "name": "Royal Sherwani",
+    "category": "Men's Ethnic",
+    "subcategory": "Sherwanis",
+    "price": 13200,
+    "mrp": 21407,
+    "discount": 38,
+    "description": "Premium quality royal sherwani made from Silk/Brocade. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Purple",
+        "Red",
+        "Blue"
+      ],
+      "size": [
+        "M",
+        "S",
+        "XXL"
+      ],
+      "material": "Silk/Brocade",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.2,
+    "reviews": 254,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0116",
+    "name": "Traditional Dhoti Kurta Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Dhoti Sets",
+    "price": 5100,
+    "mrp": 8194,
+    "discount": 37,
+    "description": "Premium quality traditional dhoti kurta set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Red",
+        "Brown",
+        "White"
+      ],
+      "size": [
+        "Free Size",
+        "M",
+        "XXL",
+        "L",
+        "XL"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 280,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0117",
+    "name": "Modern Dhoti Kurta Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Dhoti Sets",
+    "price": 5800,
+    "mrp": 8913,
+    "discount": 34,
+    "description": "Premium quality modern dhoti kurta set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "White"
+      ],
+      "size": [
+        "XL",
+        "L",
+        "S",
+        "M"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.0,
+    "reviews": 186,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0118",
+    "name": "Festive Dhoti Kurta Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Dhoti Sets",
+    "price": 6200,
+    "mrp": 10978,
+    "discount": 43,
+    "description": "Premium quality festive dhoti kurta set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Yellow",
+        "Purple"
+      ],
+      "size": [
+        "S",
+        "XL",
+        "XS",
+        "XXL"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 335,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0119",
+    "name": "Party Wear Dhoti Kurta Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Dhoti Sets",
+    "price": 3500,
+    "mrp": 4976,
+    "discount": 29,
+    "description": "Premium quality party wear dhoti kurta set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Navy",
+        "Grey"
+      ],
+      "size": [
+        "L",
+        "XS",
+        "M",
+        "XXL",
+        "Free Size"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 286,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0120",
+    "name": "Casual Dhoti Kurta Set",
+    "category": "Men's Ethnic",
+    "subcategory": "Dhoti Sets",
+    "price": 6800,
+    "mrp": 11212,
+    "discount": 39,
+    "description": "Premium quality casual dhoti kurta set made from Cotton/Silk. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Yellow",
+        "Brown"
+      ],
+      "size": [
+        "Free Size",
+        "M",
+        "S",
+        "L"
+      ],
+      "material": "Cotton/Silk",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 3.9,
+    "reviews": 252,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0121",
+    "name": "Women's Heels",
+    "category": "Footwear",
+    "subcategory": "Women's Footwear",
+    "price": 2200,
+    "mrp": 3055,
+    "discount": 27,
+    "description": "Premium quality women's heels made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Red",
+        "Brown",
+        "Black"
+      ],
+      "size": [
+        "6",
         "7",
         "8",
         "9",
         "10"
       ],
-      "material": "Mesh",
-      "occasion": "Casual"
-    },
-    "image_url": "https://example.com/sneakers1.jpg",
-    "rating": 4.5,
-    "reviews": 1234
-  },
-  {
-    "sku": "AC001",
-    "name": "Designer Watch",
-    "category": "Accessories",
-    "subcategory": "Watches",
-    "price": 4999,
-    "mrp": 7999,
-    "discount": 37,
-    "description": "Premium analog watch",
-    "attributes": {
-      "color": [
-        "Silver",
-        "Gold",
-        "Black"
-      ],
-      "size": [
-        "Free Size"
-      ],
-      "material": "Stainless Steel",
-      "occasion": "Formal"
-    },
-    "image_url": "https://example.com/watch1.jpg",
-    "rating": 4.7,
-    "reviews": 456
-  },
-  {
-    "sku": "AC002",
-    "name": "Leather Belt",
-    "category": "Accessories",
-    "subcategory": "Belts",
-    "price": 899,
-    "mrp": 1499,
-    "discount": 40,
-    "description": "Genuine leather belt",
-    "attributes": {
-      "color": [
-        "Black",
-        "Brown"
-      ],
-      "size": [
-        "32",
-        "34",
-        "36",
-        "38"
-      ],
-      "material": "Genuine Leather",
-      "occasion": "Formal"
-    },
-    "image_url": "https://example.com/belt1.jpg",
-    "rating": 4.4,
-    "reviews": 890
-  },
-  {
-    "sku": "AC003",
-    "name": "Designer Handbag",
-    "category": "Accessories",
-    "subcategory": "Handbags",
-    "price": 3999,
-    "mrp": 6999,
-    "discount": 43,
-    "description": "Stylish handbag for women",
-    "attributes": {
-      "color": [
-        "Black",
-        "Brown",
-        "Beige"
-      ],
-      "size": [
-        "Medium"
-      ],
-      "material": "Synthetic Leather",
-      "occasion": "Casual"
-    },
-    "image_url": "https://example.com/handbag1.jpg",
-    "rating": 4.5,
-    "reviews": 678
-  },
-  {
-    "sku": "AC004",
-    "name": "Earrings Set",
-    "category": "Accessories",
-    "subcategory": "Jewelry",
-    "price": 1299,
-    "mrp": 1999,
-    "discount": 35,
-    "description": "Elegant earrings for special occasions",
-    "attributes": {
-      "color": [
-        "Gold",
-        "Silver"
-      ],
-      "size": [
-        "Free Size"
-      ],
-      "material": "Brass",
-      "occasion": "Party"
-    },
-    "image_url": "https://example.com/earrings1.jpg",
-    "rating": 4.6,
-    "reviews": 345
-  },
-  {
-    "sku": "AC005",
-    "name": "Necklace Set",
-    "category": "Accessories",
-    "subcategory": "Jewelry",
-    "price": 2999,
-    "mrp": 4999,
-    "discount": 40,
-    "description": "Beautiful necklace set with earrings",
-    "attributes": {
-      "color": [
-        "Gold",
-        "Silver"
-      ],
-      "size": [
-        "Free Size"
-      ],
-      "material": "Brass",
+      "material": "Leather/Synthetic",
       "occasion": "Festive"
     },
-    "image_url": "https://example.com/necklace1.jpg",
-    "rating": 4.7,
-    "reviews": 234
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.3,
+    "reviews": 447,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
   },
   {
-    "sku": "KG001",
-    "name": "Girl's Party Dress",
-    "category": "Kids",
-    "subcategory": "Girls Dresses",
-    "price": 1499,
-    "mrp": 2499,
-    "discount": 40,
-    "description": "Cute party dress for girls with floral print",
+    "sku": "SKU0122",
+    "name": "Women's Wedges",
+    "category": "Footwear",
+    "subcategory": "Women's Footwear",
+    "price": 2800,
+    "mrp": 4029,
+    "discount": 30,
+    "description": "Premium quality women's wedges made from Leather/Synthetic. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
-        "Pink",
-        "Blue",
-        "Purple"
+        "Green",
+        "Yellow",
+        "White"
       ],
       "size": [
-        "2-3Y",
-        "4-5Y",
-        "6-7Y",
-        "8-9Y"
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
       ],
-      "material": "Cotton Blend",
+      "material": "Leather/Synthetic",
       "occasion": "Party"
     },
-    "image_url": "https://example.com/girl_dress1.jpg",
-    "rating": 4.5,
-    "reviews": 156
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.7,
+    "reviews": 166,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
   },
   {
-    "sku": "KG002",
-    "name": "Girl's Ethnic Lehenga",
-    "category": "Kids",
-    "subcategory": "Girls Ethnic",
-    "price": 2499,
-    "mrp": 3999,
-    "discount": 37,
-    "description": "Traditional lehenga choli for festive occasions",
+    "sku": "SKU0123",
+    "name": "Women's Flats",
+    "category": "Footwear",
+    "subcategory": "Women's Footwear",
+    "price": 3200,
+    "mrp": 4660,
+    "discount": 31,
+    "description": "Premium quality women's flats made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Green"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.5,
+    "reviews": 100,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0124",
+    "name": "Women's Sandals",
+    "category": "Footwear",
+    "subcategory": "Women's Footwear",
+    "price": 3400,
+    "mrp": 5315,
+    "discount": 36,
+    "description": "Premium quality women's sandals made from Leather/Synthetic. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
         "Red",
+        "Green",
+        "Pink",
+        "Blue"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.1,
+    "reviews": 149,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0125",
+    "name": "Women's Boots",
+    "category": "Footwear",
+    "subcategory": "Women's Footwear",
+    "price": 3600,
+    "mrp": 6094,
+    "discount": 40,
+    "description": "Premium quality women's boots made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Navy",
+        "Pink"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 4.2,
+    "reviews": 246,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0126",
+    "name": "Women's Pumps",
+    "category": "Footwear",
+    "subcategory": "Women's Footwear",
+    "price": 1600,
+    "mrp": 2431,
+    "discount": 34,
+    "description": "Premium quality women's pumps made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Red",
+        "Yellow",
+        "Brown"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.7,
+    "reviews": 107,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0127",
+    "name": "Women's Stilettos",
+    "category": "Footwear",
+    "subcategory": "Women's Footwear",
+    "price": 3800,
+    "mrp": 5300,
+    "discount": 28,
+    "description": "Premium quality women's stilettos made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Navy"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.8,
+    "reviews": 296,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0128",
+    "name": "Women's Ankle Boots",
+    "category": "Footwear",
+    "subcategory": "Women's Footwear",
+    "price": 2700,
+    "mrp": 4642,
+    "discount": 41,
+    "description": "Premium quality women's ankle boots made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Orange"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+    "rating": 4.8,
+    "reviews": 309,
+    "images": [
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0129",
+    "name": "Men's Sports Shoes",
+    "category": "Footwear",
+    "subcategory": "Men's Footwear",
+    "price": 1800,
+    "mrp": 2795,
+    "discount": 35,
+    "description": "Premium quality men's sports shoes made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Orange",
+        "Brown"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+    "rating": 4.5,
+    "reviews": 135,
+    "images": [
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0130",
+    "name": "Men's Running Shoes",
+    "category": "Footwear",
+    "subcategory": "Men's Footwear",
+    "price": 4200,
+    "mrp": 7014,
+    "discount": 40,
+    "description": "Premium quality men's running shoes made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Brown",
+        "Red"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 4.4,
+    "reviews": 84,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0131",
+    "name": "Men's Boots",
+    "category": "Footwear",
+    "subcategory": "Men's Footwear",
+    "price": 4200,
+    "mrp": 7485,
+    "discount": 43,
+    "description": "Premium quality men's boots made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "Red",
+        "Grey",
+        "Green"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 4.2,
+    "reviews": 315,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0132",
+    "name": "Men's Sandals",
+    "category": "Footwear",
+    "subcategory": "Men's Footwear",
+    "price": 3800,
+    "mrp": 5487,
+    "discount": 30,
+    "description": "Premium quality men's sandals made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Yellow",
+        "Purple"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.1,
+    "reviews": 67,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0133",
+    "name": "Men's Flip Flops",
+    "category": "Footwear",
+    "subcategory": "Men's Footwear",
+    "price": 3300,
+    "mrp": 5231,
+    "discount": 36,
+    "description": "Premium quality men's flip flops made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Navy"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.1,
+    "reviews": 209,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0134",
+    "name": "Kids School Shoes",
+    "category": "Footwear",
+    "subcategory": "Kids Footwear",
+    "price": 1300,
+    "mrp": 1966,
+    "discount": 33,
+    "description": "Premium quality kids school shoes made from Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
         "Pink",
         "Green"
       ],
       "size": [
-        "2-3Y",
-        "4-5Y",
-        "6-7Y",
-        "8-9Y"
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
       ],
-      "material": "Silk Blend",
-      "occasion": "Festive"
+      "material": "Synthetic",
+      "occasion": "Formal"
     },
-    "image_url": "https://example.com/girl_lehenga1.jpg",
-    "rating": 4.6,
-    "reviews": 89
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 4.0,
+    "reviews": 398,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
   },
   {
-    "sku": "KB001",
-    "name": "Boy's Casual T-Shirt",
-    "category": "Kids",
-    "subcategory": "Boys Casual",
-    "price": 599,
-    "mrp": 999,
-    "discount": 40,
-    "description": "Comfortable cotton t-shirt for boys",
+    "sku": "SKU0135",
+    "name": "Kids Sneakers",
+    "category": "Footwear",
+    "subcategory": "Kids Footwear",
+    "price": 700,
+    "mrp": 1236,
+    "discount": 43,
+    "description": "Premium quality kids sneakers made from Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Green",
+        "Brown",
+        "Navy"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Synthetic",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 4.3,
+    "reviews": 355,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0136",
+    "name": "Kids Sandals",
+    "category": "Footwear",
+    "subcategory": "Kids Footwear",
+    "price": 1200,
+    "mrp": 2102,
+    "discount": 42,
+    "description": "Premium quality kids sandals made from Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Pink",
+        "White",
+        "Orange"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Synthetic",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.3,
+    "reviews": 308,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0137",
+    "name": "Kids Boots",
+    "category": "Footwear",
+    "subcategory": "Kids Footwear",
+    "price": 1600,
+    "mrp": 2163,
+    "discount": 26,
+    "description": "Premium quality kids boots made from Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Blue",
+        "Brown",
+        "White"
+      ],
+      "size": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "material": "Synthetic",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 4.4,
+    "reviews": 289,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0138",
+    "name": "Analog Watch",
+    "category": "Accessories",
+    "subcategory": "Watches",
+    "price": 9500,
+    "mrp": 17039,
+    "discount": 44,
+    "description": "Premium quality analog watch made from Stainless Steel. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "White"
+      ],
+      "size": [
+        "S",
+        "Free Size",
+        "L",
+        "XL"
+      ],
+      "material": "Stainless Steel",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop",
+    "rating": 4.3,
+    "reviews": 183,
+    "images": [
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0139",
+    "name": "Digital Watch",
+    "category": "Accessories",
+    "subcategory": "Watches",
+    "price": 4000,
+    "mrp": 7182,
+    "discount": 44,
+    "description": "Premium quality digital watch made from Stainless Steel. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Pink"
+      ],
+      "size": [
+        "L",
+        "XS",
+        "Free Size",
+        "XL",
+        "XXL"
+      ],
+      "material": "Stainless Steel",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
+    "rating": 3.9,
+    "reviews": 132,
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0140",
+    "name": "Smart Watch",
+    "category": "Accessories",
+    "subcategory": "Watches",
+    "price": 5700,
+    "mrp": 7590,
+    "discount": 24,
+    "description": "Premium quality smart watch made from Stainless Steel. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
         "Blue",
-        "Red",
+        "Green"
+      ],
+      "size": [
+        "XS",
+        "XXL",
+        "L"
+      ],
+      "material": "Stainless Steel",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop",
+    "rating": 4.8,
+    "reviews": 257,
+    "images": [
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0141",
+    "name": "Chronograph Watch",
+    "category": "Accessories",
+    "subcategory": "Watches",
+    "price": 3300,
+    "mrp": 4464,
+    "discount": 26,
+    "description": "Premium quality chronograph watch made from Stainless Steel. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Brown",
+        "Grey"
+      ],
+      "size": [
+        "XXL",
+        "XL",
+        "S",
+        "M"
+      ],
+      "material": "Stainless Steel",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=400&h=400&fit=crop",
+    "rating": 4.8,
+    "reviews": 273,
+    "images": [
+      "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0142",
+    "name": "Designer Watch",
+    "category": "Accessories",
+    "subcategory": "Watches",
+    "price": 5700,
+    "mrp": 8296,
+    "discount": 31,
+    "description": "Premium quality designer watch made from Stainless Steel. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Yellow",
         "Green",
+        "Navy"
+      ],
+      "size": [
+        "Free Size",
+        "XS",
+        "XXL",
+        "S",
+        "XL"
+      ],
+      "material": "Stainless Steel",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
+    "rating": 4.7,
+    "reviews": 280,
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0143",
+    "name": "Luxury Watch",
+    "category": "Accessories",
+    "subcategory": "Watches",
+    "price": 4600,
+    "mrp": 6372,
+    "discount": 27,
+    "description": "Premium quality luxury watch made from Stainless Steel. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "White",
+        "Blue",
+        "Navy"
+      ],
+      "size": [
+        "XXL",
+        "Free Size",
+        "L",
+        "M"
+      ],
+      "material": "Stainless Steel",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop",
+    "rating": 4.9,
+    "reviews": 221,
+    "images": [
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0144",
+    "name": "Tote Handbag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 7900,
+    "mrp": 13691,
+    "discount": 42,
+    "description": "Premium quality tote handbag made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Pink",
+        "Yellow",
+        "Orange"
+      ],
+      "size": [
+        "L",
+        "XL",
+        "S"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop",
+    "rating": 4.9,
+    "reviews": 149,
+    "images": [
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0145",
+    "name": "Satchel Handbag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 6500,
+    "mrp": 8589,
+    "discount": 24,
+    "description": "Premium quality satchel handbag made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Blue"
+      ],
+      "size": [
+        "L",
+        "Free Size",
+        "XL",
+        "XXL",
+        "S"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop",
+    "rating": 4.7,
+    "reviews": 216,
+    "images": [
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0146",
+    "name": "Clutch Handbag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 7600,
+    "mrp": 12282,
+    "discount": 38,
+    "description": "Premium quality clutch handbag made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Green"
+      ],
+      "size": [
+        "L",
+        "XL",
+        "M",
+        "XS",
+        "S"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop",
+    "rating": 4.6,
+    "reviews": 73,
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0147",
+    "name": "Crossbody Handbag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 7300,
+    "mrp": 13038,
+    "discount": 44,
+    "description": "Premium quality crossbody handbag made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Red"
+      ],
+      "size": [
+        "L",
+        "XS",
+        "S",
+        "M"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 282,
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0148",
+    "name": "Hobo Handbag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 5900,
+    "mrp": 9134,
+    "discount": 35,
+    "description": "Premium quality hobo handbag made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "White",
+        "Purple",
+        "Grey"
+      ],
+      "size": [
+        "XL",
+        "M",
+        "XXL"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop",
+    "rating": 4.0,
+    "reviews": 417,
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0149",
+    "name": "Backpack Handbag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 7200,
+    "mrp": 10758,
+    "discount": 33,
+    "description": "Premium quality backpack handbag made from Leather/Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Brown",
+        "Grey"
+      ],
+      "size": [
+        "XS",
+        "XL",
+        "XXL"
+      ],
+      "material": "Leather/Synthetic",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 454,
+    "images": [
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0150",
+    "name": "Men's Laptop Bag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 4100,
+    "mrp": 5967,
+    "discount": 31,
+    "description": "Premium quality men's laptop bag made from Leather/Canvas. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Brown",
+        "Pink"
+      ],
+      "size": [
+        "XL",
+        "Free Size",
+        "XXL",
+        "S",
+        "L"
+      ],
+      "material": "Leather/Canvas",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 407,
+    "images": [
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0151",
+    "name": "Men's Messenger Bag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 5300,
+    "mrp": 8312,
+    "discount": 36,
+    "description": "Premium quality men's messenger bag made from Leather/Canvas. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Green"
+      ],
+      "size": [
+        "M",
+        "XS",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "material": "Leather/Canvas",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 349,
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0152",
+    "name": "Men's Duffel Bag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 2400,
+    "mrp": 4081,
+    "discount": 41,
+    "description": "Premium quality men's duffel bag made from Leather/Canvas. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Grey",
+        "Orange"
+      ],
+      "size": [
+        "Free Size",
+        "XS",
+        "L",
+        "XXL"
+      ],
+      "material": "Leather/Canvas",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 368,
+    "images": [
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0153",
+    "name": "Men's Backpack Bag",
+    "category": "Accessories",
+    "subcategory": "Bags",
+    "price": 4900,
+    "mrp": 8184,
+    "discount": 40,
+    "description": "Premium quality men's backpack bag made from Leather/Canvas. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Yellow",
+        "White",
+        "Pink"
+      ],
+      "size": [
+        "Free Size",
+        "XXL",
+        "S",
+        "XS",
+        "XL"
+      ],
+      "material": "Leather/Canvas",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 144,
+    "images": [
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0154",
+    "name": "Necklace Jewelry Set",
+    "category": "Accessories",
+    "subcategory": "Jewelry",
+    "price": 1400,
+    "mrp": 2418,
+    "discount": 42,
+    "description": "Premium quality necklace jewelry set made from Artificial/Gold Plated. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Green"
+      ],
+      "size": [
+        "XS",
+        "XXL",
+        "XL",
+        "L"
+      ],
+      "material": "Artificial/Gold Plated",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
+    "rating": 4.7,
+    "reviews": 469,
+    "images": [
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0155",
+    "name": "Earrings Jewelry Set",
+    "category": "Accessories",
+    "subcategory": "Jewelry",
+    "price": 1300,
+    "mrp": 1763,
+    "discount": 26,
+    "description": "Premium quality earrings jewelry set made from Artificial/Gold Plated. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Yellow",
+        "Green"
+      ],
+      "size": [
+        "Free Size",
+        "M",
+        "XL",
+        "S",
+        "L"
+      ],
+      "material": "Artificial/Gold Plated",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop",
+    "rating": 4.7,
+    "reviews": 210,
+    "images": [
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0156",
+    "name": "Bracelet Jewelry Set",
+    "category": "Accessories",
+    "subcategory": "Jewelry",
+    "price": 2500,
+    "mrp": 3991,
+    "discount": 37,
+    "description": "Premium quality bracelet jewelry set made from Artificial/Gold Plated. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Blue"
+      ],
+      "size": [
+        "S",
+        "L",
+        "Free Size"
+      ],
+      "material": "Artificial/Gold Plated",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
+    "rating": 4.3,
+    "reviews": 406,
+    "images": [
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0157",
+    "name": "Ring Jewelry Set",
+    "category": "Accessories",
+    "subcategory": "Jewelry",
+    "price": 2700,
+    "mrp": 3936,
+    "discount": 31,
+    "description": "Premium quality ring jewelry set made from Artificial/Gold Plated. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "White",
+        "Pink"
+      ],
+      "size": [
+        "S",
+        "Free Size",
+        "XXL",
+        "XS"
+      ],
+      "material": "Artificial/Gold Plated",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop",
+    "rating": 4.5,
+    "reviews": 81,
+    "images": [
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0158",
+    "name": "Pendant Jewelry Set",
+    "category": "Accessories",
+    "subcategory": "Jewelry",
+    "price": 3100,
+    "mrp": 4751,
+    "discount": 34,
+    "description": "Premium quality pendant jewelry set made from Artificial/Gold Plated. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Orange",
+        "Grey",
+        "Black"
+      ],
+      "size": [
+        "XL",
+        "S",
+        "XXL",
+        "XS"
+      ],
+      "material": "Artificial/Gold Plated",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
+    "rating": 3.9,
+    "reviews": 451,
+    "images": [
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0159",
+    "name": "Sunglasses",
+    "category": "Accessories",
+    "subcategory": "Accessories",
+    "price": 800,
+    "mrp": 1234,
+    "discount": 35,
+    "description": "Premium quality sunglasses made from Various. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Navy",
+        "Red",
+        "Orange"
+      ],
+      "size": [
+        "S",
+        "XXL",
+        "L",
+        "XL"
+      ],
+      "material": "Various",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=400&fit=crop",
+    "rating": 4.4,
+    "reviews": 402,
+    "images": [
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0160",
+    "name": "Belt",
+    "category": "Accessories",
+    "subcategory": "Accessories",
+    "price": 700,
+    "mrp": 942,
+    "discount": 25,
+    "description": "Premium quality belt made from Various. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Pink",
+        "Brown"
+      ],
+      "size": [
+        "XS",
+        "Free Size",
+        "XXL"
+      ],
+      "material": "Various",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 3.9,
+    "reviews": 213,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0161",
+    "name": "Wallet",
+    "category": "Accessories",
+    "subcategory": "Accessories",
+    "price": 1700,
+    "mrp": 2775,
+    "discount": 38,
+    "description": "Premium quality wallet made from Various. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Blue",
+        "Pink",
+        "Purple"
+      ],
+      "size": [
+        "XS",
+        "S",
+        "XXL"
+      ],
+      "material": "Various",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 3.8,
+    "reviews": 415,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0162",
+    "name": "Scarf",
+    "category": "Accessories",
+    "subcategory": "Accessories",
+    "price": 900,
+    "mrp": 1240,
+    "discount": 27,
+    "description": "Premium quality scarf made from Various. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Black",
+        "Grey",
+        "White"
+      ],
+      "size": [
+        "XL",
+        "M",
+        "XXL",
+        "S",
+        "L"
+      ],
+      "material": "Various",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 3.9,
+    "reviews": 259,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0163",
+    "name": "Hat",
+    "category": "Accessories",
+    "subcategory": "Accessories",
+    "price": 800,
+    "mrp": 1394,
+    "discount": 42,
+    "description": "Premium quality hat made from Various. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Green",
+        "Blue",
         "Yellow"
       ],
       "size": [
-        "2-3Y",
-        "4-5Y",
-        "6-7Y",
-        "8-9Y"
+        "XXL",
+        "S",
+        "XL",
+        "M",
+        "L"
+      ],
+      "material": "Various",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.7,
+    "reviews": 126,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0164",
+    "name": "Boy's T-Shirt",
+    "category": "Kids",
+    "subcategory": "Boys Wear",
+    "price": 1500,
+    "mrp": 2221,
+    "discount": 32,
+    "description": "Premium quality boy's t-shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "Pink",
+        "Grey"
+      ],
+      "size": [
+        "XXL",
+        "M",
+        "XS"
+      ],
+      "material": "Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+    "rating": 4.9,
+    "reviews": 360,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0165",
+    "name": "Boy's Shirt",
+    "category": "Kids",
+    "subcategory": "Boys Wear",
+    "price": 600,
+    "mrp": 810,
+    "discount": 25,
+    "description": "Premium quality boy's shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Yellow"
+      ],
+      "size": [
+        "Free Size",
+        "XXL",
+        "M",
+        "XS"
+      ],
+      "material": "Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 448,
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0166",
+    "name": "Boy's Jeans",
+    "category": "Kids",
+    "subcategory": "Boys Wear",
+    "price": 1600,
+    "mrp": 2285,
+    "discount": 29,
+    "description": "Premium quality boy's jeans made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "Green"
+      ],
+      "size": [
+        "XS",
+        "M",
+        "S",
+        "Free Size"
+      ],
+      "material": "Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 279,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0167",
+    "name": "Boy's Shorts",
+    "category": "Kids",
+    "subcategory": "Boys Wear",
+    "price": 500,
+    "mrp": 885,
+    "discount": 43,
+    "description": "Premium quality boy's shorts made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Purple",
+        "Brown"
+      ],
+      "size": [
+        "M",
+        "Free Size",
+        "S"
+      ],
+      "material": "Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.2,
+    "reviews": 316,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0168",
+    "name": "Boy's Tracksuit",
+    "category": "Kids",
+    "subcategory": "Boys Wear",
+    "price": 1500,
+    "mrp": 1953,
+    "discount": 23,
+    "description": "Premium quality boy's tracksuit made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Purple"
+      ],
+      "size": [
+        "XXL",
+        "S",
+        "XL"
+      ],
+      "material": "Cotton",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+    "rating": 4.6,
+    "reviews": 323,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0169",
+    "name": "Boy's Ethnic Kurta",
+    "category": "Kids",
+    "subcategory": "Boys Wear",
+    "price": 1200,
+    "mrp": 1811,
+    "discount": 33,
+    "description": "Premium quality boy's ethnic kurta made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Brown"
+      ],
+      "size": [
+        "XXL",
+        "S",
+        "M"
+      ],
+      "material": "Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+    "rating": 3.9,
+    "reviews": 394,
+    "images": [
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0170",
+    "name": "Boy's Polo T-Shirt",
+    "category": "Kids",
+    "subcategory": "Boys Wear",
+    "price": 900,
+    "mrp": 1341,
+    "discount": 32,
+    "description": "Premium quality boy's polo t-shirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Navy"
+      ],
+      "size": [
+        "Free Size",
+        "XL",
+        "S",
+        "XXL",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 385,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0171",
+    "name": "Boy's Cargo Pants",
+    "category": "Kids",
+    "subcategory": "Boys Wear",
+    "price": 500,
+    "mrp": 765,
+    "discount": 34,
+    "description": "Premium quality boy's cargo pants made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Orange",
+        "Green",
+        "Brown"
+      ],
+      "size": [
+        "XXL",
+        "XL",
+        "XS"
       ],
       "material": "Cotton",
       "occasion": "Casual"
     },
-    "image_url": "https://example.com/boy_tshirt1.jpg",
-    "rating": 4.4,
-    "reviews": 234
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.6,
+    "reviews": 229,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
   },
   {
-    "sku": "KB002",
-    "name": "Boy's Denim Jeans",
+    "sku": "SKU0172",
+    "name": "Girl's Dress",
     "category": "Kids",
-    "subcategory": "Boys Casual",
-    "price": 1299,
-    "mrp": 1999,
-    "discount": 35,
-    "description": "Stylish denim jeans for boys",
+    "subcategory": "Girls Wear",
+    "price": 1900,
+    "mrp": 2552,
+    "discount": 25,
+    "description": "Premium quality girl's dress made from Cotton/Polyester. Perfect for your wardrobe collection.",
     "attributes": {
       "color": [
-        "Blue",
+        "Purple",
+        "Red",
+        "Navy",
+        "Pink"
+      ],
+      "size": [
+        "XXL",
+        "Free Size",
+        "XS"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+    "rating": 4.5,
+    "reviews": 294,
+    "images": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0173",
+    "name": "Girl's Frock",
+    "category": "Kids",
+    "subcategory": "Girls Wear",
+    "price": 2300,
+    "mrp": 3683,
+    "discount": 37,
+    "description": "Premium quality girl's frock made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Red",
+        "White",
+        "Brown"
+      ],
+      "size": [
+        "XS",
+        "M",
+        "XXL"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.1,
+    "reviews": 344,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0174",
+    "name": "Girl's Lehenga",
+    "category": "Kids",
+    "subcategory": "Girls Wear",
+    "price": 2000,
+    "mrp": 3086,
+    "discount": 35,
+    "description": "Premium quality girl's lehenga made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Red"
+      ],
+      "size": [
+        "Free Size",
+        "XL",
+        "M"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+    "rating": 3.9,
+    "reviews": 300,
+    "images": [
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610030469978-5b6a4f6e8c0c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0175",
+    "name": "Girl's Skirt Set",
+    "category": "Kids",
+    "subcategory": "Girls Wear",
+    "price": 2100,
+    "mrp": 3356,
+    "discount": 37,
+    "description": "Premium quality girl's skirt set made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
         "Black"
       ],
       "size": [
-        "2-3Y",
-        "4-5Y",
-        "6-7Y",
-        "8-9Y"
+        "L",
+        "S",
+        "XS",
+        "M"
       ],
-      "material": "Denim",
+      "material": "Cotton/Polyester",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.1,
+    "reviews": 469,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0176",
+    "name": "Girl's Top & Jeans",
+    "category": "Kids",
+    "subcategory": "Girls Wear",
+    "price": 900,
+    "mrp": 1399,
+    "discount": 35,
+    "description": "Premium quality girl's top & jeans made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Grey",
+        "Green",
+        "White"
+      ],
+      "size": [
+        "Free Size",
+        "XS",
+        "S",
+        "XL",
+        "XXL"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 442,
+    "images": [
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1564257577142-98f5c7ef2a8e?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0177",
+    "name": "Girl's Ethnic Dress",
+    "category": "Kids",
+    "subcategory": "Girls Wear",
+    "price": 800,
+    "mrp": 1067,
+    "discount": 25,
+    "description": "Premium quality girl's ethnic dress made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Brown"
+      ],
+      "size": [
+        "S",
+        "XL",
+        "Free Size"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+    "rating": 4.8,
+    "reviews": 197,
+    "images": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0178",
+    "name": "Girl's Party Gown",
+    "category": "Kids",
+    "subcategory": "Girls Wear",
+    "price": 1000,
+    "mrp": 1638,
+    "discount": 38,
+    "description": "Premium quality girl's party gown made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Orange"
+      ],
+      "size": [
+        "M",
+        "XXL",
+        "Free Size",
+        "XL"
+      ],
+      "material": "Cotton/Polyester",
       "occasion": "Casual"
     },
-    "image_url": "https://example.com/boy_jeans1.jpg",
-    "rating": 4.5,
-    "reviews": 178
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.7,
+    "reviews": 417,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0179",
+    "name": "Girl's Tutu Dress",
+    "category": "Kids",
+    "subcategory": "Girls Wear",
+    "price": 1700,
+    "mrp": 2853,
+    "discount": 40,
+    "description": "Premium quality girl's tutu dress made from Cotton/Polyester. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "White",
+        "Blue"
+      ],
+      "size": [
+        "XXL",
+        "S",
+        "L"
+      ],
+      "material": "Cotton/Polyester",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop",
+    "rating": 4.0,
+    "reviews": 90,
+    "images": [
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0180",
+    "name": "Kids Winter Jacket",
+    "category": "Kids",
+    "subcategory": "Kids Wear",
+    "price": 1900,
+    "mrp": 2609,
+    "discount": 27,
+    "description": "Premium quality kids winter jacket made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Green",
+        "Pink",
+        "Brown"
+      ],
+      "size": [
+        "L",
+        "S",
+        "M"
+      ],
+      "material": "Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+    "rating": 4.1,
+    "reviews": 418,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0181",
+    "name": "Kids Sweater",
+    "category": "Kids",
+    "subcategory": "Kids Wear",
+    "price": 1400,
+    "mrp": 2214,
+    "discount": 36,
+    "description": "Premium quality kids sweater made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "White",
+        "Green"
+      ],
+      "size": [
+        "Free Size",
+        "L",
+        "M",
+        "XXL",
+        "S"
+      ],
+      "material": "Cotton",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.7,
+    "reviews": 457,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0182",
+    "name": "Kids Raincoat",
+    "category": "Kids",
+    "subcategory": "Kids Wear",
+    "price": 1800,
+    "mrp": 3037,
+    "discount": 40,
+    "description": "Premium quality kids raincoat made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Grey"
+      ],
+      "size": [
+        "XL",
+        "Free Size",
+        "S"
+      ],
+      "material": "Cotton",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.7,
+    "reviews": 455,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0183",
+    "name": "Kids School Uniform",
+    "category": "Kids",
+    "subcategory": "Kids Wear",
+    "price": 1600,
+    "mrp": 2515,
+    "discount": 36,
+    "description": "Premium quality kids school uniform made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Purple",
+        "Grey"
+      ],
+      "size": [
+        "M",
+        "S",
+        "XL",
+        "L",
+        "XXL"
+      ],
+      "material": "Cotton",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.3,
+    "reviews": 348,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0184",
+    "name": "Kids Party Wear",
+    "category": "Kids",
+    "subcategory": "Kids Wear",
+    "price": 1300,
+    "mrp": 2064,
+    "discount": 37,
+    "description": "Premium quality kids party wear made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "White",
+        "Orange"
+      ],
+      "size": [
+        "XL",
+        "Free Size",
+        "XS",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.9,
+    "reviews": 163,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0185",
+    "name": "Kids Hoodie",
+    "category": "Kids",
+    "subcategory": "Kids Wear",
+    "price": 1300,
+    "mrp": 2310,
+    "discount": 43,
+    "description": "Premium quality kids hoodie made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Yellow",
+        "Purple"
+      ],
+      "size": [
+        "S",
+        "XS",
+        "Free Size",
+        "XL",
+        "M"
+      ],
+      "material": "Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.6,
+    "reviews": 109,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0186",
+    "name": "Kids Sweatshirt",
+    "category": "Kids",
+    "subcategory": "Kids Wear",
+    "price": 1100,
+    "mrp": 1883,
+    "discount": 41,
+    "description": "Premium quality kids sweatshirt made from Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Green",
+        "Brown",
+        "Yellow"
+      ],
+      "size": [
+        "XL",
+        "M",
+        "Free Size",
+        "XS",
+        "L"
+      ],
+      "material": "Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+    "rating": 4.7,
+    "reviews": 176,
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0187",
+    "name": "Running Sports Wear",
+    "category": "Sportswear",
+    "subcategory": "Sportswear",
+    "price": 2800,
+    "mrp": 4964,
+    "discount": 43,
+    "description": "Premium quality running sports wear made from Polyester/Spandex. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "White"
+      ],
+      "size": [
+        "Free Size",
+        "XS",
+        "L",
+        "XL"
+      ],
+      "material": "Polyester/Spandex",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+    "rating": 4.2,
+    "reviews": 371,
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0188",
+    "name": "Gym Sports Wear",
+    "category": "Sportswear",
+    "subcategory": "Sportswear",
+    "price": 3900,
+    "mrp": 5768,
+    "discount": 32,
+    "description": "Premium quality gym sports wear made from Polyester/Spandex. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Black"
+      ],
+      "size": [
+        "XXL",
+        "Free Size",
+        "L",
+        "XS"
+      ],
+      "material": "Polyester/Spandex",
+      "occasion": "Festive"
+    },
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+    "rating": 4.1,
+    "reviews": 200,
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0189",
+    "name": "Yoga Sports Wear",
+    "category": "Sportswear",
+    "subcategory": "Sportswear",
+    "price": 3100,
+    "mrp": 4736,
+    "discount": 34,
+    "description": "Premium quality yoga sports wear made from Polyester/Spandex. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Green"
+      ],
+      "size": [
+        "Free Size",
+        "M",
+        "S",
+        "L",
+        "XS"
+      ],
+      "material": "Polyester/Spandex",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 449,
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0190",
+    "name": "Training Sports Wear",
+    "category": "Sportswear",
+    "subcategory": "Sportswear",
+    "price": 2500,
+    "mrp": 4003,
+    "discount": 37,
+    "description": "Premium quality training sports wear made from Polyester/Spandex. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "White",
+        "Purple",
+        "Yellow"
+      ],
+      "size": [
+        "XL",
+        "XS",
+        "L",
+        "Free Size"
+      ],
+      "material": "Polyester/Spandex",
+      "occasion": "Casual"
+    },
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+    "rating": 4.1,
+    "reviews": 436,
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0191",
+    "name": "Track Suit Sports Wear",
+    "category": "Sportswear",
+    "subcategory": "Sportswear",
+    "price": 3100,
+    "mrp": 4686,
+    "discount": 33,
+    "description": "Premium quality track suit sports wear made from Polyester/Spandex. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Green",
+        "Navy",
+        "Blue",
+        "Purple"
+      ],
+      "size": [
+        "M",
+        "XL",
+        "S",
+        "XS"
+      ],
+      "material": "Polyester/Spandex",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 170,
+    "images": [
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583391733981-8b1c68a41e03?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0192",
+    "name": "Sports Shoes",
+    "category": "Sportswear",
+    "subcategory": "Sports Accessories",
+    "price": 1000,
+    "mrp": 1478,
+    "discount": 32,
+    "description": "Premium quality sports shoes made from Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Orange",
+        "White"
+      ],
+      "size": [
+        "XL",
+        "XS",
+        "XXL",
+        "Free Size",
+        "S"
+      ],
+      "material": "Synthetic",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+    "rating": 3.9,
+    "reviews": 223,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0193",
+    "name": "Sports Bag",
+    "category": "Sportswear",
+    "subcategory": "Sports Accessories",
+    "price": 600,
+    "mrp": 1048,
+    "discount": 42,
+    "description": "Premium quality sports bag made from Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Blue",
+        "Pink",
+        "Black"
+      ],
+      "size": [
+        "S",
+        "XXL",
+        "XS",
+        "M",
+        "Free Size"
+      ],
+      "material": "Synthetic",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop",
+    "rating": 4.0,
+    "reviews": 454,
+    "images": [
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0194",
+    "name": "Sports Water Bottle",
+    "category": "Sportswear",
+    "subcategory": "Sports Accessories",
+    "price": 1700,
+    "mrp": 2481,
+    "discount": 31,
+    "description": "Premium quality sports water bottle made from Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Grey",
+        "Green",
+        "Red"
+      ],
+      "size": [
+        "L",
+        "XL",
+        "M"
+      ],
+      "material": "Synthetic",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+    "rating": 4.4,
+    "reviews": 363,
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0195",
+    "name": "Sports Cap",
+    "category": "Sportswear",
+    "subcategory": "Sports Accessories",
+    "price": 1100,
+    "mrp": 1536,
+    "discount": 28,
+    "description": "Premium quality sports cap made from Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Red",
+        "White",
+        "Brown"
+      ],
+      "size": [
+        "S",
+        "L",
+        "M"
+      ],
+      "material": "Synthetic",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 298,
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0196",
+    "name": "Sports Gloves",
+    "category": "Sportswear",
+    "subcategory": "Sports Accessories",
+    "price": 2000,
+    "mrp": 3550,
+    "discount": 43,
+    "description": "Premium quality sports gloves made from Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Red",
+        "Pink",
+        "Black",
+        "White"
+      ],
+      "size": [
+        "XS",
+        "XXL",
+        "XL"
+      ],
+      "material": "Synthetic",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+    "rating": 4.6,
+    "reviews": 309,
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0197",
+    "name": "Sports Socks",
+    "category": "Sportswear",
+    "subcategory": "Sports Accessories",
+    "price": 1400,
+    "mrp": 2321,
+    "discount": 39,
+    "description": "Premium quality sports socks made from Synthetic. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Grey",
+        "Navy",
+        "Red",
+        "White"
+      ],
+      "size": [
+        "S",
+        "Free Size",
+        "M"
+      ],
+      "material": "Synthetic",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+    "rating": 4.0,
+    "reviews": 351,
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0198",
+    "name": "Women's Yoga Activewear Set",
+    "category": "Sportswear",
+    "subcategory": "Activewear",
+    "price": 3300,
+    "mrp": 4691,
+    "discount": 29,
+    "description": "Premium quality women's yoga activewear set made from Lycra/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Orange",
+        "White",
+        "Yellow",
+        "Black"
+      ],
+      "size": [
+        "Free Size",
+        "L",
+        "XXL",
+        "XS",
+        "M"
+      ],
+      "material": "Lycra/Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+    "rating": 4.7,
+    "reviews": 252,
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0199",
+    "name": "Men's Gym Activewear Set",
+    "category": "Sportswear",
+    "subcategory": "Activewear",
+    "price": 1900,
+    "mrp": 3183,
+    "discount": 40,
+    "description": "Premium quality men's gym activewear set made from Lycra/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Navy",
+        "Red",
+        "Yellow",
+        "Brown"
+      ],
+      "size": [
+        "S",
+        "L",
+        "Free Size",
+        "XL"
+      ],
+      "material": "Lycra/Cotton",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+    "rating": 4.3,
+    "reviews": 306,
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=500&fit=crop"
+    ]
+  },
+  {
+    "sku": "SKU0200",
+    "name": "Running Activewear Set",
+    "category": "Sportswear",
+    "subcategory": "Activewear",
+    "price": 4200,
+    "mrp": 6778,
+    "discount": 38,
+    "description": "Premium quality running activewear set made from Lycra/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "Yellow",
+        "Red"
+      ],
+      "size": [
+        "XS",
+        "L",
+        "Free Size"
+      ],
+      "material": "Lycra/Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 3.9,
+    "reviews": 105,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0201",
+    "name": "Cycling Activewear Set",
+    "category": "Sportswear",
+    "subcategory": "Activewear",
+    "price": 2200,
+    "mrp": 3422,
+    "discount": 35,
+    "description": "Premium quality cycling activewear set made from Lycra/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Purple",
+        "Green",
+        "Grey",
+        "Red"
+      ],
+      "size": [
+        "S",
+        "XL",
+        "XXL",
+        "Free Size"
+      ],
+      "material": "Lycra/Cotton",
+      "occasion": "Formal"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.6,
+    "reviews": 255,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0202",
+    "name": "Swimming Activewear Set",
+    "category": "Sportswear",
+    "subcategory": "Activewear",
+    "price": 3600,
+    "mrp": 5922,
+    "discount": 39,
+    "description": "Premium quality swimming activewear set made from Lycra/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Grey"
+      ],
+      "size": [
+        "XL",
+        "XS",
+        "M"
+      ],
+      "material": "Lycra/Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.1,
+    "reviews": 81,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0203",
+    "name": "CrossFit Activewear Set",
+    "category": "Sportswear",
+    "subcategory": "Activewear",
+    "price": 3200,
+    "mrp": 4989,
+    "discount": 35,
+    "description": "Premium quality crossfit activewear set made from Lycra/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Yellow",
+        "Brown",
+        "Red",
+        "White"
+      ],
+      "size": [
+        "L",
+        "XL",
+        "XXL",
+        "M"
+      ],
+      "material": "Lycra/Cotton",
+      "occasion": "Wedding"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.7,
+    "reviews": 292,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0204",
+    "name": "Boxing Activewear Set",
+    "category": "Sportswear",
+    "subcategory": "Activewear",
+    "price": 4600,
+    "mrp": 6020,
+    "discount": 23,
+    "description": "Premium quality boxing activewear set made from Lycra/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Brown",
+        "Grey"
+      ],
+      "size": [
+        "L",
+        "XL",
+        "XS",
+        "XXL"
+      ],
+      "material": "Lycra/Cotton",
+      "occasion": "Party"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.1,
+    "reviews": 85,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
+  },
+  {
+    "sku": "SKU0205",
+    "name": "Tennis Activewear Set",
+    "category": "Sportswear",
+    "subcategory": "Activewear",
+    "price": 2000,
+    "mrp": 3586,
+    "discount": 44,
+    "description": "Premium quality tennis activewear set made from Lycra/Cotton. Perfect for your wardrobe collection.",
+    "attributes": {
+      "color": [
+        "Pink",
+        "Orange"
+      ],
+      "size": [
+        "L",
+        "Free Size",
+        "XS",
+        "XXL"
+      ],
+      "material": "Lycra/Cotton",
+      "occasion": "Office"
+    },
+    "image_url": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+    "rating": 4.8,
+    "reviews": 131,
+    "images": [
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400"
+    ]
   }
 ]

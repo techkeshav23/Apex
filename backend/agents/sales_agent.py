@@ -123,6 +123,9 @@ class SalesAgent:
                 self.current_session = {}
         else:
             self.current_session = state or {}
+        
+        # Restore conversation history from session
+        self.conversation_history = self.current_session.get('conversation_history', [])
 
     def get_state(self):
         """Return the current session state"""
@@ -194,8 +197,16 @@ class SalesAgent:
         """Handle product discovery and recommendations"""
         self.log("Initiating product discovery...")
         
-        # Extract context from user input
+        # Extract context from user input AND previous conversation
+        # Include last few messages for context
         context = user_input
+        if len(self.conversation_history) > 1:
+            # Get last 2-3 user messages for context
+            recent_messages = [msg['message'] for msg in self.conversation_history[-6:] if msg['role'] == 'user']
+            if recent_messages:
+                context = " ".join(recent_messages[-3:])  # Last 3 user messages
+                self.log(f"📝 Using conversation context: {context}")
+        
         occasion = ""
         budget = None
         
@@ -217,6 +228,11 @@ class SalesAgent:
         if recommendations.get('success'):
             self.current_session['stage'] = 'browsing'
             self.current_session['recommendations'] = recommendations['recommendations']
+            
+            # Log the order of recommendations
+            self.log(f"🎯 Final recommendation order in SalesAgent:")
+            for i, prod in enumerate(recommendations['recommendations'][:5], 1):
+                self.log(f"  {i}. {prod['name']}")
             
             # Create response message
             message = recommendations['personalized_message'] + "\n\n"
@@ -640,6 +656,8 @@ class SalesAgent:
     
     def get_state(self):
         """Return the current session state"""
+        # Include conversation history in the session state
+        self.current_session['conversation_history'] = self.conversation_history
         return self.current_session
 
     def log(self, message: str):
