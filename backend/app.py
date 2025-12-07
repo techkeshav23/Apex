@@ -123,19 +123,19 @@ def chat():
 def add_to_cart():
     data = request.json
     session_id = data.get('session_id')
-    # Rehydrate agent
-    port = os.environ.get('PORT', 5000)
-    host_url = f"http://127.0.0.1:{port}"
-    sales_agent = SalesAgent(api_base_url=host_url)
-    sales_agent.load_state(state)
+    sku = data.get('sku')
+    quantity = int(data.get('quantity', 1))
 
-    result = sales_agent.add_item_to_cart(sku, quantity)
+    # Load session state
+    state = session_manager.load_session(session_id)
+    if not session_id or not state:
         return jsonify({"success": False, "error": "Session not found"}), 404
     if not sku:
         return jsonify({"success": False, "error": "Missing SKU"}), 400
 
     # Rehydrate agent
-    host_url = request.host_url.rstrip('/')
+    port = os.environ.get('PORT', 5000)
+    host_url = f"http://127.0.0.1:{port}"
     sales_agent = SalesAgent(api_base_url=host_url)
     sales_agent.load_state(state)
 
@@ -149,13 +149,21 @@ def add_to_cart():
         sales_agent.get_state()
     )
     
+@app.route('/api/cart', methods=['GET'])
+def get_cart():
+    session_id = request.args.get('session_id')
+    
+    state = session_manager.load_session(session_id)
+    if not session_id or not state:
+        return jsonify({"success": False, "error": "Session not found"}), 404
+
     # Rehydrate agent
     port = os.environ.get('PORT', 5000)
     host_url = f"http://127.0.0.1:{port}"
     sales_agent = SalesAgent(api_base_url=host_url)
     sales_agent.load_state(state)
     
-    cart = sales_agent.current_session.get('cart', [])
+    cart = sales_agent.current_session.get('cart', [])ion.get('cart', [])
     state = session_manager.load_session(session_id)
     if not session_id or not state:
         return jsonify({"success": False, "error": "Session not found"}), 404
