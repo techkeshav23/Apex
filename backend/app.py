@@ -73,9 +73,9 @@ def start_session():
     })
 
 @app.route('/api/chat', methods=['POST', 'OPTIONS'])
-@app.route('/api/chat', methods=['POST', 'OPTIONS'])
 def chat():
     if request.method == 'OPTIONS':
+        return jsonify({}), 200
 
     data = request.json
     session_id = data.get('session_id')
