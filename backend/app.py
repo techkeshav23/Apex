@@ -58,8 +58,9 @@ def start_session():
     # Use a stable UUID per session to support channel switching
     session_id = str(uuid.uuid4())
     
-    # Use the configured API URL or fallback to the request host
-    host_url = os.getenv('API_BASE_URL', request.host_url.rstrip('/'))
+    # Use localhost for internal API calls to avoid external network roundtrips and deadlocks
+    port = os.environ.get('PORT', 5000)
+    host_url = f"http://127.0.0.1:{port}"
     
     sales_agent = SalesAgent(api_base_url=host_url)
     greeting = sales_agent.start_session(customer_id, channel)
@@ -91,12 +92,21 @@ def chat():
             "success": False,
             "error": "Session not found"
         }), 404
-    
     # Rehydrate agent
-    host_url = request.host_url.rstrip('/')
+    # Use localhost for internal API calls
+    port = os.environ.get('PORT', 5000)
+    host_url = f"http://127.0.0.1:{port}"
+    
     sales_agent = SalesAgent(api_base_url=host_url)
     sales_agent.load_state(state)
     
+    try:
+        response = sales_agent.handle_conversation(user_message)
+    except Exception as e:
+        print(f"Error in handle_conversation: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({"success": False, "error": str(e)}), 500
     response = sales_agent.handle_conversation(user_message)
     
     # Save updated state
@@ -113,12 +123,13 @@ def chat():
 def add_to_cart():
     data = request.json
     session_id = data.get('session_id')
-    sku = data.get('sku')
-    quantity = int(data.get('quantity', 1))
+    # Rehydrate agent
+    port = os.environ.get('PORT', 5000)
+    host_url = f"http://127.0.0.1:{port}"
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
 
-    # Load session state
-    state = session_manager.load_session(session_id)
-    if not session_id or not state:
+    result = sales_agent.add_item_to_cart(sku, quantity)
         return jsonify({"success": False, "error": "Session not found"}), 404
     if not sku:
         return jsonify({"success": False, "error": "Missing SKU"}), 400
@@ -138,12 +149,13 @@ def add_to_cart():
         sales_agent.get_state()
     )
     
-    return jsonify(result)
-
-@app.route('/api/cart', methods=['GET'])
-def get_cart():
-    session_id = request.args.get('session_id')
+    # Rehydrate agent
+    port = os.environ.get('PORT', 5000)
+    host_url = f"http://127.0.0.1:{port}"
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
     
+    cart = sales_agent.current_session.get('cart', [])
     state = session_manager.load_session(session_id)
     if not session_id or not state:
         return jsonify({"success": False, "error": "Session not found"}), 404
@@ -174,14 +186,15 @@ def get_cart():
             "delivery": delivery,
             "total": total
         }
-    })
+    if not promo_code:
+        return jsonify({"success": False, "error": "Missing promo code"}), 400
 
-@app.route('/api/cart/apply_promo', methods=['POST'])
-def apply_promo():
-    data = request.json
-    session_id = data.get('session_id')
-    promo_code = data.get('promo_code')
+    port = os.environ.get('PORT', 5000)
+    host_url = f"http://127.0.0.1:{port}"
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
 
+    cart = sales_agent.current_session.get('cart', [])
     state = session_manager.load_session(session_id)
     if not session_id or not state:
         return jsonify({"success": False, "error": "Session not found"}), 404
@@ -228,14 +241,15 @@ def apply_promo():
             "discount": discount_total,
             "summary": {"subtotal": subtotal, "delivery": delivery, "total": total}
         })
-    else:
-        return jsonify({"success": False, "error": "Invalid or inapplicable promo"}), 400
+    if points <= 0:
+        return jsonify({"success": False, "error": "Invalid points"}), 400
 
-@app.route('/api/cart/redeem_points', methods=['POST'])
-def redeem_points():
-    data = request.json
-    session_id = data.get('session_id')
-    points = int(data.get('points', 0))
+    port = os.environ.get('PORT', 5000)
+    host_url = f"http://127.0.0.1:{port}"
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
+
+    customer_id = sales_agent.current_session.get('customer_id')
 
     state = session_manager.load_session(session_id)
     if not session_id or not state:
@@ -271,14 +285,15 @@ def redeem_points():
     subtotal = sum((item.get('price', 0) * item.get('quantity', 1)) for item in cart)
     delivery = 0 if subtotal > 1000 else (0 if subtotal == 0 else 50)
     total = max(0, subtotal - ctx.get('promo_discount', 0) - ctx.get('redeemed_discount', 0) + delivery)
+    if not session_id or not state:
+        return jsonify({"success": False, "error": "Session not found"}), 404
 
-    return jsonify({
-        "success": True,
-        "discount": ctx['redeemed_discount'],
-        "summary": {"subtotal": subtotal, "delivery": delivery, "total": total}
-    })
+    port = os.environ.get('PORT', 5000)
+    host_url = f"http://127.0.0.1:{port}"
+    sales_agent = SalesAgent(api_base_url=host_url)
+    sales_agent.load_state(state)
 
-@app.route('/api/checkout', methods=['POST'])
+    result = sales_agent._handle_checkout()])
 def checkout():
     data = request.json
     session_id = data.get('session_id')
@@ -287,17 +302,18 @@ def checkout():
     if not session_id or not state:
         return jsonify({"success": False, "error": "Session not found"}), 404
 
-    host_url = request.host_url.rstrip('/')
+    if not state:
+        return jsonify({
+            "success": False,
+            "error": "Session not found"
+        }), 404
+    
+    port = os.environ.get('PORT', 5000)
+    host_url = f"http://127.0.0.1:{port}"
     sales_agent = SalesAgent(api_base_url=host_url)
     sales_agent.load_state(state)
-
-    result = sales_agent._handle_checkout()
-    return jsonify(result), (200 if result.get('success') else 400)
-
-@app.route('/api/switch_channel', methods=['POST'])
-def switch_channel():
-    data = request.json
-    session_id = data.get('session_id')
+    
+    response = sales_agent.switch_channel(new_channel)
     new_channel = data.get('new_channel')
     
     state = session_manager.load_session(session_id)
