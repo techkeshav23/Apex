@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import axios from 'axios';
+import { Mic, MicOff, Send, MapPin, Tag, User, ShoppingBag, Volume2, VolumeX, Search, ShoppingCart, CreditCard, X, Check } from 'lucide-react';
 import { getProductImage } from './utils/productImage';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
@@ -9,6 +10,12 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState('');
   const [loading, setLoading] = useState(false);
+  
+  // Cart & Checkout States
+  const [cart, setCart] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
+  const [checkoutStatus, setCheckoutStatus] = useState('idle'); // idle, processing, success, error
   
   // Voice States
   const [isListening, setIsListening] = useState(false);
@@ -66,12 +73,16 @@ function App() {
         console.log('Heard:', transcript);
 
         // Wake Word Logic
-        if (transcript.includes('hey apex') || transcript.includes('hey apecs') || transcript.includes('apex')) {
+        // Normalize transcript to remove punctuation for better matching
+        const cleanTranscript = transcript.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+        
+        if (cleanTranscript.includes('hey apex') || cleanTranscript.includes('hey apecs') || cleanTranscript.includes('apex') || cleanTranscript.includes('hey epics')) {
            setIsListening(true);
-           // Visual feedback or sound could go here
            
            // Check if there is a command AFTER the wake word
-           const command = transcript.replace(/hey apex|hey apecs|apex/g, '').trim();
+           // Remove the wake word variations to get the command
+           const command = cleanTranscript.replace(/hey apex|hey apecs|apex|hey epics/g, '').trim();
+           
            if (command.length > 2) {
               setInputMessage(command);
               if (handleSendMessageRef.current) {
@@ -145,7 +156,8 @@ function App() {
       // Start listening
       synthesisRef.current.cancel();
       setIsSpeaking(false);
-      setIsListening(true);
+      // Start in "Standby" mode - waiting for Wake Word
+      setIsListening(false); 
       setWakeWordActive(true);
       try {
         recognitionRef.current.start();
@@ -220,6 +232,15 @@ function App() {
 
       setMessages(prev => [...prev, botMessage]);
       
+      // Update Cart if present in response
+      if (response.data.cart) {
+        setCart(response.data.cart);
+        // Auto-open cart if items were added
+        if (response.data.cart.length > cart.length) {
+           setIsCartOpen(true);
+        }
+      }
+
       // Speak the response
       speak(response.data.message);
 
@@ -252,20 +273,64 @@ function App() {
     handleSendMessage(action);
   };
 
+  const handleCheckout = async () => {
+    setCheckoutStatus('processing');
+    try {
+      const response = await axios.post(`${API_URL}/api/checkout`, {
+        session_id: sessionData.session_id
+      });
+      
+      if (response.data.success) {
+        setCheckoutStatus('success');
+        setCart([]); // Clear local cart
+        
+        // Add success message to chat
+        setMessages(prev => [...prev, {
+          type: 'bot',
+          text: response.data.message,
+          timestamp: new Date().toLocaleTimeString()
+        }]);
+        
+        speak("Payment successful! Your order has been placed.");
+        
+        setTimeout(() => {
+          setIsCheckoutOpen(false);
+          setCheckoutStatus('idle');
+          setIsCartOpen(false);
+        }, 3000);
+      }
+    } catch (error) {
+      console.error("Checkout failed:", error);
+      setCheckoutStatus('error');
+      speak("Sorry, payment failed. Please try again.");
+    }
+  };
+
   return (
     <div className="fixed inset-0 bg-gray-50 text-gray-900 z-50 flex flex-col font-sans">
       {/* Kiosk Header */}
       <div className="bg-white p-6 flex justify-between items-center shadow-sm border-b border-gray-200">
         <div className="flex items-center gap-4">
           <div className={`w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold shadow-lg shadow-blue-200 transition-all text-white ${isSpeaking ? 'bg-green-500 scale-110' : 'bg-blue-600'}`}>
-            {isSpeaking ? '🔊' : 'A'}
+            {isSpeaking ? <Volume2 size={24} /> : <ShoppingBag size={24} />}
           </div>
           <div>
             <h1 className="text-2xl font-bold tracking-wide text-gray-900">IN-STORE ASSISTANT</h1>
-            <p className="text-gray-500 text-sm">Kiosk ID: K-04 • Aisle 3</p>
+            <p className="text-gray-500 text-sm flex items-center gap-1"><MapPin size={14} /> Kiosk ID: K-04 • Aisle 3</p>
           </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-4 items-center">
+           <button 
+             onClick={() => setIsCartOpen(true)}
+             className="relative p-3 bg-gray-100 rounded-xl hover:bg-blue-50 hover:text-blue-600 transition-colors"
+           >
+             <ShoppingCart size={24} />
+             {cart.length > 0 && (
+               <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">
+                 {cart.reduce((acc, item) => acc + (item.quantity || 1), 0)}
+               </span>
+             )}
+           </button>
            <div className="px-4 py-2 bg-gray-100 rounded-lg border border-gray-200">
               <span className="text-xs text-gray-500 block">STORE</span>
               <span className="font-bold text-gray-800">Phoenix Mall, BLR</span>
@@ -274,17 +339,134 @@ function App() {
       </div>
 
       {/* Main Content Area */}
-      <div className="flex-1 flex overflow-hidden">
+      <div className="flex-1 flex overflow-hidden relative">
         
+        {/* Cart Sidebar Overlay */}
+        {isCartOpen && (
+          <div className="absolute inset-0 z-40 flex justify-end bg-black/20 backdrop-blur-sm transition-all" onClick={() => setIsCartOpen(false)}>
+            <div className="w-96 bg-white h-full shadow-2xl flex flex-col animate-slide-in-right" onClick={e => e.stopPropagation()}>
+              <div className="p-6 border-b border-gray-200 flex justify-between items-center bg-gray-50">
+                <h2 className="text-xl font-bold flex items-center gap-2"><ShoppingCart size={20} /> Your Cart</h2>
+                <button onClick={() => setIsCartOpen(false)} className="p-2 hover:bg-gray-200 rounded-full transition-colors"><X size={20} /></button>
+              </div>
+              
+              <div className="flex-1 overflow-y-auto p-6 space-y-4">
+                {cart.length === 0 ? (
+                  <div className="text-center text-gray-400 py-10">
+                    <ShoppingBag size={48} className="mx-auto mb-4 opacity-20" />
+                    <p>Your cart is empty</p>
+                  </div>
+                ) : (
+                  cart.map((item, idx) => (
+                    <div key={idx} className="flex gap-4 border-b border-gray-100 pb-4">
+                      <div className="w-16 h-16 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
+                        <img src={getProductImage(item)} alt={item.name} className="w-full h-full object-cover" />
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-semibold text-sm line-clamp-2">{item.name}</h4>
+                        <div className="flex justify-between items-center mt-1">
+                          <span className="text-blue-600 font-bold">₹{item.price}</span>
+                          <span className="text-xs text-gray-500">Qty: {item.quantity || 1}</span>
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                )}
+              </div>
+              
+              <div className="p-6 border-t border-gray-200 bg-gray-50">
+                <div className="flex justify-between items-center mb-4">
+                  <span className="text-gray-600">Total</span>
+                  <span className="text-2xl font-bold text-gray-900">
+                    ₹{cart.reduce((acc, item) => acc + (item.price * (item.quantity || 1)), 0)}
+                  </span>
+                </div>
+                <button 
+                  onClick={() => setIsCheckoutOpen(true)}
+                  disabled={cart.length === 0}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-blue-200"
+                >
+                  <CreditCard size={20} /> Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Checkout Modal */}
+        {isCheckoutOpen && (
+          <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+            <div className="bg-white w-[480px] rounded-2xl shadow-2xl overflow-hidden animate-scale-in">
+              <div className="p-6 border-b border-gray-200 flex justify-between items-center bg-gray-50">
+                <h2 className="text-xl font-bold">Secure Checkout</h2>
+                <button onClick={() => setIsCheckoutOpen(false)} className="p-2 hover:bg-gray-200 rounded-full"><X size={20} /></button>
+              </div>
+              
+              <div className="p-8 text-center">
+                {checkoutStatus === 'idle' && (
+                  <div className="space-y-6">
+                    <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <CreditCard size={40} className="text-blue-600" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">Tap to Pay</h3>
+                    <p className="text-gray-500">Total Amount: <span className="font-bold text-gray-900">₹{cart.reduce((acc, item) => acc + (item.price * (item.quantity || 1)), 0)}</span></p>
+                    
+                    <div className="grid grid-cols-2 gap-4">
+                      <button onClick={handleCheckout} className="p-4 border-2 border-blue-100 rounded-xl hover:border-blue-500 hover:bg-blue-50 transition-all flex flex-col items-center gap-2">
+                        <span className="text-2xl">💳</span>
+                        <span className="font-semibold">Card</span>
+                      </button>
+                      <button onClick={handleCheckout} className="p-4 border-2 border-blue-100 rounded-xl hover:border-blue-500 hover:bg-blue-50 transition-all flex flex-col items-center gap-2">
+                        <span className="text-2xl">📱</span>
+                        <span className="font-semibold">UPI / QR</span>
+                      </button>
+                    </div>
+                  </div>
+                )}
+                
+                {checkoutStatus === 'processing' && (
+                  <div className="py-10">
+                    <div className="w-16 h-16 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin mx-auto mb-6"></div>
+                    <h3 className="text-xl font-bold text-gray-800">Processing Payment...</h3>
+                    <p className="text-gray-500 mt-2">Please wait while we connect to the terminal.</p>
+                  </div>
+                )}
+                
+                {checkoutStatus === 'success' && (
+                  <div className="py-6">
+                    <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 animate-bounce">
+                      <Check size={40} className="text-green-600" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">Payment Successful!</h3>
+                    <p className="text-gray-500 mt-2">Your order has been confirmed.</p>
+                    <p className="text-sm text-gray-400 mt-4">Redirecting...</p>
+                  </div>
+                )}
+                
+                {checkoutStatus === 'error' && (
+                  <div className="py-6">
+                    <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <X size={40} className="text-red-600" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900">Payment Failed</h3>
+                    <p className="text-gray-500 mt-2">Please try again or ask for assistance.</p>
+                    <button onClick={() => setCheckoutStatus('idle')} className="mt-6 px-6 py-2 bg-gray-900 text-white rounded-lg">Try Again</button>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Left Panel: Chat */}
-        <div className="w-2/3 flex flex-col border-r border-gray-200 bg-white">
-          <div className="flex-1 overflow-y-auto p-8 space-y-6">
+        <div className="w-2/3 flex flex-col border-r border-gray-200 bg-white relative">
+          <div className="flex-1 overflow-y-auto p-8 space-y-6 pb-32">
             {messages.map((message, index) => (
               <div key={index} className={`flex gap-4 ${message.type === 'user' ? 'flex-row-reverse' : ''}`}>
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center text-lg flex-shrink-0 shadow-md text-white ${
                   message.type === 'bot' ? 'bg-blue-600' : 'bg-gray-600'
                 }`}>
-                  {message.type === 'bot' ? 'A' : '👤'}
+                  {message.type === 'bot' ? <ShoppingBag size={18} /> : <User size={18} />}
                 </div>
                 <div className={`max-w-[80%] flex flex-col gap-2 ${message.type === 'user' ? 'items-end' : ''}`}>
                   <div className={`px-6 py-4 rounded-2xl text-lg leading-relaxed shadow-sm whitespace-pre-wrap ${
@@ -326,7 +508,7 @@ function App() {
             ))}
             {loading && (
               <div className="flex gap-4">
-                <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white">A</div>
+                <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white"><ShoppingBag size={18} /></div>
                 <div className="bg-gray-100 px-6 py-4 rounded-2xl rounded-tl-sm border border-gray-200 flex gap-2 items-center">
                   <span className="w-2 h-2 bg-blue-400 rounded-full animate-bounce"></span>
                   <span className="w-2 h-2 bg-blue-400 rounded-full animate-bounce delay-100"></span>
@@ -338,37 +520,70 @@ function App() {
           </div>
 
           {/* Input Area */}
-          <div className="p-6 bg-white border-t border-gray-200">
-            <div className="flex gap-4">
+          <div className="p-6 bg-white border-t border-gray-200 absolute bottom-0 left-0 right-0 z-10">
+            <div className={`flex gap-4 items-center transition-all duration-300 p-2 rounded-2xl ${isListening || wakeWordActive ? 'bg-blue-50 border border-blue-200 shadow-inner' : ''}`}>
               {/* Voice Button */}
               <button 
                 onClick={toggleListening}
                 disabled={!voiceSupported}
-                className={`w-16 h-16 rounded-xl flex items-center justify-center text-2xl transition-all shadow-sm border relative ${
+                className={`w-16 h-16 rounded-full flex items-center justify-center text-2xl transition-all shadow-lg border-2 relative overflow-hidden group ${
                   isListening || wakeWordActive
-                    ? 'bg-red-500 border-red-600 text-white animate-pulse shadow-red-200' 
-                    : 'bg-gray-100 border-gray-300 text-gray-600 hover:text-blue-600 hover:border-blue-400 hover:bg-blue-50'
+                    ? 'bg-blue-600 border-blue-400 text-white shadow-blue-300 scale-105' 
+                    : 'bg-white border-gray-200 text-gray-600 hover:text-blue-600 hover:border-blue-400 hover:shadow-md'
                 } ${!voiceSupported ? 'opacity-50 cursor-not-allowed' : ''}`}
                 title={!voiceSupported ? 'Voice not supported' : (isListening || wakeWordActive) ? 'Click to stop listening' : 'Click to start voice input'}
               >
-                {isListening || wakeWordActive ? '🔴' : '🎙️'}
+                {isListening || wakeWordActive ? (
+                   <div className="flex gap-1 items-center h-6">
+                      <div className="w-1 bg-white rounded-full animate-bounce h-3" style={{ animationDuration: '1s' }}></div>
+                      <div className="w-1 bg-white rounded-full animate-bounce h-5" style={{ animationDuration: '1s', animationDelay: '0.1s' }}></div>
+                      <div className="w-1 bg-white rounded-full animate-bounce h-3" style={{ animationDuration: '1s', animationDelay: '0.2s' }}></div>
+                   </div>
+                ) : (
+                  <Mic size={28} className="group-hover:scale-110 transition-transform" />
+                )}
+                
+                {/* Pulse Ring */}
+                {(isListening || wakeWordActive) && (
+                  <span className="absolute inset-0 rounded-full border-4 border-white opacity-30 animate-ping"></span>
+                )}
               </button>
 
-              <input
-                type="text"
-                value={inputMessage}
-                onChange={(e) => setInputMessage(e.target.value)}
-                onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
-                placeholder={isListening || wakeWordActive ? "🎤 Listening... (Say 'Hey Apex' to wake)" : "Type to search or click mic for voice..."}
-                className="flex-1 bg-gray-50 text-gray-900 px-6 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 text-lg placeholder-gray-400 transition-all"
-              />
+              <div className="flex-1 relative">
+                <input
+                  type="text"
+                  value={inputMessage}
+                  onChange={(e) => setInputMessage(e.target.value)}
+                  onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
+                  placeholder={isListening || wakeWordActive ? "Listening... Say 'Hey Apex'..." : "Type to search..."}
+                  className={`w-full bg-gray-50 text-gray-900 px-6 py-4 pl-12 rounded-xl border focus:outline-none focus:ring-2 text-lg placeholder-gray-400 transition-all ${
+                    isListening || wakeWordActive 
+                      ? 'border-blue-300 bg-white ring-2 ring-blue-100' 
+                      : 'border-gray-200 focus:border-blue-500 focus:ring-blue-100'
+                  }`}
+                />
+                <div className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+                  {isListening || wakeWordActive ? (
+                    <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                  ) : (
+                    <Search size={20} />
+                  )}
+                </div>
+              </div>
+
               <button 
                 onClick={() => handleSendMessage()}
-                disabled={loading}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-blue-200"
+                disabled={loading || !inputMessage.trim()}
+                className="bg-blue-600 hover:bg-blue-700 text-white w-16 h-16 rounded-full flex items-center justify-center transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-blue-200 hover:scale-105 active:scale-95"
               >
-                SEND
+                <Send size={24} className={loading ? 'opacity-0' : 'ml-1'} />
+                {loading && <div className="absolute w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>}
               </button>
+            </div>
+            
+            {/* Voice Status Text */}
+            <div className={`text-center mt-2 text-sm font-medium transition-all duration-300 ${isListening || wakeWordActive ? 'text-blue-600 opacity-100' : 'text-gray-400 opacity-0 h-0'}`}>
+               Listening for "Hey Apex"...
             </div>
           </div>
         </div>
@@ -378,26 +593,29 @@ function App() {
           
           {/* Quick Actions */}
           <div>
-            <h3 className="text-gray-500 font-bold uppercase tracking-wider text-sm mb-4">Quick Actions</h3>
+            <h3 className="text-gray-500 font-bold uppercase tracking-wider text-sm mb-4 flex items-center gap-2"><Tag size={16} /> Quick Actions</h3>
             <div className="grid grid-cols-1 gap-3">
-              <button onClick={() => handleQuickAction("Where is the trial room?")} className="bg-white hover:bg-blue-50 p-4 rounded-xl text-left transition-all border border-gray-200 hover:border-blue-300 shadow-sm group">
-                <span className="text-2xl mb-1 block">🚪</span>
+              <button onClick={() => handleQuickAction("Where is the trial room?")} className="bg-white hover:bg-blue-50 p-4 rounded-xl text-left transition-all border border-gray-200 hover:border-blue-300 shadow-sm group flex items-center gap-4">
+                <span className="w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-xl group-hover:bg-blue-600 group-hover:text-white transition-colors">🚪</span>
                 <span className="font-semibold text-gray-700 group-hover:text-blue-700">Find Trial Room</span>
               </button>
-              <button onClick={() => handleQuickAction("Check price of this item")} className="bg-white hover:bg-blue-50 p-4 rounded-xl text-left transition-all border border-gray-200 hover:border-blue-300 shadow-sm group">
-                <span className="text-2xl mb-1 block">🏷️</span>
-                <span className="font-semibold text-gray-700 group-hover:text-blue-700">Price Check</span>
+              <button onClick={() => handleQuickAction("Check price of this item")} className="bg-white hover:bg-blue-50 p-4 rounded-xl text-left transition-all border border-gray-200 hover:border-blue-300 shadow-sm group flex items-center gap-4">
+                <span className="w-10 h-10 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center text-xl group-hover:bg-purple-600 group-hover:text-white transition-colors">🏷️</span>
+                <span className="font-semibold text-gray-700 group-hover:text-purple-700">Price Check</span>
               </button>
-              <button onClick={() => handleQuickAction("Call a store associate")} className="bg-white hover:bg-blue-50 p-4 rounded-xl text-left transition-all border border-gray-200 hover:border-blue-300 shadow-sm group">
-                <span className="text-2xl mb-1 block">🙋‍♂️</span>
-                <span className="font-semibold text-gray-700 group-hover:text-blue-700">Call Staff</span>
+              <button onClick={() => handleQuickAction("Call a store associate")} className="bg-white hover:bg-blue-50 p-4 rounded-xl text-left transition-all border border-gray-200 hover:border-blue-300 shadow-sm group flex items-center gap-4">
+                <span className="w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center text-xl group-hover:bg-green-600 group-hover:text-white transition-colors">🙋‍♂️</span>
+                <span className="font-semibold text-gray-700 group-hover:text-green-700">Call Staff</span>
               </button>
             </div>
           </div>
 
           {/* Store Map Placeholder */}
-          <div className="flex-1 bg-white rounded-2xl p-6 border border-gray-200 flex flex-col items-center justify-center text-center shadow-sm">
-            <div className="text-6xl mb-4 opacity-50">🗺️</div>
+          <div className="flex-1 bg-white rounded-2xl p-6 border border-gray-200 flex flex-col items-center justify-center text-center shadow-sm relative overflow-hidden group">
+            <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+            <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+               <MapPin size={40} className="text-blue-500" />
+            </div>
             <h3 className="text-xl font-bold text-gray-800">Store Map</h3>
             <p className="text-gray-500 mt-2">You are in Zone A</p>
           </div>

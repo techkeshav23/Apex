@@ -154,39 +154,57 @@ class SalesAgent:
         return response
     
     def _analyze_intent(self, user_input: str) -> str:
-        """Analyze user intent from input"""
+        """Analyze user intent from input using Gemini or rules"""
+        
+        # 1. Try Gemini for advanced intent classification
+        if GEMINI_ENABLED and gemini_assistant.is_available():
+            try:
+                prompt = f"""Classify the user's intent into exactly one of these categories:
+- product_discovery: User wants to find, see, search, or buy products (e.g., "show me shirts", "I need a dress", "buy shoes", "do you have...").
+- add_to_cart: User wants to add a specific item to cart (e.g., "add this", "add to cart", "I'll take it", "buy this one").
+- checkout: User wants to pay or finish shopping (e.g., "checkout", "pay now", "bill please").
+- apply_offer: User wants to use a coupon or check offers (e.g., "apply SAVE10", "any discounts?", "use promo code").
+- post_purchase: User asks about past orders, returns, tracking, or shipping status (e.g., "where is my order?", "return this", "track package").
+- general: Greetings, small talk, or unclear requests.
+
+User Input: "{user_input}"
+
+Return ONLY the category name."""
+                
+                response = gemini_assistant.model.generate_content(prompt)
+                intent = response.text.strip().lower()
+                
+                valid_intents = ["product_discovery", "add_to_cart", "checkout", "apply_offer", "post_purchase", "general"]
+                if intent in valid_intents:
+                    self.log(f"🧠 Gemini classified intent: {intent}")
+                    return intent
+            except Exception as e:
+                self.log(f"⚠️ Gemini intent classification failed: {e}")
+
+        # 2. Fallback to Rule-based (Improved)
         user_input_lower = user_input.lower()
         
-        # Product discovery keywords - prioritize if no recommendations yet
-        discovery_keywords = ['show', 'looking for', 'need', 'want', 'recommend', 'suggest', 'find']
-        buy_keywords = ['buy', 'purchase', 'get']
-        
-        # If user wants/needs to buy something, it's product discovery first
-        if any(word in user_input_lower for word in discovery_keywords):
-            return "product_discovery"
-        
-        # If user says buy/purchase but we have no context, it's still discovery
-        if any(word in user_input_lower for word in buy_keywords):
-            if not self.current_session.get('recommendations'):
-                return "product_discovery"
-            return "add_to_cart"
-        
-        # Add to cart keywords (only when we have context)
-        if any(word in user_input_lower for word in ['add', 'take', 'cart']):
-            return "add_to_cart"
-        
-        # Checkout keywords
-        if any(word in user_input_lower for word in ['checkout', 'pay', 'complete', 'order', 'buy now']):
-            return "checkout"
-        
-        # Offer keywords
-        if any(word in user_input_lower for word in ['offer', 'discount', 'promo', 'coupon', 'deal']):
-            return "apply_offer"
-        
-        # Post-purchase keywords
-        if any(word in user_input_lower for word in ['return', 'exchange', 'track', 'feedback']):
+        # Post-purchase (Specific keywords that shouldn't be confused with checkout)
+        if any(word in user_input_lower for word in ['return', 'exchange', 'track', 'shipment', 'delivery status', 'where is my order']):
             return "post_purchase"
-        
+            
+        # Checkout
+        if any(word in user_input_lower for word in ['checkout', 'pay', 'complete order', 'bill']):
+            return "checkout"
+            
+        # Add to cart
+        if any(word in user_input_lower for word in ['add to cart', 'add this', 'buy this', 'take it']):
+            return "add_to_cart"
+            
+        # Offers
+        if any(word in user_input_lower for word in ['offer', 'discount', 'promo', 'coupon', 'code']):
+            return "apply_offer"
+            
+        # Product Discovery (Broadest category)
+        discovery_keywords = ['show', 'looking for', 'need', 'want', 'recommend', 'suggest', 'find', 'buy', 'get', 'search', 'have']
+        if any(word in user_input_lower for word in discovery_keywords) or any(cat in user_input_lower for cat in ['shirt', 'pant', 'dress', 'shoe', 'watch']):
+            return "product_discovery"
+            
         return "general"
     
     def _handle_product_discovery(self, user_input: str) -> Dict[str, Any]:
@@ -222,6 +240,25 @@ class SalesAgent:
         recommendations = self.recommendation_agent.execute(task)
         
         if recommendations.get('success'):
+            # Filter out-of-stock items using InventoryAgent
+            available_recs = []
+            for prod in recommendations['recommendations']:
+                # Quick inventory check
+                inv_task = {"sku": prod['sku'], "quantity": 1}
+                inv_result = self.inventory_agent.execute(inv_task)
+                
+                # If available or check failed (assume available on fail to not block), keep it
+                if not inv_result.get('success') or inv_result.get('availability', {}).get('status') == 'available':
+                    available_recs.append(prod)
+            
+            recommendations['recommendations'] = available_recs
+            
+            if not available_recs:
+                 return {
+                    "success": False,
+                    "message": "I found some items matching your request, but unfortunately they are all out of stock right now. Can I help you find something else?"
+                }
+
             self.current_session['stage'] = 'browsing'
             self.current_session['recommendations'] = recommendations['recommendations']
             
@@ -666,12 +703,22 @@ Make it sound natural and helpful, not robotic!"""
         if GEMINI_ENABLED and gemini_assistant.is_available():
             try:
                 # Use internal API call if possible, or skip if connection fails
-                # For now, we'll just use the fallback if the API call fails
-                # to prevent the entire session start from failing
                 try:
                     response = requests.get(f"{self.api_base_url}/api/customers/{customer_id}", timeout=3)
                     if response.status_code == 200:
                         customer = response.json()
+                        
+                        # Also fetch loyalty info explicitly if not in customer object
+                        if 'loyalty_points' not in customer:
+                            try:
+                                loyalty_resp = requests.get(f"{self.api_base_url}/api/loyalty/{customer_id}", timeout=2)
+                                if loyalty_resp.status_code == 200:
+                                    loyalty_data = loyalty_resp.json()
+                                    customer['loyalty_points'] = loyalty_data.get('points', 0)
+                                    customer['loyalty_tier'] = loyalty_data.get('tier', 'Bronze')
+                            except:
+                                pass
+
                         greeting_text = gemini_assistant.generate_personalized_greeting(
                             customer, 
                             self.current_session.get('channel', 'web')

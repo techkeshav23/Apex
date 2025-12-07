@@ -130,170 +130,86 @@ const ApexAIModal = ({ visible, onClose, cart, onAddToCart, products, onClearCar
     },
   ]);
 
-  const getSmartResponse = (userInput) => {
-    const input = userInput.toLowerCase();
-    
-    // Cart management
-    if (input.includes('clear cart') || input.includes('empty cart') || input.includes('remove all')) {
-      onClearCart();
-      return {
-        message: "✅ Done! I've cleared your cart. Ready to start fresh shopping?",
-        quickReplies: ['Show all products', 'Best deals', 'Electronics'],
+
+
+  const processBackendResponse = (data) => {
+    // Sync cart if provided by backend
+    if (data.cart) {
+      const mappedCart = data.cart.map(p => ({
+        id: p.sku,
+        title: p.name,
+        price: p.price,
+        category: p.category,
+        description: p.description,
+        image: p.image_url || (p.images && p.images.length > 0 ? p.images[0] : 'https://via.placeholder.com/150'),
+        quantity: p.quantity
+      }));
+      setCart(mappedCart);
+    }
+
+    // Map backend product to frontend format
+    let product = null;
+    if (data.recommendations && data.recommendations.length > 0) {
+      const p = data.recommendations[0];
+      product = {
+        id: p.sku,
+        title: p.name,
+        price: p.price,
+        category: p.category,
+        description: p.description,
+        image: p.image_url || (p.images && p.images.length > 0 ? p.images[0] : 'https://via.placeholder.com/150'),
+        rating: { rate: 4.5, count: 10 }
       };
     }
 
-    if (input.includes('cart') || input.includes('basket') || input.includes('checkout')) {
-      const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-      if (cart.length > 0) {
-        const itemsList = cart.map(item => `• ${item.title.substring(0, 30)}... (${item.quantity}x) - $${(item.price * item.quantity).toFixed(2)}`).join('\n');
-        return {
-          message: `🛒 Your Cart Summary:\n\n${itemsList}\n\n💰 Total: $${total.toFixed(2)}\n\nWhat would you like to do?`,
-          quickReplies: ['Proceed to checkout', 'Clear cart', 'Continue shopping'],
-        };
-      } else {
-        return {
-          message: "Your cart is empty! Let me show you some amazing products to get started 🛍️",
-          quickReplies: ['Show all products', 'Best deals', 'Electronics'],
-        };
-      }
-    }
-
-    // Category navigation
-    if (input.includes('electron') || input.includes('tech') || input.includes('gadget')) {
-      onNavigateToCategory('electronics');
-      const electronics = products.filter(p => p.category === 'electronics')[0];
-      return {
-        message: "🔌 I've filtered to show Electronics. Here's a top pick:",
-        product: electronics,
-        quickReplies: ['Add to cart', 'Show more', 'Different category'],
-      };
-    }
-
-    if (input.includes('jewel') || input.includes('gold') || input.includes('ring') || input.includes('gift')) {
-      onNavigateToCategory('jewelery');
-      const jewelry = products.filter(p => p.category === 'jewelery')[0];
-      return {
-        message: "💎 Perfect for gifting! I've switched to Jewelry. Check this out:",
-        product: jewelry,
-        quickReplies: ['Add to cart', 'Show more jewelry', 'Something else'],
-      };
-    }
-
-    if (input.includes('men') || input.includes('shirt') || input.includes('jacket')) {
-      onNavigateToCategory("men's clothing");
-      const mens = products.filter(p => p.category === "men's clothing")[0];
-      return {
-        message: "👔 I've filtered to Men's Fashion. Here's a stylish option:",
-        product: mens,
-        quickReplies: ['Add to cart', 'Show more', 'Women\'s fashion'],
-      };
-    }
-
-    if (input.includes('women') || input.includes('dress') || input.includes('fashion')) {
-      onNavigateToCategory("women's clothing");
-      const womens = products.filter(p => p.category === "women's clothing")[0];
-      return {
-        message: "👗 I've filtered to Women's Fashion. Trending now:",
-        product: womens,
-        quickReplies: ['Add to cart', 'Show more', 'Men\'s fashion'],
-      };
-    }
-
-    // Show all products
-    if (input.includes('show all') || input.includes('all product') || input.includes('everything')) {
-      onNavigateToCategory('all');
-      return {
-        message: "📱 Perfect! I've reset the view to show ALL products. Browse through our complete collection below!",
-        quickReplies: ['Best rated', 'Cheapest items', 'Most expensive'],
-      };
-    }
-
-    // Deals and pricing
-    if (input.includes('deal') || input.includes('discount') || input.includes('sale') || input.includes('cheap') || input.includes('affordable') || input.includes('budget')) {
-      const cheapest = [...products].sort((a, b) => a.price - b.price)[0];
-      return {
-        message: "🔥 Hot deal alert! Here's our best value product:",
-        product: cheapest,
-        quickReplies: ['Add to cart', 'More deals', 'Show expensive'],
-      };
-    }
-
-    if (input.includes('expensive') || input.includes('premium') || input.includes('luxury') || input.includes('high-end')) {
-      const expensive = [...products].sort((a, b) => b.price - a.price)[0];
-      return {
-        message: "💎 Premium quality - our finest offering:",
-        product: expensive,
-        quickReplies: ['Add to cart', 'Show cheaper', 'More premium'],
-      };
-    }
-
-    // Best rated
-    if (input.includes('best') || input.includes('popular') || input.includes('trending') || input.includes('top') || input.includes('rated')) {
-      const topRated = [...products].sort((a, b) => (b.rating?.rate || 0) - (a.rating?.rate || 0))[0];
-      return {
-        message: "⭐ Customer favorite! Our highest-rated product:",
-        product: topRated,
-        quickReplies: ['Add to cart', 'More top rated', 'Show deals'],
-      };
-    }
-
-    // Add to cart confirmation
-    if (input.includes('add') || input.includes('buy') || input.includes('purchase')) {
-      return {
-        message: "Great! Just tap the 'Add to Cart' button on any product card I show you, and I'll add it instantly! 🛒",
-        quickReplies: ['Show electronics', 'Show jewelry', 'Best deals'],
-      };
-    }
-
-    // Help and suggestions
-    if (input.includes('help') || input.includes('suggest') || input.includes('recommend') || input.includes('find')) {
-      return {
-        message: "🎯 I can help you with:\n\n🛍️ Browse by category\n💎 Find best deals\n⭐ Show top-rated items\n🛒 Manage your cart\n💰 Track your budget\n\nWhat interests you?",
-        quickReplies: ['Electronics', 'Jewelry', 'Men\'s fashion', 'Women\'s fashion', 'Best deals'],
-      };
-    }
-
-    // Spending tracking
-    if (input.includes('spend') || input.includes('total') || input.includes('budget') || input.includes('money')) {
-      const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-      return {
-        message: `💰 Your current spending:\n\nCart Total: $${total.toFixed(2)}\nItems: ${cart.length}\n\n${total > 100 ? '💡 Tip: You\'re over $100! Consider reviewing your cart.' : '✅ Great! You\'re shopping within budget.'}`,
-        quickReplies: ['View cart', 'Continue shopping', 'Best deals'],
-      };
-    }
-
-    // Default response
     return {
-      message: "I'm your AI shopping assistant with full app control!\n\nI can:\n✅ Show you products by category\n✅ Find best deals & prices\n✅ Manage your cart\n✅ Track your spending\n✅ Recommend items\n\nTry asking me:\n• 'Show me electronics'\n• 'What are the best deals?'\n• 'Show my cart'\n• 'Find me a gift'",
-      quickReplies: ['Show all products', 'Electronics', 'Best deals', 'My cart'],
+      message: data.message,
+      product: product,
+      quickReplies: ['Show more', 'Price under 1000', 'Different color']
     };
   };
 
-  const handleSend = () => {
+  const sendMessageToBackend = async (text) => {
+    try {
+      const response = await fetch(`${API_URL}/api/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          session_id: sessionId,
+          message: text
+        })
+      });
+      const data = await response.json();
+      return processBackendResponse(data);
+    } catch (error) {
+      console.error("Chat error:", error);
+      return { message: "Sorry, I'm having trouble connecting to the server." };
+    }
+  };
+
+  const handleSend = async () => {
     if (inputText.trim() === '') return;
 
+    const text = inputText.trim();
     const newMessage = {
       id: Date.now().toString(),
       type: 'user',
-      message: inputText.trim(),
+      message: text,
     };
 
     setMessages((prev) => [...prev, newMessage]);
-    const userInput = inputText.trim();
     setInputText('');
 
-    setTimeout(() => {
-      const response = getSmartResponse(userInput);
-      const botResponse = {
-        id: (Date.now() + 1).toString(),
-        type: 'bot',
-        ...response,
-      };
-      setMessages((prev) => [...prev, botResponse]);
-    }, 600);
+    const response = await sendMessageToBackend(text);
+    const botResponse = {
+      id: (Date.now() + 1).toString(),
+      type: 'bot',
+      ...response,
+    };
+    setMessages((prev) => [...prev, botResponse]);
   };
 
-  const handleQuickReply = (reply) => {
+  const handleQuickReply = async (reply) => {
     const userReply = {
       id: Date.now().toString(),
       type: 'user',
@@ -301,15 +217,13 @@ const ApexAIModal = ({ visible, onClose, cart, onAddToCart, products, onClearCar
     };
     setMessages((prev) => [...prev, userReply]);
 
-    setTimeout(() => {
-      const response = getSmartResponse(reply);
-      const botResponse = {
-        id: (Date.now() + 1).toString(),
-        type: 'bot',
-        ...response,
-      };
-      setMessages((prev) => [...prev, botResponse]);
-    }, 600);
+    const response = await sendMessageToBackend(reply);
+    const botResponse = {
+      id: (Date.now() + 1).toString(),
+      type: 'bot',
+      ...response,
+    };
+    setMessages((prev) => [...prev, botResponse]);
   };
 
   const renderMessage = ({ item }) => {
@@ -761,7 +675,7 @@ const App = () => {
         price: p.price,
         category: p.category,
         description: p.description,
-        image: p.images && p.images.length > 0 ? p.images[0] : 'https://via.placeholder.com/150',
+        image: p.image_url || (p.images && p.images.length > 0 ? p.images[0] : 'https://via.placeholder.com/150'),
         rating: { rate: 4.5, count: 10 } // Mock rating
       }));
       
