@@ -3,6 +3,7 @@ Backend Main Server
 Combines Data API and Sales Agent API
 """
 from flask import Flask, jsonify, request
+from werkzeug.exceptions import HTTPException
 from flask_cors import CORS, cross_origin
 import sys
 import os
@@ -33,6 +34,14 @@ app.register_blueprint(api_bp)
 
 # Initialize Session Manager (Supports SQLite for local, Postgres for Render)
 session_manager = SessionManager()
+
+@app.errorhandler(Exception)
+def handle_exception(e):
+    # pass through HTTP errors
+    if isinstance(e, HTTPException):
+        return e
+    # now you're handling non-HTTP exceptions only
+    return jsonify(error=str(e), success=False), 500
 
 # Health check
 @app.route('/health', methods=['GET'])
