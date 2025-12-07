@@ -16,6 +16,7 @@ import {
   StatusBar,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import * as Speech from 'expo-speech';
 
 // Color Palette
 const COLORS = {
@@ -118,7 +119,7 @@ const BotMessage = ({ message, product, quickReplies, onAddToCart, onQuickReply 
 // ============================================
 // APEX AI MODAL
 // ============================================
-const ApexAIModal = ({ visible, onClose, cart, onAddToCart, products, onClearCart, onNavigateToCategory, onSearchProducts }) => {
+const ApexAIModal = ({ visible, onClose, cart, onAddToCart, products, onClearCart, onNavigateToCategory, onSearchProducts, sessionId, welcomeMessage, speak }) => {
   const flatListRef = useRef(null);
   const [inputText, setInputText] = useState('');
   const [messages, setMessages] = useState([
@@ -129,6 +130,16 @@ const ApexAIModal = ({ visible, onClose, cart, onAddToCart, products, onClearCar
       quickReplies: ['Show all products', 'Best deals', 'Manage my cart', 'Help me find something'],
     },
   ]);
+
+  useEffect(() => {
+    if (welcomeMessage) {
+      setMessages([{
+        id: 'welcome',
+        type: 'bot',
+        message: welcomeMessage,
+      }]);
+    }
+  }, [welcomeMessage]);
 
 
 
@@ -207,6 +218,9 @@ const ApexAIModal = ({ visible, onClose, cart, onAddToCart, products, onClearCar
       ...response,
     };
     setMessages((prev) => [...prev, botResponse]);
+    if (botResponse.message) {
+      speak(botResponse.message);
+    }
   };
 
   const handleQuickReply = async (reply) => {
@@ -224,6 +238,9 @@ const ApexAIModal = ({ visible, onClose, cart, onAddToCart, products, onClearCar
       ...response,
     };
     setMessages((prev) => [...prev, botResponse]);
+    if (botResponse.message) {
+      speak(botResponse.message);
+    }
   };
 
   const renderMessage = ({ item }) => {
@@ -619,8 +636,8 @@ const CartScreen = ({ cart, onUpdateQuantity, onRemoveItem, onClearCart, onBackT
 // ============================================
 // MAIN APP
 // ============================================
-// Replace with your PC's IP address if running on a real device
-const API_URL = 'http://10.0.2.2:5000'; 
+// Hosted Backend URL
+const API_URL = 'https://apex-1-v7pe.onrender.com'; 
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -628,6 +645,13 @@ const App = () => {
   const [apexVisible, setApexVisible] = useState(false);
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [welcomeMessage, setWelcomeMessage] = useState(null);
+
+  const speak = (text) => {
+    Speech.stop();
+    Speech.speak(text);
+  };
+
   const [categories, setCategories] = useState(['all']);
   const [cartVisible, setCartVisible] = useState(false);
   const [currentScreen, setCurrentScreen] = useState('home'); // 'home', 'cart', 'categories', 'search', or 'account'
@@ -656,6 +680,11 @@ const App = () => {
       if (data.success) {
         setSessionId(data.session_id);
         console.log('Session started:', data.session_id);
+        
+        if (data.message) {
+          setWelcomeMessage(data.message);
+          speak(data.message);
+        }
       }
     } catch (error) {
       console.error('Error starting session:', error);
@@ -1111,7 +1140,8 @@ const App = () => {
         onClearCart={handleClearCart}
         onNavigateToCategory={handleNavigateToCategory}
         sessionId={sessionId}
-        apiUrl={API_URL}
+        welcomeMessage={welcomeMessage}
+        speak={speak}
       />
     </SafeAreaView>
   );
