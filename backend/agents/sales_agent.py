@@ -425,7 +425,7 @@ Make it sound natural and helpful, not robotic!"""
             if color in user_input_lower:
                 keywords.append(color)
         
-        # Strategy: Search all products first for better matching
+        # Strategy: Search recommendations first for better context awareness
         all_products = []
         try:
             resp = requests.get(f"{self.api_base_url}/api/products", timeout=5)
@@ -478,54 +478,81 @@ Make it sound natural and helpful, not robotic!"""
             
             return best_match if best_score >= 10 else None
         
-        # Try to find match in all products first
-        if keywords:
-            product = find_best_match(all_products)
+        products_to_add = []
         
-        # If no match in all products, try recommendations
-        if not product and recommendations:
-            product = find_best_match(recommendations)
+        # Check for plural intent ("add these", "add both", "watches")
+        is_plural = any(w in user_input_lower for w in ['all', 'both', 'these', 'watches', 'items', 'products'])
         
-        # Last resort fallback - but give preference to matching category
-        if not product and all_products:
+        # 1. Try recommendations first (Context aware)
+        if recommendations:
+            if is_plural:
+                # If user says "add these watches", add all recommended items
+                products_to_add = recommendations
+            else:
+                match = find_best_match(recommendations)
+                if match:
+                    products_to_add = [match]
+        
+        # 2. If no match in recommendations, try all products
+        if not products_to_add and keywords:
+            match = find_best_match(all_products)
+            if match:
+                products_to_add = [match]
+        
+        # 3. Last resort fallback - try to find something relevant in all products
+        if not products_to_add and all_products:
             # For kids products that don't exist, suggest alternatives
             if is_girl or is_boy or is_kid:
-                # Look for women's or men's dress/clothing as alternative
                 for p in all_products:
                     if product_type and product_type in p['name'].lower():
-                        product = p
+                        products_to_add = [p]
                         break
-            
-            # Otherwise use first product from all products
-            if not product:
-                product = all_products[0]
         
-        if not product:
+        if not products_to_add:
             # Fallback: trigger product discovery instead
             self.log("No product match found, falling back to product discovery")
             return self._handle_product_discovery(user_input)
         
-        # Check inventory
-        inventory_task = {
-            "sku": product['sku'],
-            "quantity": 1,
-            "customer_location": self.current_session.get('context', {}).get('location')
-        }
+        # Process additions
+        added_items = []
+        failed_items = []
         
-        inventory_result = self.inventory_agent.execute(inventory_task)
+        for product in products_to_add:
+            # Check inventory
+            inventory_task = {
+                "sku": product['sku'],
+                "quantity": 1,
+                "customer_location": self.current_session.get('context', {}).get('location')
+            }
+            
+            inventory_result = self.inventory_agent.execute(inventory_task)
+            
+            if inventory_result['success'] and inventory_result['availability']['status'] == 'available':
+                self.current_session['cart'].append(product)
+                added_items.append(product)
+                # Store last inventory result for options display
+                last_inventory_result = inventory_result
+            else:
+                failed_items.append(product)
         
-        if inventory_result['success'] and inventory_result['availability']['status'] == 'available':
-            # Add to cart
-            self.current_session['cart'].append(product)
-            self.current_session['stage'] = 'cart'
+        self.current_session['stage'] = 'cart'
+        
+        if added_items:
+            if len(added_items) == 1:
+                product = added_items[0]
+                message = f"Great choice! I've added **{product['name']}** to your cart.\n\n"
+                message += "**Availability Options:**\n"
+                if 'last_inventory_result' in locals():
+                    options = last_inventory_result['availability']['options']
+                    for opt in options[:2]:
+                        message += f"✓ {opt['message']}\n"
+            else:
+                names = ", ".join([f"**{p['name']}**" for p in added_items])
+                message = f"Great choice! I've added {names} to your cart.\n\n"
             
-            options = inventory_result['availability']['options']
-            
-            message = f"Great choice! I've added **{product['name']}** to your cart.\n\n"
-            message += "**Availability Options:**\n"
-            
-            for opt in options[:2]:
-                message += f"✓ {opt['message']}\n"
+            if failed_items:
+                failed_names = ", ".join([p['name'] for p in failed_items])
+                message += f"\n(Note: {failed_names} could not be added due to stock issues.)\n"
             
             message += f"\n**Cart Total:** ₹{sum(p['price'] for p in self.current_session['cart'])}\n"
             message += "\nWould you like to:\n1. Continue shopping\n2. Proceed to checkout\n3. Apply promo code"
@@ -534,12 +561,12 @@ Make it sound natural and helpful, not robotic!"""
                 "success": True,
                 "message": message,
                 "cart": self.current_session['cart'],
-                "inventory": inventory_result
+                "inventory": last_inventory_result if 'last_inventory_result' in locals() else {}
             }
         else:
             return {
                 "success": False,
-                "message": f"Sorry, **{product['name']}** is currently out of stock. Would you like to see similar products?"
+                "message": f"Sorry, the requested items are currently out of stock. Would you like to see similar products?"
             }
     
     def _handle_checkout(self) -> Dict[str, Any]:

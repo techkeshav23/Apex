@@ -6,9 +6,9 @@ import time
 
 # ADD YOUR API KEYS HERE
 API_KEYS = [
-    "AIzaSyA3mcm3HemY83oBUHPFLwiBQ4Ko1u8OAJk",
-    "AIzaSyAOAFYAtGP09amVczd2EDqLLnXDbc8LYU8", 
-    "AIzaSyCpg0yBZ5jCyYXAjZQLXoHDvsZ0ranu91I"
+    "",
+    "", 
+    ""
 ]
 
 def test_api_key(api_key, key_number):

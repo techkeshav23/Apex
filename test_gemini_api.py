@@ -4,7 +4,7 @@ Test script to verify Gemini API key
 import google.generativeai as genai
 import sys
 
-API_KEY = "AIzaSyDHq3fNoLR9CjpjL_eGrzOHMsZUMCPjD7M"
+API_KEY = ""
 
 def test_gemini_api():
     try:
