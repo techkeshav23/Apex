@@ -43,9 +43,15 @@ class RecommendationAgent(BaseAgent):
         # Get customer profile
         try:
             customer_response = requests.get(
-                f"{self.api_base_url}/api/customers/{customer_id}"
+                f"{self.api_base_url}/api/customers/{customer_id}",
+                timeout=5
             )
             customer = customer_response.json()
+        except requests.exceptions.Timeout:
+            return {
+                "success": False,
+                "error": "Timeout fetching customer data - please try again"
+            }
         except Exception as e:
             return {
                 "success": False,
@@ -54,8 +60,13 @@ class RecommendationAgent(BaseAgent):
         
         # Get all products
         try:
-            products_response = requests.get(f"{self.api_base_url}/api/products")
+            products_response = requests.get(f"{self.api_base_url}/api/products", timeout=5)
             all_products = products_response.json()
+        except requests.exceptions.Timeout:
+            return {
+                "success": False,
+                "error": "Timeout fetching products - please try again"
+            }
         except Exception as e:
             return {
                 "success": False,

@@ -40,7 +40,8 @@ class LoyaltyAgent(BaseAgent):
         # Get customer loyalty info
         try:
             loyalty_response = requests.get(
-                f"{self.api_base_url}/api/loyalty/{customer_id}"
+                f"{self.api_base_url}/api/loyalty/{customer_id}",
+                timeout=5
             )
             loyalty_data = loyalty_response.json()
             result['loyalty_info'] = loyalty_data
@@ -115,7 +116,7 @@ class LoyaltyAgent(BaseAgent):
         promotions = []
         
         try:
-            response = requests.get(f"{self.api_base_url}/api/promotions")
+            response = requests.get(f"{self.api_base_url}/api/promotions", timeout=5)
             all_promos = response.json()
             
             categories = [item.get('category') for item in cart_items]

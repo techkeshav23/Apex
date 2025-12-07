@@ -61,10 +61,12 @@ class SalesAgent:
         """Add a specific SKU to the agent-managed cart with basic stock check."""
         # Fetch product details from data API
         try:
-            resp = requests.get(f"{self.api_base_url}/api/products/{sku}")
+            resp = requests.get(f"{self.api_base_url}/api/products/{sku}", timeout=5)
             if resp.status_code != 200:
                 return {"success": False, "message": "Product not found"}
             product = resp.json()
+        except requests.exceptions.Timeout:
+            return {"success": False, "message": "Request timeout - please try again"}
         except Exception as e:
             return {"success": False, "message": f"Failed to fetch product: {str(e)}"}
 
@@ -312,7 +314,7 @@ class SalesAgent:
         # Strategy: Search all products first for better matching
         all_products = []
         try:
-            resp = requests.get(f"{self.api_base_url}/api/products")
+            resp = requests.get(f"{self.api_base_url}/api/products", timeout=5)
             if resp.status_code == 200:
                 all_products = resp.json()
         except Exception as e:
@@ -593,7 +595,7 @@ class SalesAgent:
                 # For now, we'll just use the fallback if the API call fails
                 # to prevent the entire session start from failing
                 try:
-                    response = requests.get(f"{self.api_base_url}/api/customers/{customer_id}", timeout=2)
+                    response = requests.get(f"{self.api_base_url}/api/customers/{customer_id}", timeout=3)
                     if response.status_code == 200:
                         customer = response.json()
                         greeting_text = gemini_assistant.generate_personalized_greeting(
@@ -604,7 +606,7 @@ class SalesAgent:
                             "success": True,
                             "message": greeting_text + "\n\nI can help you:\n✨ Find the perfect products\n📦 Check availability\n🎁 Apply best offers\n🚚 Complete your purchase\n\nWhat are you looking for today?"
                         }
-                except requests.exceptions.RequestException:
+                except (requests.exceptions.RequestException, requests.exceptions.Timeout):
                     pass # Fallback silently
             except Exception as e:
                 self.log(f"Could not fetch customer data: {str(e)}")

@@ -132,7 +132,8 @@ class FulfillmentAgent(BaseAgent):
         
         try:
             response = requests.get(
-                f"{self.api_base_url}/api/orders/{order_id}"
+                f"{self.api_base_url}/api/orders/{order_id}",
+                timeout=5
             )
             
             if response.status_code == 200:

@@ -32,9 +32,15 @@ class InventoryAgent(BaseAgent):
         # Get inventory data
         try:
             inventory_response = requests.get(
-                f"{self.api_base_url}/api/inventory/{sku}"
+                f"{self.api_base_url}/api/inventory/{sku}",
+                timeout=5
             )
             inventory = inventory_response.json()
+        except requests.exceptions.Timeout:
+            return {
+                "success": False,
+                "error": "Timeout checking inventory - please try again"
+            }
         except Exception as e:
             return {
                 "success": False,
