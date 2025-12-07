@@ -34,13 +34,6 @@ app.register_blueprint(api_bp)
 # Initialize Session Manager (Supports SQLite for local, Postgres for Render)
 session_manager = SessionManager()
 
-@app.after_request
-def after_request(response):
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
-    return response
-
 # Health check
 @app.route('/health', methods=['GET'])
 def health():
@@ -48,7 +41,6 @@ def health():
 
 # Sales Agent Routes
 @app.route('/api/start_session', methods=['POST', 'OPTIONS'])
-@cross_origin()
 def start_session():
     if request.method == 'OPTIONS':
         return jsonify({}), 200
@@ -81,10 +73,9 @@ def start_session():
     })
 
 @app.route('/api/chat', methods=['POST', 'OPTIONS'])
-@cross_origin()
+@app.route('/api/chat', methods=['POST', 'OPTIONS'])
 def chat():
     if request.method == 'OPTIONS':
-        return jsonify({}), 200
 
     data = request.json
     session_id = data.get('session_id')
