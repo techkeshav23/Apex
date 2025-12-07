@@ -158,12 +158,22 @@ class SalesAgent:
         """Analyze user intent from input"""
         user_input_lower = user_input.lower()
         
-        # Product discovery keywords
-        if any(word in user_input_lower for word in ['show', 'looking for', 'need', 'want', 'recommend', 'suggest']):
+        # Product discovery keywords - prioritize if no recommendations yet
+        discovery_keywords = ['show', 'looking for', 'need', 'want', 'recommend', 'suggest', 'find']
+        buy_keywords = ['buy', 'purchase', 'get']
+        
+        # If user wants/needs to buy something, it's product discovery first
+        if any(word in user_input_lower for word in discovery_keywords):
             return "product_discovery"
         
-        # Add to cart keywords
-        if any(word in user_input_lower for word in ['add', 'buy', 'purchase', 'take', 'cart']):
+        # If user says buy/purchase but we have no context, it's still discovery
+        if any(word in user_input_lower for word in buy_keywords):
+            if not self.current_session.get('recommendations'):
+                return "product_discovery"
+            return "add_to_cart"
+        
+        # Add to cart keywords (only when we have context)
+        if any(word in user_input_lower for word in ['add', 'take', 'cart']):
             return "add_to_cart"
         
         # Checkout keywords
@@ -297,6 +307,18 @@ class SalesAgent:
         if 'trouser' in user_input_lower or 'pant' in user_input_lower:
             keywords.extend(['trouser', 'pant', 'chino'])
             product_type = 'trouser'
+        if 'watch' in user_input_lower:
+            keywords.append('watch')
+            product_type = 'watch'
+        if 'shoe' in user_input_lower or 'shoes' in user_input_lower:
+            keywords.extend(['shoe', 'shoes'])
+            product_type = 'shoe'
+        if 'bag' in user_input_lower or 'handbag' in user_input_lower:
+            keywords.extend(['bag', 'handbag'])
+            product_type = 'bag'
+        if 'accessory' in user_input_lower or 'accessories' in user_input_lower:
+            keywords.extend(['accessory', 'accessories'])
+            product_type = 'accessory'
         
         # Check for gender/age modifiers
         is_girl = 'girl' in user_input_lower or 'girls' in user_input_lower
@@ -387,10 +409,9 @@ class SalesAgent:
                 product = all_products[0]
         
         if not product:
-            return {
-                "success": False,
-                "message": "I couldn't find that product. Could you describe what you're looking for?"
-            }
+            # Fallback: trigger product discovery instead
+            self.log("No product match found, falling back to product discovery")
+            return self._handle_product_discovery(user_input)
         
         # Check inventory
         inventory_task = {
