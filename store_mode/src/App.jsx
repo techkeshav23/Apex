@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import axios from 'axios';
-import { Mic, MicOff, Send, MapPin, Tag, User, ShoppingBag, Volume2, VolumeX, Search, ShoppingCart, CreditCard, X, Check } from 'lucide-react';
+import { Mic, Send, MapPin, Tag, User, ShoppingBag, Volume2, Search, ShoppingCart, CreditCard, X, Check } from 'lucide-react';
 import { getProductImage } from './utils/productImage';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
@@ -32,10 +32,15 @@ function App() {
   
   // Ref to track listening state without triggering re-renders of the effect
   const isListeningRef = useRef(isListening);
+  const wakeWordActiveRef = useRef(wakeWordActive);
   
   useEffect(() => {
     isListeningRef.current = isListening;
   }, [isListening]);
+
+  useEffect(() => {
+    wakeWordActiveRef.current = wakeWordActive;
+  }, [wakeWordActive]);
 
   // Text-to-Speech Function
   const speak = useCallback((text) => {
@@ -74,14 +79,15 @@ function App() {
 
         // Wake Word Logic
         // Normalize transcript to remove punctuation for better matching
+        // eslint-disable-next-line no-useless-escape
         const cleanTranscript = transcript.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
         
-        if (cleanTranscript.includes('hey apex') || cleanTranscript.includes('hey apecs') || cleanTranscript.includes('apex') || cleanTranscript.includes('hey epics')) {
+        if (cleanTranscript.includes('hey apex') || cleanTranscript.includes('hey apecs') || cleanTranscript.includes('apex') || cleanTranscript.includes('hey epics') || cleanTranscript.includes('hi apex') || cleanTranscript.includes('hello apex')) {
            setIsListening(true);
            
            // Check if there is a command AFTER the wake word
            // Remove the wake word variations to get the command
-           const command = cleanTranscript.replace(/hey apex|hey apecs|apex|hey epics/g, '').trim();
+           const command = cleanTranscript.replace(/hey apex|hey apecs|apex|hey epics|hi apex|hello apex/g, '').trim();
            
            if (command.length > 2) {
               setInputMessage(command);
@@ -103,7 +109,7 @@ function App() {
 
       recognitionRef.current.onend = () => {
         // Auto-restart if wake word mode is active
-        if (wakeWordActive) {
+        if (wakeWordActiveRef.current) {
           try {
             recognitionRef.current.start();
           } catch (e) {
@@ -136,15 +142,15 @@ function App() {
         recognitionRef.current.stop();
       }
     };
-  }, [wakeWordActive, speak]); // Removed isListening from dependencies
+  }, [speak]); // Removed wakeWordActive from dependencies
 
 
 
   const toggleListening = () => {
     if (!recognitionRef.current) return;
     
-    if (isListening || wakeWordActive) {
-      // Stop listening
+    if (isListening) {
+      // If currently active listening, stop everything (User wants to cancel)
       setIsListening(false);
       setWakeWordActive(false);
       try {
@@ -152,12 +158,16 @@ function App() {
       } catch(e) {
         console.log("Recognition already stopped");
       }
+    } else if (wakeWordActive) {
+      // If in standby (waiting for wake word), switch to active listening (User wants to talk now)
+      setIsListening(true);
+      speak("I'm listening.");
+      // Recognition is already running, so we don't need to start it
     } else {
-      // Start listening
+      // If completely off, start everything
       synthesisRef.current.cancel();
       setIsSpeaking(false);
-      // Start in "Standby" mode - waiting for Wake Word
-      setIsListening(false); 
+      setIsListening(true); 
       setWakeWordActive(true);
       try {
         recognitionRef.current.start();
@@ -168,7 +178,11 @@ function App() {
   };
 
   // Start session on mount
+  const sessionStartedRef = useRef(false);
   useEffect(() => {
+    if (sessionStartedRef.current) return;
+    sessionStartedRef.current = true;
+
     const startSession = async () => {
       try {
         const response = await axios.post(`${API_URL}/api/start_session`, {
@@ -208,6 +222,12 @@ function App() {
 
   const handleSendMessage = useCallback(async (text = inputMessage) => {
     if (!text.trim() || loading || !sessionData) return;
+
+    // Go back to Standby mode (Waiting for Wake Word)
+    setIsListening(false);
+    // Ensure wake word remains active so onend restarts it
+    setWakeWordActive(true); 
+    wakeWordActiveRef.current = true;
 
     const userMessage = {
       type: 'user',
@@ -262,7 +282,7 @@ function App() {
     } finally {
       setLoading(false);
     }
-  }, [inputMessage, loading, sessionData, speak]);
+  }, [inputMessage, loading, sessionData, speak, cart.length]);
 
   // Update the ref whenever handleSendMessage changes
   useEffect(() => {
@@ -527,25 +547,32 @@ function App() {
                 onClick={toggleListening}
                 disabled={!voiceSupported}
                 className={`w-16 h-16 rounded-full flex items-center justify-center text-2xl transition-all shadow-lg border-2 relative overflow-hidden group ${
-                  isListening || wakeWordActive
-                    ? 'bg-blue-600 border-blue-400 text-white shadow-blue-300 scale-105' 
-                    : 'bg-white border-gray-200 text-gray-600 hover:text-blue-600 hover:border-blue-400 hover:shadow-md'
+                  isListening 
+                    ? 'bg-blue-600 border-blue-400 text-white shadow-blue-300 scale-105' // Active Listening
+                    : wakeWordActive 
+                      ? 'bg-blue-50 border-blue-300 text-blue-600 shadow-blue-100' // Standby (Wake Word)
+                      : 'bg-white border-gray-200 text-gray-600 hover:text-blue-600 hover:border-blue-400 hover:shadow-md' // Off
                 } ${!voiceSupported ? 'opacity-50 cursor-not-allowed' : ''}`}
-                title={!voiceSupported ? 'Voice not supported' : (isListening || wakeWordActive) ? 'Click to stop listening' : 'Click to start voice input'}
+                title={!voiceSupported ? 'Voice not supported' : isListening ? 'Click to stop' : wakeWordActive ? 'Listening for "Hey Apex"' : 'Click to start'}
               >
-                {isListening || wakeWordActive ? (
+                {isListening ? (
                    <div className="flex gap-1 items-center h-6">
                       <div className="w-1 bg-white rounded-full animate-bounce h-3" style={{ animationDuration: '1s' }}></div>
                       <div className="w-1 bg-white rounded-full animate-bounce h-5" style={{ animationDuration: '1s', animationDelay: '0.1s' }}></div>
                       <div className="w-1 bg-white rounded-full animate-bounce h-3" style={{ animationDuration: '1s', animationDelay: '0.2s' }}></div>
                    </div>
                 ) : (
-                  <Mic size={28} className="group-hover:scale-110 transition-transform" />
+                  <Mic size={28} className={`transition-transform ${wakeWordActive ? 'scale-110' : 'group-hover:scale-110'}`} />
                 )}
                 
-                {/* Pulse Ring */}
-                {(isListening || wakeWordActive) && (
+                {/* Pulse Ring - Only for Active Listening */}
+                {isListening && (
                   <span className="absolute inset-0 rounded-full border-4 border-white opacity-30 animate-ping"></span>
+                )}
+                
+                {/* Slow Pulse for Standby */}
+                {wakeWordActive && !isListening && (
+                   <span className="absolute inset-0 rounded-full border-2 border-blue-400 opacity-20 animate-pulse"></span>
                 )}
               </button>
 
@@ -583,7 +610,7 @@ function App() {
             
             {/* Voice Status Text */}
             <div className={`text-center mt-2 text-sm font-medium transition-all duration-300 ${isListening || wakeWordActive ? 'text-blue-600 opacity-100' : 'text-gray-400 opacity-0 h-0'}`}>
-               Listening for "Hey Apex"...
+               {isListening ? "Listening..." : "Listening for 'Hey Apex'..."}
             </div>
           </div>
         </div>
