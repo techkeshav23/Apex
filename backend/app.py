@@ -69,12 +69,12 @@ def start_session():
         "message": greeting['message']
     })
 
-@app.route('/api/chat', methods=['POST', 'OPTIONS'])
-def chat():
-    if request.method == 'OPTIONS':
 @app.route('/api/chat', methods=['POST'])
 def chat():
     data = request.json
+    session_id = data.get('session_id')
+    user_message = data.get('message')
+    
     # Load session state
     state = session_manager.load_session(session_id)
     if not state:
