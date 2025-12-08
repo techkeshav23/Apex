@@ -1,35 +1,24 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-env/
 venv/
-ENV/
-.venv
-
-# Environment
+.venv/
+env/
 .env
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
+# OS specific
 .DS_Store
 Thumbs.db
 
-# Data
-*.sqlite
+# IDEs
+.vscode/
+.idea/
+
+# Database
 *.db
-
-# Logs
-*.log
-
-# Node
-node_modules/
-npm-debug.log
-yarn-error.log
